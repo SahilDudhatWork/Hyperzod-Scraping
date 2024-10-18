@@ -1,0 +1,63 @@
+/ A / : Travis Perkins Vauxhall = Buildgo Pimlico
+/ B / : Travis Perkins London Bridge = Buildgo London Bridge
+/ C / : Travis Perkins St Pancras = Buildgo Kings Cross
+/ D / : Travis Perkins Paddington = Buildgo Marlybone
+
+=============================================================
+=============================================================
+
+const merchantIdA = "66f544b605f843b99b0fbff3";
+const merchantIdB = "66feb0274ba29a6a3e0e2e8d";
+const merchantIdC = "66f67a9863e7cad5c0021c91";
+const merchantIdD = "66f67d6105f843b99b0fc062";
+
+=============================================================
+=============================================================
+
+////////////////////// BranchA //////////////////////
+
+ facets: [
+            {
+              name: "localised",
+              values: ["0320"],
+            },
+          ],
+
+////////////////////// BranchB //////////////////////
+
+ facets: [
+            {
+              name: "localised",
+              values: [
+                "0344",
+                 "SE15 6TH"
+                ],
+            },
+          ],
+
+////////////////////// BranchC //////////////////////
+
+ facets: [
+            {
+                "name": "localised",
+                "values": [
+                    "0216",
+                    "SE15 6TH"
+                ]
+            }
+        ]
+
+////////////////////// BranchD //////////////////////
+
+ facets: [
+            {
+                "name": "localised",
+                "values": [
+                    "0212",
+                    "SE15 6TH"
+                ]
+            }
+        ]
+
+=============================================================
+=============================================================
