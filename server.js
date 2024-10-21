@@ -1,4 +1,5 @@
 const express = require("express");
+const cron = require("node-cron");
 const fs = require("fs");
 const path = require("path");
 const app = express();
@@ -16,8 +17,9 @@ const {
 } = require("./utils/fetchCategoryTree");
 const PORT = process.env.PORT || 3000;
 
-(async () => {
+cron.schedule("0 0 * * *", async () => {
   try {
+    console.log("Running a task every 24 hours at midnight");
     const csvFilePathBranchA = path.join(__dirname, "./BranchA.csv");
     const csvFilePathBranchB = path.join(__dirname, "./BranchB.csv");
     const csvFilePathBranchC = path.join(__dirname, "./BranchC.csv");
@@ -52,17 +54,14 @@ const PORT = process.env.PORT || 3000;
     let index = 0;
     for (const item of readCategoryTreeResult) {
       if (item.subCategories.length > 0) {
-        await BranchA(item);
-        await BranchB(item);
-        await BranchC(item);
-        await BranchD(item);
-        // await new Promise((resolve) => setTimeout(resolve, 100));
-
+        for (const category of item.subCategories) {
+          await BranchA(category);
+          await BranchB(category);
+          await BranchC(category);
+          await BranchD(category);
+        }
         index++;
-        console.log(
-          "*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*= :>> ",
-          index
-        );
+        console.log("*=*=*=*=*=*=*=*=*=*=*=*= :>> ", index);
       }
     }
 
@@ -74,12 +73,13 @@ const PORT = process.env.PORT || 3000;
     await new Promise((resolve) => setTimeout(resolve, 9000));
     await MerchantsD();
     console.log(
-      "\x1b[32m*=*=*=*=*=*=*=*=*=*/\x1b[0m \x1b[31mAll Products successfully Imported.\x1b[0m \x1b[32m/*=*=*=*=*=*=*=*=*=*x1b[0m"
+      "\x1b[32m*=*=*=*=*=*=*=*=*=*/\x1b[0m \x1b[31mAll Products successfully Imported.\x1b[0m \x1b[32m/*=*=*=*=*=*=*=*=*=*\x1b[0m"
     );
   } catch (error) {
     console.error("Error during initial execution:", error);
   }
-})();
+});
+// (async () => {})();
 
 app.listen(PORT, () => {
   console.log(`Server is running on http://localhost:${PORT}`);

@@ -16,6 +16,7 @@
     "csv-parser": "^3.0.0",
     "express": "^4.21.0",
     "fs": "^0.0.1-security",
+    "json2csv": "^6.0.0-alpha.2",
     "node-cron": "^3.0.3",
     "puppeteer": "^23.4.1"
   }

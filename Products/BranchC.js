@@ -25,117 +25,8 @@ const BranchC = async (data) => {
           term: "se1",
         },
       },
-      query: `query searchProducts($brandId: ID!, $input: TpplcProductSearchInput!) {
-        tpplcBrand(brandId: $brandId) {
-          searchProducts(input: $input) {
-            totalCount
-            autoCorrectQuery
-            searchRedirect
-            pageInfo {
-              endCursor
-              hasNextPage
-              __typename
-            }
-            edges {
-              product {
-                ...TPPLCProductFields
-                __typename
-              }
-              __typename
-            }
-            facets {
-              name
-              values {
-                value
-                count
-                ... on TpplcCategoryFacetValue {
-                  category {
-                    code
-                    id
-                    name
-                    parentCategories {
-                      code
-                      __typename
-                    }
-                    __typename
-                  }
-                  __typename
-                }
-                __typename
-              }
-              __typename
-            }
-            __typename
-          }
-          __typename
-        }
-      }
-      fragment TPPLCProductFields on TpplcProduct {
-        id
-        sku
-        name
-        description
-        minimumHirePeriod
-        type
-        baseProductId
-        review {
-          averageRating
-          numberOfReviews
-          __typename
-        }
-        primaryImage {
-          id
-          images {
-            type
-            url
-            altText
-            __typename
-          }
-          __typename
-        }
-        vatRate
-        parentCategories {
-          ...TPPLCParentCategoriesTree
-          __typename
-        }
-        technicalSpecifications {
-          name
-          value
-          __typename
-        }
-        featuresAndBenefits
-        variants {
-          product {
-            id
-            sku
-            name
-            description
-            vatRate
-            primaryImage {
-              id
-              images {
-                type
-                url
-                altText
-                __typename
-              }
-              __typename
-            }
-            parentCategories {
-              ...TPPLCParentCategoriesTree
-              __typename
-            }
-            __typename
-          }
-          __typename
-        }
-        __typename
-      }
-      fragment TPPLCParentCategoriesTree on TpplcCategory {
-        code
-        name
-        __typename
-      }`,
+      query:
+        "query searchProducts($brandId: ID!, $input: TpplcProductSearchInput!) {\n  tpplcBrand(brandId: $brandId) {\n    searchProducts(input: $input) {\n      totalCount\n      autoCorrectQuery\n      searchRedirect\n      pageInfo {\n        endCursor\n        hasNextPage\n        __typename\n      }\n      edges {\n        product {\n          ...TPPLCProductFields\n          __typename\n        }\n        __typename\n      }\n      facets {\n        name\n        values {\n          value\n          count\n          ... on TpplcCategoryFacetValue {\n            category {\n              code\n              id\n              name\n              parentCategories {\n                code\n                __typename\n              }\n              __typename\n            }\n            __typename\n          }\n          __typename\n        }\n        __typename\n      }\n      __typename\n    }\n    __typename\n  }\n}\n\nfragment TPPLCProductFields on TpplcProduct {\n  id\n  sku\n  name\n  description\n  minimumHirePeriod\n  type\n  baseProductId\n  review {\n    averageRating\n    numberOfReviews\n    __typename\n  }\n  primaryImage {\n    id\n    images {\n      type\n      url\n      altText\n      __typename\n    }\n    __typename\n  }\n  otherImages {\n    id\n    images {\n      type\n      url\n      altText\n      __typename\n    }\n    __typename\n  }\n  vatRate\n  parentCategories {\n    ...TPPLCParentCategoriesTree\n    __typename\n  }\n  technicalSpecifications {\n    name\n    value\n    __typename\n  }\n  featuresAndBenefits\n  variants {\n    product {\n      id\n      baseProductId\n      sku\n      name\n      description\n      review {\n        averageRating\n        numberOfReviews\n        __typename\n      }\n      vatRate\n      type\n      primaryImage {\n        id\n        images {\n          type\n          url\n          altText\n          __typename\n        }\n        __typename\n      }\n      otherImages {\n        id\n        images {\n          type\n          url\n          altText\n          __typename\n        }\n        __typename\n      }\n      parentCategories {\n        ...TPPLCParentCategoriesTree\n        __typename\n      }\n      ...TPPLCProductPriceFields\n      __typename\n    }\n    features {\n      name\n      value\n      __typename\n    }\n    __typename\n  }\n  dataSheets {\n    name\n    type\n    url\n    __typename\n  }\n  type\n  hireable\n  ...TPPLCProductPriceFields\n  __typename\n}\n\nfragment TPPLCProductPriceFields on TpplcProduct {\n  price {\n    price {\n      ... on TpplcBuyPrice {\n        promotionalPriceTiers {\n          finalPrice {\n            valueExVat\n            valueIncVat\n            __typename\n          }\n          minimumQuantity\n          promotionEndDate\n          promotionMessages\n          promotionType\n          __typename\n        }\n        retailPrice {\n          valueExVat\n          valueIncVat\n          __typename\n        }\n        tradePrice {\n          valueExVat\n          valueIncVat\n          __typename\n        }\n        typicalTradePrice {\n          valueExVat\n          valueIncVat\n          __typename\n        }\n        tradePriceType\n        __typename\n      }\n      ... on TpplcHirePrice {\n        retailHireRates {\n          period\n          rate {\n            valueExVat\n            valueIncVat\n            __typename\n          }\n          __typename\n        }\n        tradeHireRates {\n          period\n          rate {\n            valueExVat\n            valueIncVat\n            __typename\n          }\n          __typename\n        }\n        __typename\n      }\n      __typename\n    }\n    priceOnApplication\n    priceUom {\n      code\n      name\n      prefix\n      __typename\n    }\n    __typename\n  }\n  __typename\n}\n\nfragment TPPLCParentCategories on TpplcCategory {\n  code\n  name\n  __typename\n}\n\nfragment TPPLCParentCategoriesTree on TpplcCategory {\n  ...TPPLCParentCategories\n  parentCategories {\n    ...TPPLCParentCategories\n    parentCategories {\n      ...TPPLCParentCategories\n      parentCategories {\n        ...TPPLCParentCategories\n        parentCategories {\n          ...TPPLCParentCategories\n          parentCategories {\n            ...TPPLCParentCategories\n            parentCategories {\n              ...TPPLCParentCategories\n              parentCategories {\n                ...TPPLCParentCategories\n                parentCategories {\n                  ...TPPLCParentCategories\n                  __typename\n                }\n                __typename\n              }\n              __typename\n            }\n            __typename\n          }\n          __typename\n        }\n        __typename\n      }\n      __typename\n    }\n    __typename\n  }\n  __typename\n}",
     };
 
     const response = await productRepository.getProducts(body);
@@ -172,6 +63,10 @@ const BranchC = async (data) => {
 
     let productArray = [];
 
+    if (response.data.data.tpplcBrand.searchProducts.edges.length === 0) {
+      return;
+    }
+
     response.data.data.tpplcBrand.searchProducts.edges.forEach((el) => {
       if (el?.product?.variants?.length == 0) {
         let thumbnailImage = el?.product?.primaryImage?.images.find(
@@ -186,7 +81,6 @@ const BranchC = async (data) => {
 
         let sellingPrice =
           el?.product?.price?.price?.typicalTradePrice?.valueIncVat || 0;
-        let costPrice = el?.product?.price?.price?.costPrice || 0;
 
         productArray.push({
           id: el?.product.sku || "N/A",
@@ -197,7 +91,7 @@ const BranchC = async (data) => {
           min: 1,
           max: inventoryQty,
           sellingPrice: sellingPrice,
-          costPrice: costPrice,
+          costPrice: sellingPrice,
           status: inventoryQty > 0 ? "ACTIVE" : "INACTIVE",
           inventory: inventoryQty,
         });
@@ -222,57 +116,35 @@ const BranchC = async (data) => {
       "producttags",
     ].join(",");
 
-    const csvFilePath = path.join(__dirname, "../BranchC.csv");
-    const fileExists = fs.existsSync(csvFilePath);
-
-    let existingSkus = new Set();
-
-    // Step 1: Read the existing CSV and get existing SKUs
-    if (fileExists) {
-      await new Promise((resolve, reject) => {
-        fs.createReadStream(csvFilePath)
-          .pipe(csvParser())
-          .on("data", (row) => {
-            existingSkus.add(row.productsku);
-          })
-          .on("end", resolve)
-          .on("error", reject);
-      });
-    }
-
-    // Step 2: Filter out products that already exist
-    let newProducts = productArray.filter(
-      (product) => !existingSkus.has(product.sku)
-    );
-
-    if (newProducts.length === 0) {
-      console.log("No new products to add.");
-      return;
-    }
-
     // Step 3: Format the CSV content for the new products
-    let csvContent = newProducts
+    let csvContent = productArray
       .map((product) => {
         let percentageAmount = (15 / 100) * product.sellingPrice;
         let totalSellingPrice = product.sellingPrice + percentageAmount;
         let formattedTotalSellingPrice = totalSellingPrice.toFixed(2);
+        const randomSixDigitNumber = Math.floor(
+          100000 + Math.random() * 900000
+        );
 
         const row = [
           `""`,
           `"${product.name.replace(/"/g, '""')}"`,
           `"${product.image}"`,
           `"${product.description.replace(/"/g, '""')}"`,
-          `"${product.sku}"`,
+          `"${randomSixDigitNumber}"`,
           `"${product.min},${product.max}"`,
           `${formattedTotalSellingPrice}`,
           `"${product.status}"`,
           `${product.inventory}`,
           `"${data.name}"`,
-          `${product.costPrice}`,
+          `${product.sellingPrice}`,
         ];
         return row.join(",");
       })
       .join("\n");
+
+    const csvFilePath = path.join(__dirname, "../BranchC.csv");
+    const fileExists = fs.existsSync(csvFilePath);
 
     // Step 4: Write or append the CSV
     if (!fileExists) {
