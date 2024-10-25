@@ -182,7 +182,61 @@ process.env.TZ = "Asia/Kolkata"; // Set timezone to India for the second cron jo
 cron.schedule(indiaCronSchedule, async () => {
   try {
     console.log("Running a task every day at 5:05 PM India time");
-    // Add the specific task to be executed at this time
+    const csvFilePathBranchA = path.join(__dirname, "./BranchA.csv");
+    const csvFilePathBranchB = path.join(__dirname, "./BranchB.csv");
+    const csvFilePathBranchC = path.join(__dirname, "./BranchC.csv");
+    const csvFilePathBranchD = path.join(__dirname, "./BranchD.csv");
+
+    if (fs.existsSync(csvFilePathBranchA)) {
+      fs.unlinkSync(csvFilePathBranchA);
+      console.log("Existing BranchA file removed.");
+    }
+    if (fs.existsSync(csvFilePathBranchB)) {
+      fs.unlinkSync(csvFilePathBranchB);
+      console.log("Existing BranchB file removed.");
+    }
+    if (fs.existsSync(csvFilePathBranchC)) {
+      fs.unlinkSync(csvFilePathBranchC);
+      console.log("Existing BranchC file removed.");
+    }
+    if (fs.existsSync(csvFilePathBranchD)) {
+      fs.unlinkSync(csvFilePathBranchD);
+      console.log("Existing BranchD file removed.");
+    }
+
+    await fetchCategoryTree();
+    await new Promise((resolve) => setTimeout(resolve, 5000));
+
+    const readCategoryTreeResult = await readCategoryTree();
+    console.log(
+      "readCategoryTreeResult.length :>> ",
+      readCategoryTreeResult.length
+    );
+
+    let index = 0;
+    for (const item of readCategoryTreeResult) {
+      if (item.subCategories.length > 0) {
+        for (const category of item.subCategories) {
+          await BranchA(category);
+          await BranchB(category);
+          await BranchC(category);
+          await BranchD(category);
+        }
+        index++;
+        console.log("*=*=*=*=*=*=*=*=*=*=*=*= :>> ", index);
+      }
+    }
+
+    await MerchantsA();
+    await new Promise((resolve) => setTimeout(resolve, 9000));
+    await MerchantsB();
+    await new Promise((resolve) => setTimeout(resolve, 9000));
+    await MerchantsC();
+    await new Promise((resolve) => setTimeout(resolve, 9000));
+    await MerchantsD();
+    console.log(
+      "\x1b[32m*=*=*=*=*=*=*=*=*=*/\x1b[0m \x1b[31mAll Products successfully Imported.\x1b[0m \x1b[32m/*=*=*=*=*=*=*=*=*=*\x1b[0m"
+    );
   } catch (error) {
     console.error("Error during India execution:", error);
   }
