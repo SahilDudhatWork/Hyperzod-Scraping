@@ -80,7 +80,9 @@ cron.schedule("0 0 * * *", async () => {
   }
 });
 // (async () => {})();
-
+app.get("/", (req, res) => {
+  res.status(200).json({ message: "WelCome - V1.0.1" });
+});
 app.listen(PORT, "0.0.0.0", () => {
   console.log(`Server is running on http://localhost:${PORT}`);
 });
