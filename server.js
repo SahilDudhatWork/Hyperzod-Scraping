@@ -15,7 +15,7 @@ const {
   fetchCategoryTree,
   readCategoryTree,
 } = require("./utils/fetchCategoryTree");
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 8080;
 
 cron.schedule("0 0 * * *", async () => {
   try {
