@@ -17,9 +17,11 @@ const {
 } = require("./utils/fetchCategoryTree");
 const PORT = process.env.PORT || 8080;
 
-cron.schedule("0 0 * * *", async () => {
+process.env.TZ = "Europe/London"; // Set timezone to UK time
+
+cron.schedule("0 6 * * *", async () => {
   try {
-    console.log("Running a task every 24 hours at midnight");
+    console.log("Running a task every day at 6 AM UK time");
     const csvFilePathBranchA = path.join(__dirname, "./BranchA.csv");
     const csvFilePathBranchB = path.join(__dirname, "./BranchB.csv");
     const csvFilePathBranchC = path.join(__dirname, "./BranchC.csv");
@@ -79,10 +81,11 @@ cron.schedule("0 0 * * *", async () => {
     console.error("Error during initial execution:", error);
   }
 });
-// (async () => {})();
+
 app.get("/", (req, res) => {
   res.status(200).json({ message: "WelCome - V1.0.1" });
 });
+
 app.listen(PORT, "0.0.0.0", () => {
   console.log(`Server is running on http://localhost:${PORT}`);
 });
