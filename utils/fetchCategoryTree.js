@@ -81,56 +81,36 @@ const fetchCategoryTree = async () => {
 
     let newData = response.data.data.tpplcBrand.categoryTree.subCategories;
 
-    // Use Promise.all to wait for all async operations to complete
-    newData = await Promise.all(
-      newData.map(async (i) => {
-        let subCategories1 = await Promise.all(
-          i.subCategories
-            ? i.subCategories.map(async (subCg1) => {
-                let subCategories2 = await Promise.all(
-                  subCg1.subCategories
-                    ? subCg1.subCategories.map(async (subCg2) => {
-                        let subCategories3 = await Promise.all(
-                          subCg2.subCategories
-                            ? subCg2.subCategories.map(async (subCg3) => {
-                                return {
-                                  code: subCg3.code,
-                                  name: subCg3.name,
-                                  id: await fetchId(subCg3.code),
-                                  subCategories: subCg3.subCategories || [],
-                                };
-                              })
-                            : []
-                        );
+    // Global Set to track unique codes across all levels
+    const globalUniqueCodes = new Set();
 
-                        return {
-                          code: subCg2.code,
-                          name: subCg2.name,
-                          id: await fetchId(subCg2.code),
-                          subCategories: subCategories3 || [],
-                        };
-                      })
-                    : []
-                );
+    // Helper function to remove duplicates recursively across levels
+    const filterUniqueCategories = async (categories) => {
+      return await Promise.all(
+        categories
+          .filter((category) => {
+            if (globalUniqueCodes.has(category.code)) {
+              return false; // Skip if code is already added
+            }
+            globalUniqueCodes.add(category.code);
+            return true;
+          })
+          .map(async (category) => {
+            const uniqueSubCategories = category.subCategories
+              ? await filterUniqueCategories(category.subCategories)
+              : [];
+            return {
+              code: category.code,
+              name: category.name,
+              id: await fetchId(category.code),
+              subCategories: uniqueSubCategories,
+            };
+          })
+      );
+    };
 
-                return {
-                  code: subCg1.code,
-                  name: subCg1.name,
-                  id: await fetchId(subCg1.code),
-                  subCategories: subCategories2 || [],
-                };
-              })
-            : []
-        );
-
-        return {
-          code: i.code,
-          name: i.name,
-          id: await fetchId(i.code),
-          subCategories: subCategories1 || [],
-        };
-      })
-    );
+    // Filter main categories for uniqueness
+    newData = await filterUniqueCategories(newData);
 
     // Write the final structured data to the JSON file
     fs.writeFile(
@@ -141,7 +121,7 @@ const fetchCategoryTree = async () => {
           console.error("Error writing to file:", err);
         } else {
           console.log(
-            "Successfully wrote categoryTree data to categoryTree2.json"
+            "Successfully wrote unique categoryTree data to categoryTree.json"
           );
         }
       }
@@ -152,6 +132,7 @@ const fetchCategoryTree = async () => {
   }
 };
 
+// Function to read the category tree JSON file
 const readCategoryTree = () => {
   return new Promise((resolve, reject) => {
     fs.readFile("./categoryTree.json", "utf8", (err, data) => {
@@ -169,6 +150,7 @@ const readCategoryTree = () => {
     });
   });
 };
+
 module.exports = {
   fetchCategoryTree,
   readCategoryTree,

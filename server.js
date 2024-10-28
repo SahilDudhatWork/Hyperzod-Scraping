@@ -113,75 +113,80 @@ process.env.TZ = "Europe/London"; // Set timezone to UK time for the first cron 
 const ukCronSchedule = "0 6 * * *"; // UK cron job at 6 AM
 const indiaCronSchedule = "5 17 * * *"; // Indian cron job at 5:05 PM (17:05 in 24-hour format)
 
-const test = async () => {
-  try {
-    console.log("Running a task every day at 6 AM UK time");
-    const csvFilePathBranchA = path.join(__dirname, "./BranchA.csv");
-    const csvFilePathBranchB = path.join(__dirname, "./BranchB.csv");
-    const csvFilePathBranchC = path.join(__dirname, "./BranchC.csv");
-    const csvFilePathBranchD = path.join(__dirname, "./BranchD.csv");
+(async () => {
+  console.log("Running a task");
+  const csvFilePathBranchA = path.join(__dirname, "./BranchA.csv");
+  const csvFilePathBranchB = path.join(__dirname, "./BranchB.csv");
+  const csvFilePathBranchC = path.join(__dirname, "./BranchC.csv");
+  const csvFilePathBranchD = path.join(__dirname, "./BranchD.csv");
 
-    if (fs.existsSync(csvFilePathBranchA)) {
-      fs.unlinkSync(csvFilePathBranchA);
-      console.log("Existing BranchA file removed.");
-    }
-    if (fs.existsSync(csvFilePathBranchB)) {
-      fs.unlinkSync(csvFilePathBranchB);
-      console.log("Existing BranchB file removed.");
-    }
-    if (fs.existsSync(csvFilePathBranchC)) {
-      fs.unlinkSync(csvFilePathBranchC);
-      console.log("Existing BranchC file removed.");
-    }
-    if (fs.existsSync(csvFilePathBranchD)) {
-      fs.unlinkSync(csvFilePathBranchD);
-      console.log("Existing BranchD file removed.");
-    }
-
-    await fetchCategoryTree();
-    await new Promise((resolve) => setTimeout(resolve, 5000));
-
-    const readCategoryTreeResult = await readCategoryTree();
-    console.log(
-      "readCategoryTreeResult.length :>> ",
-      readCategoryTreeResult.length
-    );
-
-    let index = 0;
-    for (const item of readCategoryTreeResult) {
-      if (
-        item.subCategories.length > 0 &&
-        item.name != "Tool Hire" &&
-        item.name != "Big Trade Deals"
-      ) {
-        for (const category of item.subCategories) {
-          console.log("category:>> ", category.name);
-
-          await BranchA(category);
-
-          await BranchB(category);
-          await BranchC(category);
-          await BranchD(category);
-        }
-        index++;
-        console.log("*=*=*=*=*=*=*=*=*=*=*=*= :>> ", index);
-      }
-    }
-
-    await MerchantsA();
-    await new Promise((resolve) => setTimeout(resolve, 9000));
-    await MerchantsB();
-    await new Promise((resolve) => setTimeout(resolve, 9000));
-    await MerchantsC();
-    await new Promise((resolve) => setTimeout(resolve, 9000));
-    await MerchantsD();
-    console.log(
-      "\x1b[32m*=*=*=*=*=*=*=*=*=*/\x1b[0m \x1b[31mAll Products successfully Imported.\x1b[0m \x1b[32m/*=*=*=*=*=*=*=*=*=*\x1b[0m"
-    );
-  } catch (error) {
-    console.error("Error during initial execution:", error);
+  if (fs.existsSync(csvFilePathBranchA)) {
+    fs.unlinkSync(csvFilePathBranchA);
+    console.log("Existing BranchA file removed.");
   }
-};
+  if (fs.existsSync(csvFilePathBranchB)) {
+    fs.unlinkSync(csvFilePathBranchB);
+    console.log("Existing BranchB file removed.");
+  }
+  if (fs.existsSync(csvFilePathBranchC)) {
+    fs.unlinkSync(csvFilePathBranchC);
+    console.log("Existing BranchC file removed.");
+  }
+  if (fs.existsSync(csvFilePathBranchD)) {
+    fs.unlinkSync(csvFilePathBranchD);
+    console.log("Existing BranchD file removed.");
+  }
+
+  await fetchCategoryTree();
+  await new Promise((resolve) => setTimeout(resolve, 5000));
+
+  const readCategoryTreeResult = await readCategoryTree();
+  console.log(
+    "readCategoryTreeResult.length :>> ",
+    readCategoryTreeResult.length
+  );
+
+  let index = 0;
+  for (const i1 of readCategoryTreeResult) {
+    if (i1.subCategories.length > 0) {
+      for (const i2 of i1.subCategories) {
+        if (i2.subCategories.length > 0) {
+          for (const i3 of i2.subCategories) {
+            await BranchA(i3);
+            // await BranchB(i3);
+            // await BranchC(i3);
+            // await BranchD(i3);
+
+            if (i3.subCategories.length > 0) {
+              for (const i4 of i3.subCategories) {
+                if (i4.subCategories.length > 0) {
+                  await BranchA(i4);
+                  // await BranchB(i4);
+                  // await BranchC(i4);
+                  // await BranchD(i4);
+                }
+              }
+            }
+          }
+        }
+      }
+      index++;
+      console.log("*=*=*=*=*=*=*=*=*=*=*=*= :>> ", index);
+    }
+  }
+
+  // await MerchantsA();
+  // await new Promise((resolve) => setTimeout(resolve, 9000));
+  // await MerchantsB();
+  // await new Promise((resolve) => setTimeout(resolve, 9000));
+  // await MerchantsC();
+  // await new Promise((resolve) => setTimeout(resolve, 9000));
+  // await MerchantsD();
+  console.log(
+    "\x1b[32m*=*=*=*=*=*=*=*=*=*/\x1b[0m \x1b[31mAll Products successfully Imported.\x1b[0m \x1b[32m/*=*=*=*=*=*=*=*=*=*\x1b[0m"
+  );
+})();
+
 // UK cron job
 // cron.schedule(ukCronSchedule, async () => {
 //   try {
@@ -318,7 +323,3 @@ app.get("/", (req, res) => {
 app.listen(PORT, "0.0.0.0", () => {
   console.log(`Server is running on http://localhost:${PORT}`);
 });
-MerchantsA();
-// MerchantsB();
-// MerchantsC();
-// MerchantsD();

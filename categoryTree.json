@@ -16,12 +16,6 @@
             "subCategories": []
           },
           {
-            "code": "1500004",
-            "name": "CLS Studwork Timber",
-            "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTAwMDA0IiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-            "subCategories": []
-          },
-          {
             "code": "1500006",
             "name": "Scaffold Boards",
             "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTAwMDA2IiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
@@ -244,12 +238,6 @@
             "subCategories": []
           },
           {
-            "code": "1500028",
-            "name": "Flooring Grade Chipboard",
-            "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTAwMDI4IiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-            "subCategories": []
-          },
-          {
             "code": "1500189",
             "name": "Solid Wood Flooring",
             "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTAwMTg5IiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
@@ -314,12 +302,6 @@
             "code": "1560000",
             "name": "Luxury Vinyl Flooring",
             "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTYwMDAwIiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-            "subCategories": []
-          },
-          {
-            "code": "1572004",
-            "name": "Planed Tongue & Grooved Flooring",
-            "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTcyMDA0IiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
             "subCategories": []
           }
         ]
@@ -465,25 +447,6 @@
             ]
           },
           {
-            "code": "1500037",
-            "name": "Damp Proof Course & Membranes",
-            "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTAwMDM3IiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-            "subCategories": [
-              {
-                "code": "1597015",
-                "name": "Damp Proof Course (DPC)",
-                "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTk3MDE1IiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-                "subCategories": []
-              },
-              {
-                "code": "1597016",
-                "name": "Damp Proof Membrane (DPM)",
-                "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTk3MDE2IiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-                "subCategories": []
-              }
-            ]
-          },
-          {
             "code": "1500038",
             "name": "Brickwork Ventilation",
             "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTAwMDM4IiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
@@ -613,12 +576,6 @@
         "name": "Civils & Drainage",
         "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTAwMDU0IiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
         "subCategories": [
-          {
-            "code": "1500047",
-            "name": "Asphalt Pothole Repair",
-            "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTAwMDQ3IiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-            "subCategories": []
-          },
           {
             "code": "1500056",
             "name": "110mm Underground Drainage",
@@ -796,12 +753,6 @@
             "name": "Padstones",
             "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTAwMDcxIiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
             "subCategories": []
-          },
-          {
-            "code": "1594000",
-            "name": "Cast Stone Dressings",
-            "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTk0MDAwIiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-            "subCategories": []
           }
         ]
       },
@@ -930,12 +881,6 @@
                 "code": "1511009",
                 "name": "Chimney Pots & Cowls",
                 "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTExMDA5IiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-                "subCategories": []
-              },
-              {
-                "code": "1525000",
-                "name": "Roofing Batten",
-                "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTI1MDAwIiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
                 "subCategories": []
               },
               {
@@ -1229,12 +1174,6 @@
             "subCategories": []
           },
           {
-            "code": "1500226",
-            "name": "Beads & Mesh",
-            "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTAwMjI2IiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-            "subCategories": []
-          },
-          {
             "code": "1500227",
             "name": "Plasterboard Screws & Fixings",
             "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTAwMjI3IiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
@@ -1325,18 +1264,6 @@
             "name": "Ready Mixed Concrete & Mortar",
             "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTAwMDQ2IiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
             "subCategories": []
-          },
-          {
-            "code": "1503000",
-            "name": "Cement Plasterciser & Dyes",
-            "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTAzMDAwIiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-            "subCategories": []
-          },
-          {
-            "code": "1503001",
-            "name": "Screeding & Floor Levelling Compound",
-            "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTAzMDAxIiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-            "subCategories": []
           }
         ]
       }
@@ -1347,135 +1274,6 @@
     "name": "Gardens & Landscaping",
     "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTAwMDk4IiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
     "subCategories": [
-      {
-        "code": "1500053",
-        "name": "Decorative Stones & Gravel",
-        "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTAwMDUzIiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-        "subCategories": []
-      },
-      {
-        "code": "1500099",
-        "name": "Fencing & Trellis",
-        "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTAwMDk5IiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-        "subCategories": [
-          {
-            "code": "1500065",
-            "name": "Feather Edge Boards",
-            "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTAwMDY1IiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-            "subCategories": []
-          },
-          {
-            "code": "1500095",
-            "name": "Chainlink Fencing & Wire Netting",
-            "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTAwMDk1IiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-            "subCategories": []
-          },
-          {
-            "code": "1500100",
-            "name": "Fence Panels",
-            "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTAwMTAwIiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-            "subCategories": []
-          },
-          {
-            "code": "1500101",
-            "name": "Gravel Boards",
-            "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTAwMTAxIiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-            "subCategories": []
-          },
-          {
-            "code": "1500104",
-            "name": "Fence Posts",
-            "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTAwMTA0IiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-            "subCategories": []
-          },
-          {
-            "code": "1500105",
-            "name": "Fence Spikes, Brackets & Supports",
-            "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTAwMTA1IiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-            "subCategories": []
-          },
-          {
-            "code": "1570015",
-            "name": "Fence Paint",
-            "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTcwMDE1IiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-            "subCategories": []
-          },
-          {
-            "code": "1581000",
-            "name": "Trellis Panels & Screens",
-            "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTgxMDAwIiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-            "subCategories": []
-          }
-        ]
-      },
-      {
-        "code": "1500100",
-        "name": "Fence Panels",
-        "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTAwMTAwIiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-        "subCategories": []
-      },
-      {
-        "code": "1500107",
-        "name": "Decking",
-        "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTAwMTA3IiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-        "subCategories": [
-          {
-            "code": "1500108",
-            "name": "Timber Decking",
-            "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTAwMTA4IiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-            "subCategories": []
-          },
-          {
-            "code": "1500150",
-            "name": "Fencing & Decking Treatments",
-            "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTAwMTUwIiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-            "subCategories": []
-          },
-          {
-            "code": "1500242",
-            "name": "Decking Screws",
-            "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTAwMjQyIiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-            "subCategories": []
-          },
-          {
-            "code": "1501003",
-            "name": "Decking Balustrades & Accessories",
-            "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTAxMDAzIiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-            "subCategories": []
-          },
-          {
-            "code": "1597001",
-            "name": "Composite Decking",
-            "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTk3MDAxIiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-            "subCategories": []
-          },
-          {
-            "code": "1597002",
-            "name": "Composite Fixings & Fittings",
-            "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTk3MDAyIiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-            "subCategories": []
-          }
-        ]
-      },
-      {
-        "code": "1500111",
-        "name": "Gates & Railings",
-        "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTAwMTExIiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-        "subCategories": [
-          {
-            "code": "1502000",
-            "name": "Garden Gates",
-            "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTAyMDAwIiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-            "subCategories": []
-          },
-          {
-            "code": "1502001",
-            "name": "Driveway Gates",
-            "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTAyMDAxIiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-            "subCategories": []
-          }
-        ]
-      },
       {
         "code": "1500116",
         "name": "Driveways",
@@ -1523,12 +1321,6 @@
             "name": "Decorative Kerbs & Caps",
             "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTAwMTIwIiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
             "subCategories": []
-          },
-          {
-            "code": "1591022",
-            "name": "Kerbs",
-            "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTkxMDIyIiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-            "subCategories": []
           }
         ]
       },
@@ -1537,18 +1329,6 @@
         "name": "Paving & Walling",
         "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTAwMTIxIiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
         "subCategories": [
-          {
-            "code": "1500059",
-            "name": "Geotextiles",
-            "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTAwMDU5IiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-            "subCategories": []
-          },
-          {
-            "code": "1500066",
-            "name": "Commercial Paving Slabs",
-            "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTAwMDY2IiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-            "subCategories": []
-          },
           {
             "code": "1500126",
             "name": "Walling",
@@ -1588,12 +1368,6 @@
         ]
       },
       {
-        "code": "1500128",
-        "name": "Timber Sleepers",
-        "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTAwMTI4IiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-        "subCategories": []
-      },
-      {
         "code": "1500136",
         "name": "Water Storage",
         "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTAwMTM2IiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
@@ -1618,33 +1392,9 @@
         "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTAwMTQ4IiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
         "subCategories": [
           {
-            "code": "1500059",
-            "name": "Geotextiles",
-            "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTAwMDU5IiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-            "subCategories": []
-          },
-          {
-            "code": "1500129",
-            "name": "Paving Compounds & Cleaning",
-            "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTAwMTI5IiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-            "subCategories": []
-          },
-          {
-            "code": "1500150",
-            "name": "Fencing & Decking Treatments",
-            "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTAwMTUwIiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-            "subCategories": []
-          },
-          {
             "code": "1500151",
             "name": "Paving, Drive & Wall Treatments",
             "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTAwMTUxIiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-            "subCategories": []
-          },
-          {
-            "code": "1570015",
-            "name": "Fence Paint",
-            "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTcwMDE1IiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
             "subCategories": []
           }
         ]
@@ -1691,12 +1441,6 @@
         "name": "Lawns, Planting & Growing",
         "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTMwMDAwIiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
         "subCategories": [
-          {
-            "code": "1500128",
-            "name": "Timber Sleepers",
-            "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTAwMTI4IiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-            "subCategories": []
-          },
           {
             "code": "1500140",
             "name": "Topsoil, Compost & Bark Chippings",
@@ -1765,14 +1509,7 @@
         "code": "1500022",
         "name": "Timber Mouldings",
         "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTAwMDIyIiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-        "subCategories": [
-          {
-            "code": "1500027",
-            "name": "Window Boards",
-            "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTAwMDI3IiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-            "subCategories": []
-          }
-        ]
+        "subCategories": []
       },
       {
         "code": "1500153",
@@ -1920,18 +1657,6 @@
         "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTAwMTY1IiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
         "subCategories": [
           {
-            "code": "1500166",
-            "name": "Internal Fire Doors",
-            "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTAwMTY2IiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-            "subCategories": []
-          },
-          {
-            "code": "1500167",
-            "name": "External Fire Doors",
-            "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTAwMTY3IiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-            "subCategories": []
-          },
-          {
             "code": "1585017",
             "name": "Fire Door Ironmongery",
             "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTg1MDE3IiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
@@ -2013,127 +1738,37 @@
                   {
                     "code": "1585005",
                     "name": "Rose Door Handles",
-                    "image": {
-                      "name": "PRIMARY",
-                      "images": [
-                        {
-                          "altText": "Rose Door Handles",
-                          "url": "//dam-assets.apps.travisperkins.group/KjBn5/1585005.jpg",
-                          "type": "thumbnail",
-                          "__typename": "TpplcImage"
-                        }
-                      ],
-                      "__typename": "TpplcImageSet"
-                    },
-                    "__typename": "TpplcCategory",
+                    "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTg1MDA1IiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
                     "subCategories": []
                   },
                   {
                     "code": "1585006",
                     "name": "Lever Latch Door Handles",
-                    "image": {
-                      "name": "PRIMARY",
-                      "images": [
-                        {
-                          "altText": "Lever Latch Door Handles",
-                          "url": "//dam-assets.apps.travisperkins.group/KDN39/1585006.jpg",
-                          "type": "thumbnail",
-                          "__typename": "TpplcImage"
-                        }
-                      ],
-                      "__typename": "TpplcImageSet"
-                    },
-                    "__typename": "TpplcCategory",
+                    "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTg1MDA2IiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
                     "subCategories": []
                   },
                   {
                     "code": "1585007",
                     "name": "Bar Door Handles",
-                    "image": {
-                      "name": "PRIMARY",
-                      "images": [
-                        {
-                          "altText": "Bar Door Handles",
-                          "url": "//dam-assets.apps.travisperkins.group/v4466kd/1585007:TravisPerkinsWeb.jpg",
-                          "type": "thumbnail",
-                          "__typename": "TpplcImage"
-                        }
-                      ],
-                      "__typename": "TpplcImageSet"
-                    },
-                    "__typename": "TpplcCategory",
+                    "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTg1MDA3IiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
                     "subCategories": []
                   },
                   {
                     "code": "1585008",
                     "name": "Lever Lock Door Handles",
-                    "image": {
-                      "name": "PRIMARY",
-                      "images": [
-                        {
-                          "altText": "Lever Lock Door Handles",
-                          "url": "//dam-assets.apps.travisperkins.group/lvonv/1585008.jpg",
-                          "type": "thumbnail",
-                          "__typename": "TpplcImage"
-                        }
-                      ],
-                      "__typename": "TpplcImageSet"
-                    },
-                    "__typename": "TpplcCategory",
+                    "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTg1MDA4IiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
                     "subCategories": []
                   },
                   {
                     "code": "1585009",
                     "name": "Door Knobs",
-                    "image": {
-                      "name": "PRIMARY",
-                      "images": [
-                        {
-                          "altText": "Door Knobs",
-                          "url": "//dam-assets.apps.travisperkins.group/l3mG3/1585009.jpg",
-                          "type": "thumbnail",
-                          "__typename": "TpplcImage"
-                        }
-                      ],
-                      "__typename": "TpplcImageSet"
-                    },
-                    "__typename": "TpplcCategory",
-                    "subCategories": []
-                  },
-                  {
-                    "code": "1585018",
-                    "name": "Fire Door Handles",
-                    "image": {
-                      "name": "PRIMARY",
-                      "images": [
-                        {
-                          "altText": "Fire Door Handles",
-                          "url": "//dam-assets.apps.travisperkins.group/x21ppkn/1585018:TravisPerkinsWeb.jpg",
-                          "type": "thumbnail",
-                          "__typename": "TpplcImage"
-                        }
-                      ],
-                      "__typename": "TpplcImageSet"
-                    },
-                    "__typename": "TpplcCategory",
+                    "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTg1MDA5IiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
                     "subCategories": []
                   },
                   {
                     "code": "1585019",
                     "name": "Exterior Door Handles",
-                    "image": {
-                      "name": "PRIMARY",
-                      "images": [
-                        {
-                          "altText": "Exterior Door Handles",
-                          "url": "//dam-assets.apps.travisperkins.group/K21qJ/1585019.jpg",
-                          "type": "thumbnail",
-                          "__typename": "TpplcImage"
-                        }
-                      ],
-                      "__typename": "TpplcImageSet"
-                    },
-                    "__typename": "TpplcCategory",
+                    "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTg1MDE5IiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
                     "subCategories": []
                   }
                 ]
@@ -2175,39 +1810,9 @@
                 "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTM5MDAzIiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
                 "subCategories": [
                   {
-                    "code": "1539008",
-                    "name": "Door Closers",
-                    "image": {
-                      "name": "PRIMARY",
-                      "images": [
-                        {
-                          "altText": "Door Closers",
-                          "url": "//dam-assets.apps.travisperkins.group/labxw/1539008.jpg",
-                          "type": "thumbnail",
-                          "__typename": "TpplcImage"
-                        }
-                      ],
-                      "__typename": "TpplcImageSet"
-                    },
-                    "__typename": "TpplcCategory",
-                    "subCategories": []
-                  },
-                  {
                     "code": "1539009",
                     "name": "Panic Hardware",
-                    "image": {
-                      "name": "PRIMARY",
-                      "images": [
-                        {
-                          "altText": "Panic Hardware",
-                          "url": "//dam-assets.apps.travisperkins.group/x7l4wdl/1539009:TravisPerkinsWeb.jpg",
-                          "type": "thumbnail",
-                          "__typename": "TpplcImage"
-                        }
-                      ],
-                      "__typename": "TpplcImageSet"
-                    },
-                    "__typename": "TpplcCategory",
+                    "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTM5MDA5IiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
                     "subCategories": []
                   }
                 ]
@@ -2220,55 +1825,19 @@
                   {
                     "code": "1541016",
                     "name": "Security Chains",
-                    "image": {
-                      "name": "PRIMARY",
-                      "images": [
-                        {
-                          "altText": "Security Chains",
-                          "url": "//dam-assets.apps.travisperkins.group/x21mygn/1541016:TravisPerkinsWeb.jpg",
-                          "type": "thumbnail",
-                          "__typename": "TpplcImage"
-                        }
-                      ],
-                      "__typename": "TpplcImageSet"
-                    },
-                    "__typename": "TpplcCategory",
+                    "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTQxMDE2IiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
                     "subCategories": []
                   },
                   {
                     "code": "1541017",
                     "name": "Key Safes",
-                    "image": {
-                      "name": "PRIMARY",
-                      "images": [
-                        {
-                          "altText": "Key Safes",
-                          "url": "//dam-assets.apps.travisperkins.group/xw4208d/1541017:TravisPerkinsWeb.jpg",
-                          "type": "thumbnail",
-                          "__typename": "TpplcImage"
-                        }
-                      ],
-                      "__typename": "TpplcImageSet"
-                    },
-                    "__typename": "TpplcCategory",
+                    "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTQxMDE3IiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
                     "subCategories": []
                   },
                   {
                     "code": "1541018",
                     "name": "Padlocks",
-                    "image": {
-                      "name": "PRIMARY",
-                      "images": [
-                        {
-                          "altText": "Padlocks",
-                          "url": "//dam-assets.apps.travisperkins.group/v96klwz/1541018:TravisPerkinsWeb.jpg",
-                          "type": "thumbnail",
-                          "__typename": "TpplcImage"
-                        }
-                      ],
-                      "__typename": "TpplcImageSet"
-                    },
-                    "__typename": "TpplcCategory",
+                    "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTQxMDE4IiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
                     "subCategories": []
                   }
                 ]
@@ -2320,12 +1889,6 @@
                 "code": "1541011",
                 "name": "Cabinet Hinges",
                 "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTQxMDExIiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-                "subCategories": []
-              },
-              {
-                "code": "1541012",
-                "name": "Fire Door Hinges",
-                "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTQxMDEyIiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
                 "subCategories": []
               },
               {
@@ -2395,12 +1958,6 @@
                 "name": "Intumescent Sealants",
                 "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTQxMDA5IiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
                 "subCategories": []
-              },
-              {
-                "code": "1541010",
-                "name": "Intumescent Seals",
-                "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTQxMDEwIiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-                "subCategories": []
               }
             ]
           },
@@ -2446,37 +2003,6 @@
             "name": "Safety Signs",
             "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTc2MDAwIiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
             "subCategories": []
-          },
-          {
-            "code": "1585017",
-            "name": "Fire Door Ironmongery",
-            "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTg1MDE3IiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-            "subCategories": [
-              {
-                "code": "1539008",
-                "name": "Door Closers",
-                "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTM5MDA4IiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-                "subCategories": []
-              },
-              {
-                "code": "1541010",
-                "name": "Intumescent Seals",
-                "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTQxMDEwIiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-                "subCategories": []
-              },
-              {
-                "code": "1541012",
-                "name": "Fire Door Hinges",
-                "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTQxMDEyIiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-                "subCategories": []
-              },
-              {
-                "code": "1585018",
-                "name": "Fire Door Handles",
-                "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTg1MDE4IiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-                "subCategories": []
-              }
-            ]
           }
         ]
       },
@@ -2495,98 +2021,6 @@
             "code": "1500179",
             "name": "Door Lining & Casings",
             "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTAwMTc5IiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-            "subCategories": []
-          }
-        ]
-      },
-      {
-        "code": "1500188",
-        "name": "Flooring",
-        "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTAwMTg4IiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-        "subCategories": [
-          {
-            "code": "1500013",
-            "name": "Safety Vinyl Flooring",
-            "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTAwMDEzIiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-            "subCategories": []
-          },
-          {
-            "code": "1500028",
-            "name": "Flooring Grade Chipboard",
-            "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTAwMDI4IiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-            "subCategories": []
-          },
-          {
-            "code": "1500189",
-            "name": "Solid Wood Flooring",
-            "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTAwMTg5IiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-            "subCategories": []
-          },
-          {
-            "code": "1500190",
-            "name": "Engineered Flooring",
-            "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTAwMTkwIiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-            "subCategories": []
-          },
-          {
-            "code": "1500191",
-            "name": "Laminate Flooring",
-            "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTAwMTkxIiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-            "subCategories": []
-          },
-          {
-            "code": "1500192",
-            "name": "Flooring Accessories",
-            "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTAwMTkyIiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-            "subCategories": [
-              {
-                "code": "1500193",
-                "name": "Flooring Underlay",
-                "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTAwMTkzIiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-                "subCategories": []
-              },
-              {
-                "code": "1500194",
-                "name": "Flooring Adhesives",
-                "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTAwMTk0IiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-                "subCategories": []
-              },
-              {
-                "code": "1547001",
-                "name": "Floor Beading & Trims",
-                "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTQ3MDAxIiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-                "subCategories": []
-              },
-              {
-                "code": "1581007",
-                "name": "Flooring Hand Tools",
-                "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTgxMDA3IiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-                "subCategories": []
-              }
-            ]
-          },
-          {
-            "code": "1507001",
-            "name": "Modular Flooring",
-            "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTA3MDAxIiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-            "subCategories": []
-          },
-          {
-            "code": "1514026",
-            "name": "SPC Stone Polymer Composite",
-            "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTE0MDI2IiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-            "subCategories": []
-          },
-          {
-            "code": "1560000",
-            "name": "Luxury Vinyl Flooring",
-            "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTYwMDAwIiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-            "subCategories": []
-          },
-          {
-            "code": "1572004",
-            "name": "Planed Tongue & Grooved Flooring",
-            "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTcyMDA0IiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
             "subCategories": []
           }
         ]
@@ -2613,98 +2047,6 @@
             "name": "Aluminium Doors and Windows",
             "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTE5MDAxIiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
             "subCategories": []
-          },
-          {
-            "code": "1520002",
-            "name": "VELUX Roof Windows & Flashings",
-            "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTIwMDAyIiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-            "subCategories": [
-              {
-                "code": "1511005",
-                "name": "VELUX Centre Pivot Roof Windows",
-                "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTExMDA1IiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-                "subCategories": []
-              },
-              {
-                "code": "1520003",
-                "name": "VELUX Roof Flashings",
-                "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTIwMDAzIiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-                "subCategories": []
-              },
-              {
-                "code": "1553001",
-                "name": "VELUX Integra Roof Windows",
-                "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTUzMDAxIiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-                "subCategories": []
-              },
-              {
-                "code": "1553002",
-                "name": "VELUX Flat Roof Windows",
-                "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTUzMDAyIiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-                "subCategories": []
-              },
-              {
-                "code": "1553004",
-                "name": "VELUX Fixings & Installation Products",
-                "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTUzMDA0IiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-                "subCategories": []
-              },
-              {
-                "code": "1553005",
-                "name": "VELUX Conservation Roof Windows",
-                "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTUzMDA1IiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-                "subCategories": []
-              },
-              {
-                "code": "1568001",
-                "name": "VELUX Sun Tunnels",
-                "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTY4MDAxIiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-                "subCategories": []
-              },
-              {
-                "code": "1569000",
-                "name": "VELUX Blinds",
-                "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTY5MDAwIiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-                "subCategories": []
-              },
-              {
-                "code": "1597017",
-                "name": "VELUX Top Hung",
-                "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTk3MDE3IiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-                "subCategories": []
-              }
-            ]
-          },
-          {
-            "code": "1548001",
-            "name": "Window Handles, Hardware & Accessories",
-            "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTQ4MDAxIiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-            "subCategories": [
-              {
-                "code": "1546003",
-                "name": "Window Accessories",
-                "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTQ2MDAzIiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-                "subCategories": []
-              },
-              {
-                "code": "1548004",
-                "name": "Casement Stays & Fastners",
-                "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTQ4MDA0IiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-                "subCategories": []
-              },
-              {
-                "code": "1548005",
-                "name": "Sash Window Hardware",
-                "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTQ4MDA1IiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-                "subCategories": []
-              },
-              {
-                "code": "1569001",
-                "name": "uPVC Window Handles",
-                "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTY5MDAxIiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-                "subCategories": []
-              }
-            ]
           },
           {
             "code": "1595000",
@@ -2794,73 +2136,6 @@
         "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTY4MDAwIiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
         "subCategories": [
           {
-            "code": "1512001",
-            "name": "Roof Windows",
-            "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTEyMDAxIiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-            "subCategories": []
-          },
-          {
-            "code": "1520002",
-            "name": "VELUX Roof Windows & Flashings",
-            "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTIwMDAyIiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-            "subCategories": [
-              {
-                "code": "1511005",
-                "name": "VELUX Centre Pivot Roof Windows",
-                "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTExMDA1IiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-                "subCategories": []
-              },
-              {
-                "code": "1520003",
-                "name": "VELUX Roof Flashings",
-                "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTIwMDAzIiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-                "subCategories": []
-              },
-              {
-                "code": "1553001",
-                "name": "VELUX Integra Roof Windows",
-                "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTUzMDAxIiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-                "subCategories": []
-              },
-              {
-                "code": "1553002",
-                "name": "VELUX Flat Roof Windows",
-                "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTUzMDAyIiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-                "subCategories": []
-              },
-              {
-                "code": "1553004",
-                "name": "VELUX Fixings & Installation Products",
-                "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTUzMDA0IiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-                "subCategories": []
-              },
-              {
-                "code": "1553005",
-                "name": "VELUX Conservation Roof Windows",
-                "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTUzMDA1IiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-                "subCategories": []
-              },
-              {
-                "code": "1568001",
-                "name": "VELUX Sun Tunnels",
-                "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTY4MDAxIiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-                "subCategories": []
-              },
-              {
-                "code": "1569000",
-                "name": "VELUX Blinds",
-                "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTY5MDAwIiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-                "subCategories": []
-              },
-              {
-                "code": "1597017",
-                "name": "VELUX Top Hung",
-                "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTk3MDE3IiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-                "subCategories": []
-              }
-            ]
-          },
-          {
             "code": "1599000",
             "name": "Roof Lanterns",
             "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTk5MDAwIiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
@@ -2896,12 +2171,6 @@
             "code": "1500241",
             "name": "Collated Screws",
             "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTAwMjQxIiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-            "subCategories": []
-          },
-          {
-            "code": "1500242",
-            "name": "Decking Screws",
-            "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTAwMjQyIiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
             "subCategories": []
           },
           {
@@ -3211,12 +2480,6 @@
                 "subCategories": []
               },
               {
-                "code": "1555000",
-                "name": "Smart Heating Controls",
-                "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTU1MDAwIiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-                "subCategories": []
-              },
-              {
                 "code": "1572014",
                 "name": "Smart Lighting",
                 "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTcyMDE0IiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
@@ -3300,12 +2563,6 @@
             "subCategories": []
           },
           {
-            "code": "1500300",
-            "name": "Heated Towel Rails & Elements",
-            "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTAwMzAwIiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-            "subCategories": []
-          },
-          {
             "code": "1509001",
             "name": "Single Panel Radiators",
             "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTA5MDAxIiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
@@ -3385,12 +2642,6 @@
             "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTc3MDAyIiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
             "subCategories": [
               {
-                "code": "1502009",
-                "name": "Combi Gas Boilers",
-                "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTAyMDA5IiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-                "subCategories": []
-              },
-              {
                 "code": "1502010",
                 "name": "System Gas Boilers",
                 "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTAyMDEwIiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
@@ -3450,12 +2701,6 @@
     "name": "Bathrooms",
     "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTAwMzc2IiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
     "subCategories": [
-      {
-        "code": "1500300",
-        "name": "Heated Towel Rails & Elements",
-        "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTAwMzAwIiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-        "subCategories": []
-      },
       {
         "code": "1500338",
         "name": "Wastes & Traps",
@@ -3686,12 +2931,6 @@
                 "name": "Shower Trays",
                 "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTAwNDIwIiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
                 "subCategories": []
-              },
-              {
-                "code": "1583016",
-                "name": "Shower Wastes",
-                "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTgzMDE2IiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-                "subCategories": []
               }
             ]
           }
@@ -3715,12 +2954,6 @@
             "subCategories": []
           },
           {
-            "code": "1583017",
-            "name": "Bathroom Wastes",
-            "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTgzMDE3IiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-            "subCategories": []
-          },
-          {
             "code": "1591035",
             "name": "Tap Spares",
             "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTkxMDM1IiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
@@ -3737,18 +2970,6 @@
             "code": "1500016",
             "name": "Porcelain Tiles",
             "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTAwMDE2IiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-            "subCategories": []
-          },
-          {
-            "code": "1500280",
-            "name": "Tile Adhesives & Grouts",
-            "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTAwMjgwIiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-            "subCategories": []
-          },
-          {
-            "code": "1500424",
-            "name": "Tile Backing Boards",
-            "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTAwNDI0IiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
             "subCategories": []
           },
           {
@@ -3848,12 +3069,6 @@
             "code": "1514001",
             "name": "Bathroom Lighting",
             "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTE0MDAxIiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-            "subCategories": []
-          },
-          {
-            "code": "1567002",
-            "name": "Bathroom Mirrors",
-            "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTY3MDAyIiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
             "subCategories": []
           }
         ]
@@ -3974,200 +3189,6 @@
             "subCategories": []
           },
           {
-            "code": "1558001",
-            "name": "Safety",
-            "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTU4MDAxIiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-            "subCategories": [
-              {
-                "code": "1500458",
-                "name": "Personal Protective Equipment",
-                "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTAwNDU4IiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-                "subCategories": [
-                  {
-                    "code": "1500459",
-                    "name": "Work Gloves",
-                    "image": {
-                      "name": "PRIMARY",
-                      "images": [
-                        {
-                          "altText": "Work Gloves",
-                          "url": "//dam-assets.apps.travisperkins.group/x21kkpn/1500459:TravisPerkinsWeb.jpg",
-                          "type": "thumbnail",
-                          "__typename": "TpplcImage"
-                        }
-                      ],
-                      "__typename": "TpplcImageSet"
-                    },
-                    "__typename": "TpplcCategory",
-                    "subCategories": []
-                  },
-                  {
-                    "code": "1500460",
-                    "name": "Eye Protection",
-                    "image": {
-                      "name": "PRIMARY",
-                      "images": [
-                        {
-                          "altText": "Eye Protection",
-                          "url": "//dam-assets.apps.travisperkins.group/rrzEW/1500460:TravisPerkinsWeb.jpeg",
-                          "type": "thumbnail",
-                          "__typename": "TpplcImage"
-                        }
-                      ],
-                      "__typename": "TpplcImageSet"
-                    },
-                    "__typename": "TpplcCategory",
-                    "subCategories": []
-                  },
-                  {
-                    "code": "1500461",
-                    "name": "Ear Protection",
-                    "image": {
-                      "name": "PRIMARY",
-                      "images": [
-                        {
-                          "altText": "Ear Protection",
-                          "url": "//dam-assets.apps.travisperkins.group/dX0kd/1500461:TravisPerkinsWeb.jpeg",
-                          "type": "thumbnail",
-                          "__typename": "TpplcImage"
-                        }
-                      ],
-                      "__typename": "TpplcImageSet"
-                    },
-                    "__typename": "TpplcCategory",
-                    "subCategories": []
-                  },
-                  {
-                    "code": "1500462",
-                    "name": "Respirators & Dust Masks",
-                    "image": {
-                      "name": "PRIMARY",
-                      "images": [
-                        {
-                          "altText": "Respirators & Dust Masks",
-                          "url": "//dam-assets.apps.travisperkins.group/lzyEW/1500462.jpg",
-                          "type": "thumbnail",
-                          "__typename": "TpplcImage"
-                        }
-                      ],
-                      "__typename": "TpplcImageSet"
-                    },
-                    "__typename": "TpplcCategory",
-                    "subCategories": []
-                  },
-                  {
-                    "code": "1500463",
-                    "name": "Hats & Helmets",
-                    "image": {
-                      "name": "PRIMARY",
-                      "images": [
-                        {
-                          "altText": "Hats & Helmets",
-                          "url": "//dam-assets.apps.travisperkins.group/l3mDL/1500463.jpg",
-                          "type": "thumbnail",
-                          "__typename": "TpplcImage"
-                        }
-                      ],
-                      "__typename": "TpplcImageSet"
-                    },
-                    "__typename": "TpplcCategory",
-                    "subCategories": []
-                  },
-                  {
-                    "code": "1500464",
-                    "name": "Hi Vis Clothing",
-                    "image": {
-                      "name": "PRIMARY",
-                      "images": [
-                        {
-                          "altText": "Hi Vis Clothing",
-                          "url": "//dam-assets.apps.travisperkins.group/MN4xA/1500464.jpg",
-                          "type": "thumbnail",
-                          "__typename": "TpplcImage"
-                        }
-                      ],
-                      "__typename": "TpplcImageSet"
-                    },
-                    "__typename": "TpplcCategory",
-                    "subCategories": []
-                  },
-                  {
-                    "code": "1500465",
-                    "name": "Knee Pads",
-                    "image": {
-                      "name": "PRIMARY",
-                      "images": [
-                        {
-                          "altText": "Knee Pads",
-                          "url": "//dam-assets.apps.travisperkins.group/mDNxZ/1500465:TravisPerkinsWeb.jpeg",
-                          "type": "thumbnail",
-                          "__typename": "TpplcImage"
-                        }
-                      ],
-                      "__typename": "TpplcImageSet"
-                    },
-                    "__typename": "TpplcCategory",
-                    "subCategories": []
-                  },
-                  {
-                    "code": "1505035",
-                    "name": "Height Safety",
-                    "image": {
-                      "name": "PRIMARY",
-                      "images": [
-                        {
-                          "altText": "Height Safety",
-                          "url": "//dam-assets.apps.travisperkins.group/943r3/1505035:TravisPerkinsWeb.jpg",
-                          "type": "thumbnail",
-                          "__typename": "TpplcImage"
-                        }
-                      ],
-                      "__typename": "TpplcImageSet"
-                    },
-                    "__typename": "TpplcCategory",
-                    "subCategories": []
-                  },
-                  {
-                    "code": "1589002",
-                    "name": "Armour Up PPE",
-                    "image": {
-                      "name": "PRIMARY",
-                      "images": [
-                        {
-                          "altText": "Armour Up PPE",
-                          "url": "//dam-assets.apps.travisperkins.group/vne92g1/1589002.jpg",
-                          "type": "thumbnail",
-                          "__typename": "TpplcImage"
-                        }
-                      ],
-                      "__typename": "TpplcImageSet"
-                    },
-                    "__typename": "TpplcCategory",
-                    "subCategories": []
-                  }
-                ]
-              },
-              {
-                "code": "1505040",
-                "name": "Traffic Control",
-                "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTA1MDQwIiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-                "subCategories": []
-              },
-              {
-                "code": "1514007",
-                "name": "Pest Control",
-                "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTE0MDA3IiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-                "subCategories": []
-              },
-              {
-                "code": "1576000",
-                "name": "Safety Signs",
-                "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTc2MDAwIiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-                "subCategories": []
-              }
-            ]
-          },
-          {
             "code": "1580002",
             "name": "Mens Hoodies & Sweatshirts",
             "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTgwMDAyIiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
@@ -4208,12 +3229,6 @@
             "code": "1500463",
             "name": "Hats & Helmets",
             "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTAwNDYzIiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-            "subCategories": []
-          },
-          {
-            "code": "1500464",
-            "name": "Hi Vis Clothing",
-            "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTAwNDY0IiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
             "subCategories": []
           },
           {
@@ -4747,12 +3762,6 @@
             "name": "Multi Tools Accessories",
             "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTM1MDAyIiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
             "subCategories": []
-          },
-          {
-            "code": "1535007",
-            "name": "Nail Gun Accessories",
-            "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTM1MDA3IiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-            "subCategories": []
           }
         ]
       },
@@ -5000,67 +4009,6 @@
         "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTU4MDAxIiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
         "subCategories": [
           {
-            "code": "1500458",
-            "name": "Personal Protective Equipment",
-            "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTAwNDU4IiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-            "subCategories": [
-              {
-                "code": "1500459",
-                "name": "Work Gloves",
-                "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTAwNDU5IiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-                "subCategories": []
-              },
-              {
-                "code": "1500460",
-                "name": "Eye Protection",
-                "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTAwNDYwIiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-                "subCategories": []
-              },
-              {
-                "code": "1500461",
-                "name": "Ear Protection",
-                "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTAwNDYxIiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-                "subCategories": []
-              },
-              {
-                "code": "1500462",
-                "name": "Respirators & Dust Masks",
-                "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTAwNDYyIiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-                "subCategories": []
-              },
-              {
-                "code": "1500463",
-                "name": "Hats & Helmets",
-                "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTAwNDYzIiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-                "subCategories": []
-              },
-              {
-                "code": "1500464",
-                "name": "Hi Vis Clothing",
-                "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTAwNDY0IiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-                "subCategories": []
-              },
-              {
-                "code": "1500465",
-                "name": "Knee Pads",
-                "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTAwNDY1IiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-                "subCategories": []
-              },
-              {
-                "code": "1505035",
-                "name": "Height Safety",
-                "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTA1MDM1IiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-                "subCategories": []
-              },
-              {
-                "code": "1589002",
-                "name": "Armour Up PPE",
-                "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTg5MDAyIiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-                "subCategories": []
-              }
-            ]
-          },
-          {
             "code": "1505040",
             "name": "Traffic Control",
             "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTA1MDQwIiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
@@ -5070,12 +4018,6 @@
             "code": "1514007",
             "name": "Pest Control",
             "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTE0MDA3IiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-            "subCategories": []
-          },
-          {
-            "code": "1576000",
-            "name": "Safety Signs",
-            "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTc2MDAwIiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
             "subCategories": []
           }
         ]
@@ -5100,532 +4042,10 @@
     "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTAwNTM4IiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
     "subCategories": [
       {
-        "code": "1500168",
-        "name": "Ironmongery & Security",
-        "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTAwMTY4IiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-        "subCategories": [
-          {
-            "code": "1539001",
-            "name": "Cabinet Hardware & Furniture",
-            "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTM5MDAxIiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-            "subCategories": [
-              {
-                "code": "1539005",
-                "name": "Catches, Latches & Locks",
-                "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTM5MDA1IiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-                "subCategories": []
-              },
-              {
-                "code": "1539006",
-                "name": "Fixings & Fittings",
-                "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTM5MDA2IiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-                "subCategories": []
-              },
-              {
-                "code": "1539007",
-                "name": "Handles & Knobs",
-                "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTM5MDA3IiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-                "subCategories": []
-              }
-            ]
-          },
-          {
-            "code": "1539004",
-            "name": "Door Furniture & Hardware",
-            "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTM5MDA0IiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-            "subCategories": [
-              {
-                "code": "1540000",
-                "name": "Door Accessories",
-                "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTQwMDAwIiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-                "subCategories": []
-              },
-              {
-                "code": "1540001",
-                "name": "Door Handles",
-                "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTQwMDAxIiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-                "subCategories": [
-                  {
-                    "code": "1585005",
-                    "name": "Rose Door Handles",
-                    "image": {
-                      "name": "PRIMARY",
-                      "images": [
-                        {
-                          "altText": "Rose Door Handles",
-                          "url": "//dam-assets.apps.travisperkins.group/KjBn5/1585005.jpg",
-                          "type": "thumbnail",
-                          "__typename": "TpplcImage"
-                        }
-                      ],
-                      "__typename": "TpplcImageSet"
-                    },
-                    "__typename": "TpplcCategory",
-                    "subCategories": []
-                  },
-                  {
-                    "code": "1585006",
-                    "name": "Lever Latch Door Handles",
-                    "image": {
-                      "name": "PRIMARY",
-                      "images": [
-                        {
-                          "altText": "Lever Latch Door Handles",
-                          "url": "//dam-assets.apps.travisperkins.group/KDN39/1585006.jpg",
-                          "type": "thumbnail",
-                          "__typename": "TpplcImage"
-                        }
-                      ],
-                      "__typename": "TpplcImageSet"
-                    },
-                    "__typename": "TpplcCategory",
-                    "subCategories": []
-                  },
-                  {
-                    "code": "1585007",
-                    "name": "Bar Door Handles",
-                    "image": {
-                      "name": "PRIMARY",
-                      "images": [
-                        {
-                          "altText": "Bar Door Handles",
-                          "url": "//dam-assets.apps.travisperkins.group/v4466kd/1585007:TravisPerkinsWeb.jpg",
-                          "type": "thumbnail",
-                          "__typename": "TpplcImage"
-                        }
-                      ],
-                      "__typename": "TpplcImageSet"
-                    },
-                    "__typename": "TpplcCategory",
-                    "subCategories": []
-                  },
-                  {
-                    "code": "1585008",
-                    "name": "Lever Lock Door Handles",
-                    "image": {
-                      "name": "PRIMARY",
-                      "images": [
-                        {
-                          "altText": "Lever Lock Door Handles",
-                          "url": "//dam-assets.apps.travisperkins.group/lvonv/1585008.jpg",
-                          "type": "thumbnail",
-                          "__typename": "TpplcImage"
-                        }
-                      ],
-                      "__typename": "TpplcImageSet"
-                    },
-                    "__typename": "TpplcCategory",
-                    "subCategories": []
-                  },
-                  {
-                    "code": "1585009",
-                    "name": "Door Knobs",
-                    "image": {
-                      "name": "PRIMARY",
-                      "images": [
-                        {
-                          "altText": "Door Knobs",
-                          "url": "//dam-assets.apps.travisperkins.group/l3mG3/1585009.jpg",
-                          "type": "thumbnail",
-                          "__typename": "TpplcImage"
-                        }
-                      ],
-                      "__typename": "TpplcImageSet"
-                    },
-                    "__typename": "TpplcCategory",
-                    "subCategories": []
-                  },
-                  {
-                    "code": "1585018",
-                    "name": "Fire Door Handles",
-                    "image": {
-                      "name": "PRIMARY",
-                      "images": [
-                        {
-                          "altText": "Fire Door Handles",
-                          "url": "//dam-assets.apps.travisperkins.group/x21ppkn/1585018:TravisPerkinsWeb.jpg",
-                          "type": "thumbnail",
-                          "__typename": "TpplcImage"
-                        }
-                      ],
-                      "__typename": "TpplcImageSet"
-                    },
-                    "__typename": "TpplcCategory",
-                    "subCategories": []
-                  },
-                  {
-                    "code": "1585019",
-                    "name": "Exterior Door Handles",
-                    "image": {
-                      "name": "PRIMARY",
-                      "images": [
-                        {
-                          "altText": "Exterior Door Handles",
-                          "url": "//dam-assets.apps.travisperkins.group/K21qJ/1585019.jpg",
-                          "type": "thumbnail",
-                          "__typename": "TpplcImage"
-                        }
-                      ],
-                      "__typename": "TpplcImageSet"
-                    },
-                    "__typename": "TpplcCategory",
-                    "subCategories": []
-                  }
-                ]
-              },
-              {
-                "code": "1540002",
-                "name": "Hooks",
-                "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTQwMDAyIiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-                "subCategories": []
-              },
-              {
-                "code": "1540003",
-                "name": "Door Accessory Packs",
-                "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTQwMDAzIiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-                "subCategories": []
-              },
-              {
-                "code": "1585012",
-                "name": "Letter Boxes",
-                "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTg1MDEyIiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-                "subCategories": []
-              },
-              {
-                "code": "1585014",
-                "name": "Kicking Plates",
-                "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTg1MDE0IiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-                "subCategories": []
-              }
-            ]
-          },
-          {
-            "code": "1541000",
-            "name": "Door Security",
-            "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTQxMDAwIiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-            "subCategories": [
-              {
-                "code": "1539003",
-                "name": "Door Closers & Panic Hardware",
-                "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTM5MDAzIiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-                "subCategories": [
-                  {
-                    "code": "1539008",
-                    "name": "Door Closers",
-                    "image": {
-                      "name": "PRIMARY",
-                      "images": [
-                        {
-                          "altText": "Door Closers",
-                          "url": "//dam-assets.apps.travisperkins.group/labxw/1539008.jpg",
-                          "type": "thumbnail",
-                          "__typename": "TpplcImage"
-                        }
-                      ],
-                      "__typename": "TpplcImageSet"
-                    },
-                    "__typename": "TpplcCategory",
-                    "subCategories": []
-                  },
-                  {
-                    "code": "1539009",
-                    "name": "Panic Hardware",
-                    "image": {
-                      "name": "PRIMARY",
-                      "images": [
-                        {
-                          "altText": "Panic Hardware",
-                          "url": "//dam-assets.apps.travisperkins.group/x7l4wdl/1539009:TravisPerkinsWeb.jpg",
-                          "type": "thumbnail",
-                          "__typename": "TpplcImage"
-                        }
-                      ],
-                      "__typename": "TpplcImageSet"
-                    },
-                    "__typename": "TpplcCategory",
-                    "subCategories": []
-                  }
-                ]
-              },
-              {
-                "code": "1541003",
-                "name": "Padlocks, Chains & Key Safes",
-                "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTQxMDAzIiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-                "subCategories": [
-                  {
-                    "code": "1541016",
-                    "name": "Security Chains",
-                    "image": {
-                      "name": "PRIMARY",
-                      "images": [
-                        {
-                          "altText": "Security Chains",
-                          "url": "//dam-assets.apps.travisperkins.group/x21mygn/1541016:TravisPerkinsWeb.jpg",
-                          "type": "thumbnail",
-                          "__typename": "TpplcImage"
-                        }
-                      ],
-                      "__typename": "TpplcImageSet"
-                    },
-                    "__typename": "TpplcCategory",
-                    "subCategories": []
-                  },
-                  {
-                    "code": "1541017",
-                    "name": "Key Safes",
-                    "image": {
-                      "name": "PRIMARY",
-                      "images": [
-                        {
-                          "altText": "Key Safes",
-                          "url": "//dam-assets.apps.travisperkins.group/xw4208d/1541017:TravisPerkinsWeb.jpg",
-                          "type": "thumbnail",
-                          "__typename": "TpplcImage"
-                        }
-                      ],
-                      "__typename": "TpplcImageSet"
-                    },
-                    "__typename": "TpplcCategory",
-                    "subCategories": []
-                  },
-                  {
-                    "code": "1541018",
-                    "name": "Padlocks",
-                    "image": {
-                      "name": "PRIMARY",
-                      "images": [
-                        {
-                          "altText": "Padlocks",
-                          "url": "//dam-assets.apps.travisperkins.group/v96klwz/1541018:TravisPerkinsWeb.jpg",
-                          "type": "thumbnail",
-                          "__typename": "TpplcImage"
-                        }
-                      ],
-                      "__typename": "TpplcImageSet"
-                    },
-                    "__typename": "TpplcCategory",
-                    "subCategories": []
-                  }
-                ]
-              },
-              {
-                "code": "1541005",
-                "name": "Keypad & Electronic Door Locks",
-                "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTQxMDA1IiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-                "subCategories": []
-              },
-              {
-                "code": "1541006",
-                "name": "Mortice Locks",
-                "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTQxMDA2IiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-                "subCategories": []
-              },
-              {
-                "code": "1541007",
-                "name": "Night Latches",
-                "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTQxMDA3IiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-                "subCategories": []
-              },
-              {
-                "code": "1541008",
-                "name": "Rim Locks",
-                "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTQxMDA4IiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-                "subCategories": []
-              },
-              {
-                "code": "1550000",
-                "name": "Euro Cylinder Locks",
-                "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTUwMDAwIiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-                "subCategories": []
-              },
-              {
-                "code": "1585016",
-                "name": "Door Bolts",
-                "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTg1MDE2IiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-                "subCategories": []
-              }
-            ]
-          },
-          {
-            "code": "1541002",
-            "name": "Hinges",
-            "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTQxMDAyIiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-            "subCategories": [
-              {
-                "code": "1541011",
-                "name": "Cabinet Hinges",
-                "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTQxMDExIiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-                "subCategories": []
-              },
-              {
-                "code": "1541012",
-                "name": "Fire Door Hinges",
-                "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTQxMDEyIiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-                "subCategories": []
-              },
-              {
-                "code": "1541013",
-                "name": "Strap & Piano Hinges",
-                "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTQxMDEzIiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-                "subCategories": []
-              },
-              {
-                "code": "1541014",
-                "name": "Tee Hinges",
-                "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTQxMDE0IiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-                "subCategories": []
-              },
-              {
-                "code": "1541015",
-                "name": "Butt Hinges",
-                "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTQxMDE1IiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-                "subCategories": []
-              }
-            ]
-          },
-          {
-            "code": "1541004",
-            "name": "Shed Security & Gate Ironmongery",
-            "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTQxMDA0IiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-            "subCategories": [
-              {
-                "code": "1541019",
-                "name": "Cabin Hooks",
-                "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTQxMDE5IiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-                "subCategories": []
-              },
-              {
-                "code": "1541020",
-                "name": "Gate Latches & Springs",
-                "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTQxMDIwIiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-                "subCategories": []
-              },
-              {
-                "code": "1541021",
-                "name": "Hasp & Staples",
-                "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTQxMDIxIiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-                "subCategories": []
-              },
-              {
-                "code": "1541022",
-                "name": "Pad & Tower Bolts",
-                "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTQxMDIyIiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-                "subCategories": []
-              }
-            ]
-          },
-          {
-            "code": "1548000",
-            "name": "Door & Window Seals",
-            "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTQ4MDAwIiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-            "subCategories": [
-              {
-                "code": "1505022",
-                "name": "Seals & Draught Excluders",
-                "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTA1MDIyIiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-                "subCategories": []
-              },
-              {
-                "code": "1541009",
-                "name": "Intumescent Sealants",
-                "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTQxMDA5IiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-                "subCategories": []
-              },
-              {
-                "code": "1541010",
-                "name": "Intumescent Seals",
-                "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTQxMDEwIiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-                "subCategories": []
-              }
-            ]
-          },
-          {
-            "code": "1548001",
-            "name": "Window Handles, Hardware & Accessories",
-            "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTQ4MDAxIiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-            "subCategories": [
-              {
-                "code": "1546003",
-                "name": "Window Accessories",
-                "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTQ2MDAzIiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-                "subCategories": []
-              },
-              {
-                "code": "1548004",
-                "name": "Casement Stays & Fastners",
-                "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTQ4MDA0IiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-                "subCategories": []
-              },
-              {
-                "code": "1548005",
-                "name": "Sash Window Hardware",
-                "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTQ4MDA1IiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-                "subCategories": []
-              },
-              {
-                "code": "1569001",
-                "name": "uPVC Window Handles",
-                "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTY5MDAxIiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-                "subCategories": []
-              }
-            ]
-          },
-          {
-            "code": "1548002",
-            "name": "Shelf Brackets & Supports",
-            "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTQ4MDAyIiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-            "subCategories": []
-          },
-          {
-            "code": "1576000",
-            "name": "Safety Signs",
-            "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTc2MDAwIiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-            "subCategories": []
-          },
-          {
-            "code": "1585017",
-            "name": "Fire Door Ironmongery",
-            "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTg1MDE3IiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-            "subCategories": [
-              {
-                "code": "1539008",
-                "name": "Door Closers",
-                "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTM5MDA4IiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-                "subCategories": []
-              },
-              {
-                "code": "1541010",
-                "name": "Intumescent Seals",
-                "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTQxMDEwIiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-                "subCategories": []
-              },
-              {
-                "code": "1541012",
-                "name": "Fire Door Hinges",
-                "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTQxMDEyIiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-                "subCategories": []
-              },
-              {
-                "code": "1585018",
-                "name": "Fire Door Handles",
-                "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTg1MDE4IiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-                "subCategories": []
-              }
-            ]
-          }
-        ]
-      },
-      {
         "code": "1500539",
         "name": "Cleaning & Preparation",
         "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTAwNTM5IiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
         "subCategories": [
-          {
-            "code": "1500270",
-            "name": "Decorators Caulk",
-            "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTAwMjcwIiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-            "subCategories": []
-          },
           {
             "code": "1500540",
             "name": "Masking Tapes",
@@ -5719,12 +4139,6 @@
         "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTAwNTUyIiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
         "subCategories": [
           {
-            "code": "1500150",
-            "name": "Fencing & Decking Treatments",
-            "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTAwMTUwIiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-            "subCategories": []
-          },
-          {
             "code": "1500553",
             "name": "Undercoat & Primers",
             "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTAwNTUzIiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
@@ -5773,90 +4187,10 @@
             "subCategories": []
           },
           {
-            "code": "1570015",
-            "name": "Fence Paint",
-            "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTcwMDE1IiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-            "subCategories": []
-          },
-          {
             "code": "1570016",
             "name": "Mixed Coloured Paint",
             "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTcwMDE2IiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
             "subCategories": []
-          }
-        ]
-      },
-      {
-        "code": "1500560",
-        "name": "Tiling",
-        "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTAwNTYwIiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-        "subCategories": [
-          {
-            "code": "1500016",
-            "name": "Porcelain Tiles",
-            "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTAwMDE2IiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-            "subCategories": []
-          },
-          {
-            "code": "1500280",
-            "name": "Tile Adhesives & Grouts",
-            "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTAwMjgwIiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-            "subCategories": []
-          },
-          {
-            "code": "1500424",
-            "name": "Tile Backing Boards",
-            "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTAwNDI0IiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-            "subCategories": []
-          },
-          {
-            "code": "1500561",
-            "name": "Ceramic Tiles",
-            "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTAwNTYxIiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-            "subCategories": []
-          },
-          {
-            "code": "1500563",
-            "name": "Tiling Tools & Accessories",
-            "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTAwNTYzIiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-            "subCategories": []
-          },
-          {
-            "code": "1597009",
-            "name": "Brick Slips",
-            "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTk3MDA5IiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-            "subCategories": [
-              {
-                "code": "1597010",
-                "name": "Reclaimed Brick Slips Collection",
-                "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTk3MDEwIiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-                "subCategories": []
-              },
-              {
-                "code": "1597011",
-                "name": "Contemporary Brick Slips Collection",
-                "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTk3MDExIiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-                "subCategories": []
-              },
-              {
-                "code": "1597012",
-                "name": "Traditional Brick Slips Collection",
-                "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTk3MDEyIiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-                "subCategories": []
-              },
-              {
-                "code": "1597013",
-                "name": "Sample Brick Slips",
-                "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTk3MDEzIiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-                "subCategories": []
-              },
-              {
-                "code": "1597014",
-                "name": "Brick Slips Accessories",
-                "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTk3MDE0IiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-                "subCategories": []
-              }
-            ]
           }
         ]
       },
@@ -5894,20 +4228,8 @@
             "name": "Cleaning Accessories",
             "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTAwNTcwIiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
             "subCategories": []
-          },
-          {
-            "code": "1534000",
-            "name": "Dust Extractors & Vacuum Cleaners",
-            "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTM0MDAwIiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-            "subCategories": []
           }
         ]
-      },
-      {
-        "code": "1516000",
-        "name": "Wardrobe Doors & Accessories",
-        "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTE2MDAwIiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-        "subCategories": []
       }
     ]
   },
@@ -6119,12 +4441,6 @@
         "subCategories": []
       },
       {
-        "code": "1505043",
-        "name": "Outdoor lighting",
-        "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTA1MDQzIiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-        "subCategories": []
-      },
-      {
         "code": "1505051",
         "name": "Electrical Spares",
         "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTA1MDUxIiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
@@ -6142,12 +4458,6 @@
             "subCategories": []
           }
         ]
-      },
-      {
-        "code": "1511002",
-        "name": "Electric Heaters",
-        "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTExMDAyIiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-        "subCategories": []
       },
       {
         "code": "1557000",
@@ -6186,52 +4496,9 @@
         "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTU3MDA0IiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
         "subCategories": [
           {
-            "code": "1500598",
-            "name": "Site Lighting",
-            "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTAwNTk4IiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-            "subCategories": []
-          },
-          {
             "code": "1500599",
             "name": "Inspection Lamps & Torches",
             "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTAwNTk5IiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-            "subCategories": []
-          }
-        ]
-      },
-      {
-        "code": "1572013",
-        "name": "Smart Home",
-        "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTcyMDEzIiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-        "subCategories": [
-          {
-            "code": "1505025",
-            "name": "Smart Electrical",
-            "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTA1MDI1IiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-            "subCategories": []
-          },
-          {
-            "code": "1555000",
-            "name": "Smart Heating Controls",
-            "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTU1MDAwIiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-            "subCategories": []
-          },
-          {
-            "code": "1572014",
-            "name": "Smart Lighting",
-            "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTcyMDE0IiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-            "subCategories": []
-          },
-          {
-            "code": "1572015",
-            "name": "Smart Security",
-            "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTcyMDE1IiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-            "subCategories": []
-          },
-          {
-            "code": "1572016",
-            "name": "Smart Safety",
-            "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTcyMDE2IiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
             "subCategories": []
           }
         ]
@@ -6282,129 +4549,6 @@
             "code": "1591049",
             "name": "Monobloc Taps",
             "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTkxMDQ5IiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-            "subCategories": []
-          }
-        ]
-      },
-      {
-        "code": "1500560",
-        "name": "Tiling",
-        "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTAwNTYwIiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-        "subCategories": [
-          {
-            "code": "1500016",
-            "name": "Porcelain Tiles",
-            "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTAwMDE2IiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-            "subCategories": []
-          },
-          {
-            "code": "1500280",
-            "name": "Tile Adhesives & Grouts",
-            "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTAwMjgwIiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-            "subCategories": []
-          },
-          {
-            "code": "1500424",
-            "name": "Tile Backing Boards",
-            "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTAwNDI0IiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-            "subCategories": []
-          },
-          {
-            "code": "1500561",
-            "name": "Ceramic Tiles",
-            "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTAwNTYxIiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-            "subCategories": []
-          },
-          {
-            "code": "1500563",
-            "name": "Tiling Tools & Accessories",
-            "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTAwNTYzIiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-            "subCategories": []
-          },
-          {
-            "code": "1597009",
-            "name": "Brick Slips",
-            "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTk3MDA5IiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-            "subCategories": [
-              {
-                "code": "1597010",
-                "name": "Reclaimed Brick Slips Collection",
-                "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTk3MDEwIiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-                "subCategories": []
-              },
-              {
-                "code": "1597011",
-                "name": "Contemporary Brick Slips Collection",
-                "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTk3MDExIiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-                "subCategories": []
-              },
-              {
-                "code": "1597012",
-                "name": "Traditional Brick Slips Collection",
-                "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTk3MDEyIiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-                "subCategories": []
-              },
-              {
-                "code": "1597013",
-                "name": "Sample Brick Slips",
-                "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTk3MDEzIiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-                "subCategories": []
-              },
-              {
-                "code": "1597014",
-                "name": "Brick Slips Accessories",
-                "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTk3MDE0IiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-                "subCategories": []
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "code": "1502005",
-        "name": "Worktops & Accessories",
-        "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTAyMDA1IiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-        "subCategories": [
-          {
-            "code": "1500209",
-            "name": "Laminate Worktops",
-            "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTAwMjA5IiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-            "subCategories": []
-          },
-          {
-            "code": "1500210",
-            "name": "Worktop Accessories",
-            "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTAwMjEwIiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-            "subCategories": []
-          },
-          {
-            "code": "1505004",
-            "name": "Made to Measure",
-            "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTA1MDA0IiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-            "subCategories": []
-          },
-          {
-            "code": "1505005",
-            "name": "Artemis Modula",
-            "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTA1MDA1IiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-            "subCategories": []
-          },
-          {
-            "code": "1505056",
-            "name": "Splashbacks",
-            "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTA1MDU2IiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-            "subCategories": []
-          },
-          {
-            "code": "1513009",
-            "name": "Solid Wood Worktops",
-            "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTEzMDA5IiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-            "subCategories": []
-          },
-          {
-            "code": "1513010",
-            "name": "Zenith",
-            "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTEzMDEwIiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
             "subCategories": []
           }
         ]
@@ -6816,12 +4960,6 @@
             "subCategories": []
           },
           {
-            "code": "1500346",
-            "name": "Soil Pipe & Fittings",
-            "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTAwMzQ2IiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-            "subCategories": []
-          },
-          {
             "code": "1573011",
             "name": "Copper Pipe",
             "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTczMDExIiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
@@ -6905,47 +5043,10 @@
         ]
       },
       {
-        "code": "1500338",
-        "name": "Wastes & Traps",
-        "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTAwMzM4IiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-        "subCategories": [
-          {
-            "code": "1583016",
-            "name": "Shower Wastes",
-            "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTgzMDE2IiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-            "subCategories": []
-          },
-          {
-            "code": "1583017",
-            "name": "Bathroom Wastes",
-            "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTgzMDE3IiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-            "subCategories": []
-          },
-          {
-            "code": "1583018",
-            "name": "Sink Wastes",
-            "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTgzMDE4IiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-            "subCategories": []
-          }
-        ]
-      },
-      {
-        "code": "1500346",
-        "name": "Soil Pipe & Fittings",
-        "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTAwMzQ2IiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-        "subCategories": []
-      },
-      {
         "code": "1500351",
         "name": "Toilet Spares",
         "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTAwMzUxIiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
         "subCategories": [
-          {
-            "code": "1500347",
-            "name": "Pan Connectors",
-            "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTAwMzQ3IiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-            "subCategories": []
-          },
           {
             "code": "1500392",
             "name": "Toilet Fixings & Accessories",
@@ -6969,12 +5070,6 @@
             "code": "1500356",
             "name": "Scale Inhibitors",
             "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTAwMzU2IiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-            "subCategories": []
-          },
-          {
-            "code": "1500357",
-            "name": "Water Softeners",
-            "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTAwMzU3IiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
             "subCategories": []
           },
           {
@@ -7003,18 +5098,6 @@
             "subCategories": []
           },
           {
-            "code": "1500367",
-            "name": "Plumbing Wrenches & Tape",
-            "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTAwMzY3IiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-            "subCategories": []
-          },
-          {
-            "code": "1500368",
-            "name": "Soldering & Brazing",
-            "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTAwMzY4IiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-            "subCategories": []
-          },
-          {
             "code": "1583043",
             "name": "Drain Cleaning Tools",
             "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTgzMDQzIiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
@@ -7033,12 +5116,6 @@
             "subCategories": []
           }
         ]
-      },
-      {
-        "code": "1500390",
-        "name": "Macerators",
-        "id": "eyJjYXRlZ29yeUNvZGUiOiIxNTAwMzkwIiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9",
-        "subCategories": []
       },
       {
         "code": "1583008",

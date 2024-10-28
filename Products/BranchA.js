@@ -2,7 +2,6 @@ const fs = require("fs");
 const path = require("path");
 const RepositoryFactory = require("../services/repositories/repositoryFactory");
 const productRepository = RepositoryFactory.get("product");
-const csvParser = require("csv-parser");
 
 const BranchA = async (data) => {
   try {
@@ -20,9 +19,9 @@ const BranchA = async (data) => {
               values: ["0320"],
             },
           ],
-          first: 30,
+          first: 100,
           after: null,
-          term: "se1",
+          term: null,
         },
       },
       query:
@@ -62,6 +61,7 @@ const BranchA = async (data) => {
     });
 
     let productArray = [];
+    let productNameSet = new Set(); // Track product names to avoid duplicates
 
     if (response.data.data.tpplcBrand.searchProducts.edges.length === 0) {
       return;
@@ -80,23 +80,26 @@ const BranchA = async (data) => {
         }
 
         let inventoryQty = productQtyMap.get(el?.product.id) || 0;
+        let status = inventoryQty > 0 ? "ACTIVE" : "INACTIVE";
 
-        // let sellingPrice =
-        //   el?.product?.price?.price?.typicalTradePrice?.valueIncVat || 0;
+        // Check status and product name for duplicates
+        if (status === "ACTIVE" && !productNameSet.has(el.product.sku)) {
+          productNameSet.add(el.product.sku); // Track the product name to avoid duplicates
 
-        productArray.push({
-          id: el?.product.sku || "N/A",
-          name: el?.product.name || "N/A",
-          image: `https:${thumbnailImage}` || "N/A",
-          description: el?.product.description || "N/A",
-          sku: el?.product.sku || "N/A",
-          min: 1,
-          max: inventoryQty,
-          sellingPrice: sellingPrice,
-          costPrice: sellingPrice,
-          status: inventoryQty > 0 ? "ACTIVE" : "INACTIVE",
-          inventory: inventoryQty,
-        });
+          productArray.push({
+            id: el?.product.sku || "N/A",
+            name: el?.product.name || "N/A",
+            image: `https:${thumbnailImage}` || "N/A",
+            description: el?.product.description || "N/A",
+            sku: el?.product.sku || "N/A",
+            min: 1,
+            max: inventoryQty,
+            sellingPrice: sellingPrice,
+            costPrice: sellingPrice,
+            status: status,
+            inventory: inventoryQty,
+          });
+        }
       }
     });
 
@@ -118,7 +121,7 @@ const BranchA = async (data) => {
       "producttags",
     ].join(",");
 
-    // Step 3: Format the CSV content for the new products
+    // Step 3: Format the CSV content for the validated products
     let csvContent = productArray
       .map((product) => {
         let percentageAmount = (15 / 100) * product.sellingPrice;
