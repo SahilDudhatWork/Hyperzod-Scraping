@@ -124,17 +124,45 @@ const MerchantsA = async () => {
     const token = `Bearer ${await loginUser()}`;
     const merchantId = "66f544b605f843b99b0fbff3";
     const page = 1;
-    const pageLimit = 50000;
+    const pageLimit = 300;
 
-    // Step 1: Fetch and delete existing products
-    const getProductListResult = await getProductList(
-      page,
-      pageLimit,
-      token,
-      merchantId
-    );
-    if (getProductListResult.length > 0) {
+    // // Step 1: Fetch and delete existing products
+    // const getProductListResult = await getProductList(
+    //   page,
+    //   pageLimit,
+    //   token,
+    //   merchantId
+    // );
+    // if (getProductListResult.length > 0) {
+    //   await bulkDeleteProducts(getProductListResult, token, merchantId);
+    // }
+
+    // Step 1: Loop until there are no more products to delete
+    while (true) {
+      // Fetch the product list for the current page
+      const getProductListResult = await getProductList(
+        page,
+        pageLimit,
+        token,
+        merchantId
+      );
+
+      // If there are no more products to delete, break the loop
+      if (getProductListResult.length === 0) {
+        console.log("NO Products.");
+        break;
+      }
+
+      // Delete the fetched products
       await bulkDeleteProducts(getProductListResult, token, merchantId);
+
+      // Log progress
+      console.log(
+        `merchantId:${merchantId} -- Deleted ${getProductListResult.length} products from page ${page}.`
+      );
+
+      // Move to the next page
+      // page++;
     }
 
     // Step 2: Read CSV and split data into chunks of 500 rows
@@ -144,14 +172,26 @@ const MerchantsA = async () => {
     // Step 3: Process each chunk individually with retry on failure and 5 min delay between successful chunks
     for (let i = 0; i < chunks.length; i++) {
       console.log(`Processing chunk ${i + 1} of ${chunks.length}`);
-
+      console.log("chunks data length-->", chunks[i].length);
       // Process the chunk with retry logic
       await processChunkWithRetry(chunks[i], i, headers, token, merchantId);
 
       // Introduce a fixed 5-minute delay (300000 milliseconds) after successful chunk import
-      const delay = 300000;
-      console.log(`Waiting for 5 minutes before uploading the next chunk...`);
-      await sleep(delay); // Wait before uploading the next chunk
+      if (chunks[i].length >= 200) {
+        const delay = 240000;
+        console.log(`Waiting for 4 minutes before uploading the next chunk...`);
+        await sleep(delay); // Wait before uploading the next chunk
+      } else if (chunks[i].length < 200 && chunks[i].length >= 100) {
+        const delay = 120000;
+        console.log(`Waiting for 2 minutes before uploading the next chunk...`);
+        await sleep(delay); // Wait before uploading the next chunk
+      } else {
+        const delay = 30000;
+        console.log(
+          `Waiting for 30 seconds before uploading the next chunk...`
+        );
+        await sleep(delay); // Wait before uploading the next chunk
+      }
     }
 
     console.log(

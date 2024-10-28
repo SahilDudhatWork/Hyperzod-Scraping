@@ -68,7 +68,9 @@ const BranchB = async (data) => {
     }
 
     response.data.data.tpplcBrand.searchProducts.edges.forEach((el) => {
-      if (el?.product?.variants?.length == 0) {
+      let sellingPrice =
+        el?.product?.price?.price?.typicalTradePrice?.valueIncVat || 0;
+      if (el?.product?.variants?.length == 0 && sellingPrice != 0) {
         let thumbnailImage = el?.product?.primaryImage?.images.find(
           (image) => image.type === "thumbnail"
         )?.url;
@@ -79,8 +81,8 @@ const BranchB = async (data) => {
 
         let inventoryQty = productQtyMap.get(el?.product.id) || 0;
 
-        let sellingPrice =
-          el?.product?.price?.price?.typicalTradePrice?.valueIncVat || 0;
+        // let sellingPrice =
+        //   el?.product?.price?.price?.typicalTradePrice?.valueIncVat || 0;
 
         productArray.push({
           id: el?.product.sku || "N/A",
