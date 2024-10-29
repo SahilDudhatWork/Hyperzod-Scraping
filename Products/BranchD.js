@@ -127,8 +127,8 @@ const BranchD = async (data) => {
         let percentageAmount = (15 / 100) * product.sellingPrice;
         let totalSellingPrice = product.sellingPrice + percentageAmount;
         let formattedTotalSellingPrice = totalSellingPrice.toFixed(2);
-        const randomSixDigitNumber = Math.floor(
-          100000 + Math.random() * 900000
+        const randomTanDigitNumber = Math.floor(
+          1000000000 + Math.random() * 9000000000
         );
 
         const row = [
@@ -136,7 +136,7 @@ const BranchD = async (data) => {
           `"${product.name.replace(/"/g, '""')}"`,
           `"${product.image}"`,
           `"${product.description.replace(/"/g, '""')}"`,
-          `"${randomSixDigitNumber}"`,
+          `"${randomTanDigitNumber}"`,
           `"${product.min},${product.max}"`,
           `${formattedTotalSellingPrice}`,
           `"${product.status}"`,
