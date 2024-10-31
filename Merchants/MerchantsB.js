@@ -1,10 +1,11 @@
 const {
   loginUser,
-  getProductList,
-  bulkDeleteProducts,
-  hyperzodUpload,
-  validateProductImport,
-  importProductData,
+  merchantB_GetProductList,
+  merchantB_BulkDeleteProduct,
+  merchantB_HyperzodUpload,
+  merchantB_ValidateProductImport,
+  merchantB_ImportProductData,
+  merchantB_CheckImportStatus,
 } = require("../hyperzodAPI");
 const fs = require("fs");
 const csv = require("csv-parser");
@@ -41,7 +42,7 @@ function writeChunkToCSV(chunk, chunkIndex, headers) {
   return new Promise((resolve, reject) => {
     const json2csvParser = new Parser({ fields: headers });
     const csvData = json2csvParser.parse(chunk);
-    const filePath = `./temp_chunk_${chunkIndex}.csv`;
+    const filePath = `./temp_chunk_B_${chunkIndex}.csv`;
 
     fs.writeFile(filePath, csvData, (err) => {
       if (err) return reject(err);
@@ -70,13 +71,13 @@ async function processChunkWithRetry(
       const tempFilePath = await writeChunkToCSV(chunk, chunkIndex, headers);
 
       // Upload the temporary CSV file
-      const uploadResult = await hyperzodUpload(token, tempFilePath);
+      const uploadResult = await merchantB_HyperzodUpload(token, tempFilePath);
       if (!uploadResult || uploadResult.status_code !== 200) {
         throw new Error(`Failed to upload chunk ${chunkIndex + 1}`);
       }
 
       // Validate the uploaded chunk
-      const validationResult = await validateProductImport(
+      const validationResult = await merchantB_ValidateProductImport(
         uploadResult.data,
         token,
         merchantId
@@ -86,7 +87,7 @@ async function processChunkWithRetry(
       }
 
       // Import the validated products
-      const importResult = await importProductData(
+      const importResult = await merchantB_ImportProductData(
         validationResult.data,
         token,
         merchantId
@@ -96,7 +97,7 @@ async function processChunkWithRetry(
       }
 
       console.log(
-        `Chunk ${chunkIndex + 1} import successful:`,
+        `merchant-B: Chunk ${chunkIndex + 1} import successful:`,
         importResult.message
       );
 
@@ -108,7 +109,7 @@ async function processChunkWithRetry(
     } catch (error) {
       retryCount++;
       console.error(
-        `Error processing chunk ${
+        `merchant-B: Error processing chunk ${
           chunkIndex + 1
         }, retrying in 1 Minit (Attempt ${retryCount})...`,
         error.message
@@ -118,28 +119,28 @@ async function processChunkWithRetry(
   }
 }
 
+async function waitForCompletion(token, merchantId) {
+  let status;
+  do {
+    status = await merchantB_CheckImportStatus(token, merchantId);
+    console.log(`merchant-B: Current import status: ${status}`);
+    if (status === "completed") break;
+
+    await sleep(30000); // Check every 30 sec
+  } while (status !== "completed");
+}
 // Main function to handle the CSV upload in chunks with delay
 const MerchantsB = async () => {
   try {
     const token = `Bearer ${await loginUser()}`;
     const merchantId = "66feb0274ba29a6a3e0e2e8d";
     const page = 1;
-    const pageLimit = 50000;
+    const pageLimit = 300;
 
-    // // Step 1: Fetch and delete existing products
-    // const getProductListResult = await getProductList(
-    //   page,
-    //   pageLimit,
-    //   token,
-    //   merchantId
-    // );
-    // if (getProductListResult.length > 0) {
-    //   await bulkDeleteProducts(getProductListResult, token, merchantId);
-    // }
-
+    // Step 1: Fetch and delete existing products
     while (true) {
       // Fetch the product list for the current page
-      const getProductListResult = await getProductList(
+      const getProductListResult = await merchantB_GetProductList(
         page,
         pageLimit,
         token,
@@ -148,20 +149,21 @@ const MerchantsB = async () => {
 
       // If there are no more products to delete, break the loop
       if (getProductListResult.length === 0) {
-        console.log("NO Products.");
+        console.log("merchant-B: NO Products for delete.");
         break;
       }
 
       // Delete the fetched products
-      await bulkDeleteProducts(getProductListResult, token, merchantId);
+      await merchantB_BulkDeleteProduct(
+        getProductListResult,
+        token,
+        merchantId
+      );
 
       // Log progress
       console.log(
-        `merchantId:${merchantId} -- Deleted ${getProductListResult.length} products from page ${page}.`
+        `merchant-B: Deleted ${getProductListResult.length} products from page ${page}.`
       );
-
-      // Move to the next page
-      // page++;
     }
 
     // Step 2: Read CSV and split data into chunks of 500 rows
@@ -170,27 +172,14 @@ const MerchantsB = async () => {
 
     // Step 3: Process each chunk individually with retry on failure and 5 min delay between successful chunks
     for (let i = 0; i < chunks.length; i++) {
-      console.log(`Processing chunk ${i + 1} of ${chunks.length}`);
-      console.log("chunks data length-->", chunks[i].length);
+      console.log(`merchant-B: Processing chunk ${i + 1} of ${chunks.length}`);
+      console.log("merchant-B: chunks data length-->", chunks[i].length);
       // Process the chunk with retry logic
       await processChunkWithRetry(chunks[i], i, headers, token, merchantId);
-
-      // Introduce a fixed 5-minute delay (300000 milliseconds) after successful chunk import
-      if (chunks[i].length >= 200) {
-        const delay = 240000;
-        console.log(`Waiting for 4 minutes before uploading the next chunk...`);
-        await sleep(delay); // Wait before uploading the next chunk
-      } else if (chunks[i].length < 200 && chunks[i].length >= 100) {
-        const delay = 120000;
-        console.log(`Waiting for 2 minutes before uploading the next chunk...`);
-        await sleep(delay); // Wait before uploading the next chunk
-      } else {
-        const delay = 30000;
-        console.log(
-          `Waiting for 30 seconds before uploading the next chunk...`
-        );
-        await sleep(delay); // Wait before uploading the next chunk
-      }
+      await waitForCompletion(token, merchantId);
+      console.log(
+        `merchant-B: Chunk ${i + 1} completed. Moving to next chunk.`
+      );
     }
 
     console.log(

@@ -2,8 +2,9 @@ const fs = require("fs");
 const path = require("path");
 const RepositoryFactory = require("../services/repositories/repositoryFactory");
 const productRepository = RepositoryFactory.get("product");
+let productNameSet = new Set();
 
-const BranchC = async (data) => {
+const BranchC = async (data, parentCategory = "") => {
   try {
     let body = {
       operationName: "searchProducts",
@@ -61,7 +62,6 @@ const BranchC = async (data) => {
     });
 
     let productArray = [];
-    let productNameSet = new Set(); // Track product names to avoid duplicates
 
     if (response.data.data.tpplcBrand.searchProducts.edges.length === 0) {
       return;
@@ -83,8 +83,11 @@ const BranchC = async (data) => {
         let status = inventoryQty > 0 ? "ACTIVE" : "INACTIVE";
 
         // Check status and product name for duplicates
-        if (status === "ACTIVE" && !productNameSet.has(el.product.sku)) {
-          productNameSet.add(el.product.sku); // Track the product name to avoid duplicates
+        let productCategory = parentCategory.trim();
+        let productName = el.product.name.trim();
+        const uniqueIdentifier = `${productCategory}-${productName}`;
+        if (status === "ACTIVE" && !productNameSet.has(uniqueIdentifier)) {
+          productNameSet.add(uniqueIdentifier); // Track the product name to avoid duplicates
 
           productArray.push({
             id: el?.product.sku || "N/A",
@@ -141,7 +144,7 @@ const BranchC = async (data) => {
           `${formattedTotalSellingPrice}`,
           `"${product.status}"`,
           `${product.inventory}`,
-          `"${data.name}"`,
+          `"${parentCategory}"`,
           `${product.sellingPrice}`,
         ];
         return row.join(",");
