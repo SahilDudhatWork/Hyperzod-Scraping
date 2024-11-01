@@ -84,16 +84,22 @@ const BranchC = async (data, parentCategory = "") => {
 
         // Check status and product name for duplicates
         let productCategory = parentCategory.trim();
-        let productName = el.product.name.trim();
+        let productName = el?.product.name.trim();
+        let productDescription = el?.product.description;
+        productName = productName.replace("Travis Perkins", "Buildgo");
+        productDescription = productDescription.replace(
+          "Travis Perkins",
+          "Buildgo"
+        );
         const uniqueIdentifier = `${productCategory}-${productName}`;
         if (status === "ACTIVE" && !productNameSet.has(uniqueIdentifier)) {
           productNameSet.add(uniqueIdentifier); // Track the product name to avoid duplicates
 
           productArray.push({
             id: el?.product.sku || "N/A",
-            name: el?.product.name || "N/A",
+            name: productName || "N/A",
             image: `https:${thumbnailImage}` || "N/A",
-            description: el?.product.description || "N/A",
+            description: productDescription || "N/A",
             sku: el?.product.sku || "N/A",
             min: 1,
             max: inventoryQty,

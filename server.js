@@ -147,7 +147,7 @@ const test = async () => {
     let index = 0;
     for (const i1 of readCategoryTreeResult) {
       if (i1.name != "Tool Hire" && i1.name != "Benchmarx Kitchens") {
-        console.log("i1-->", i1.name);
+        console.log("Category-->", i1.name);
         if (i1.subCategories.length > 0) {
           for (const i2 of i1.subCategories) {
             if (i2.subCategories.length > 0) {
@@ -176,13 +176,6 @@ const test = async () => {
       }
     }
 
-    // await MerchantsA();
-    // await new Promise((resolve) => setTimeout(resolve, 9000));
-    // await MerchantsB();
-    // await new Promise((resolve) => setTimeout(resolve, 9000));
-    // await MerchantsC();
-    // await new Promise((resolve) => setTimeout(resolve, 9000));
-    // await MerchantsD();
     MerchantsA();
     MerchantsB();
     MerchantsC();
