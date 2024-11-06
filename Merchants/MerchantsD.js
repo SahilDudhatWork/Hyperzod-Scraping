@@ -6,6 +6,7 @@ const {
   merchantD_ValidateProductImport,
   merchantD_ImportProductData,
   merchantD_CheckImportStatus,
+  merchantD_FetchAndDeleteCatgory,
 } = require("../hyperzodAPI");
 const fs = require("fs");
 const csv = require("csv-parser");
@@ -123,7 +124,7 @@ async function waitForCompletion(token, merchantId) {
   do {
     status = await merchantD_CheckImportStatus(token, merchantId);
     console.log(`merchant-D: Current import status: ${status}`);
-    if (status === "completed") break;
+    if (status !== "processing") break;
 
     await sleep(30000); // Check every 30 sec
   } while (status !== "completed");
@@ -164,6 +165,8 @@ const MerchantsD = async () => {
         `merchant-D: Deleted ${getProductListResult.length} products from page ${page}.`
       );
     }
+    await merchantD_FetchAndDeleteCatgory(token, merchantId);
+    console.log(`merchant-D: Deleted all categories.`);
 
     // Step 2: Read CSV and split data into chunks of 500 rows
     const { data: csvData, headers } = await readCSV("./BranchD.csv");

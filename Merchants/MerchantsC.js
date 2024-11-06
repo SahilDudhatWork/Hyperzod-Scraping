@@ -6,6 +6,7 @@ const {
   merchantC_ValidateProductImport,
   merchantC_ImportProductData,
   merchantC_CheckImportStatus,
+  merchantC_FetchAndDeleteCatgory,
 } = require("../hyperzodAPI");
 const fs = require("fs");
 const csv = require("csv-parser");
@@ -72,7 +73,6 @@ async function processChunkWithRetry(
 
       // Upload the temporary CSV file
       const uploadResult = await merchantC_HyperzodUpload(token, tempFilePath);
-      console.log("uploadResult", uploadResult);
       if (!uploadResult || uploadResult.status_code !== 200) {
         throw new Error(`Failed to upload chunk ${chunkIndex + 1}`);
       }
@@ -124,7 +124,7 @@ async function waitForCompletion(token, merchantId) {
   do {
     status = await merchantC_CheckImportStatus(token, merchantId);
     console.log(`merchant-C: Current import status: ${status}`);
-    if (status === "completed") break;
+    if (status !== "processing") break;
 
     await sleep(30000); // Check every 30 sec
   } while (status !== "completed");
@@ -165,6 +165,8 @@ const MerchantsC = async () => {
         `merchant-C: Deleted ${getProductListResult.length} products from page ${page}.`
       );
     }
+    await merchantC_FetchAndDeleteCatgory(token, merchantId);
+    console.log(`merchant-C: Deleted all categories.`);
 
     // Step 2: Read CSV and split data into chunks of 500 rows
     const { data: csvData, headers } = await readCSV("./BranchC.csv");

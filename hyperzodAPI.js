@@ -105,6 +105,143 @@ const merchantD_GetProductList = async (page, pageLimit, token, merchantId) => {
   }
 };
 
+const merchantA_FetchAndDeleteCatgory = async (token, merchantId) => {
+  try {
+    const response = await axios.get(
+      `https://api.hyperzod.app/merchant/v1/catalog/product-category/list?merchant_id=${merchantId}`,
+      {
+        headers: {
+          authorization: token,
+          "x-tenant": "onstruct.hyperzod.app",
+          "x-client-medium": 3,
+        },
+      }
+    );
+    if (response.data.data.length > 0) {
+      for (let i = 0; i < response.data.data.length; i++) {
+        await axios.post(
+          `https://api.hyperzod.app/merchant/v1/catalog/product-category/delete`,
+          { id: response.data.data[i].category_id, merchant_id: merchantId },
+          {
+            headers: {
+              authorization: token,
+              "x-tenant": "onstruct.hyperzod.app",
+              "x-client-medium": 3,
+            },
+          }
+        );
+      }
+    }
+
+    return true;
+  } catch (error) {
+    console.error("merchant:A Error fetching product list:", error.message);
+    throw new Error("Failed to fetch product list");
+  }
+};
+const merchantB_FetchAndDeleteCatgory = async (token, merchantId) => {
+  try {
+    const response = await axios.get(
+      `https://api.hyperzod.app/merchant/v1/catalog/product-category/list?merchant_id=${merchantId}`,
+      {
+        headers: {
+          authorization: token,
+          "x-tenant": "onstruct.hyperzod.app",
+          "x-client-medium": 3,
+        },
+      }
+    );
+    if (response.data.data.length > 0) {
+      for (let i = 0; i < response.data.data.length; i++) {
+        await axios.post(
+          `https://api.hyperzod.app/merchant/v1/catalog/product-category/delete`,
+          { id: response.data.data[i].category_id, merchant_id: merchantId },
+          {
+            headers: {
+              authorization: token,
+              "x-tenant": "onstruct.hyperzod.app",
+              "x-client-medium": 3,
+            },
+          }
+        );
+      }
+    }
+
+    return true;
+  } catch (error) {
+    console.error("merchant:A Error fetching product list:", error.message);
+    throw new Error("Failed to fetch product list");
+  }
+};
+const merchantC_FetchAndDeleteCatgory = async (token, merchantId) => {
+  try {
+    const response = await axios.get(
+      `https://api.hyperzod.app/merchant/v1/catalog/product-category/list?merchant_id=${merchantId}`,
+      {
+        headers: {
+          authorization: token,
+          "x-tenant": "onstruct.hyperzod.app",
+          "x-client-medium": 3,
+        },
+      }
+    );
+    if (response.data.data.length > 0) {
+      for (let i = 0; i < response.data.data.length; i++) {
+        await axios.post(
+          `https://api.hyperzod.app/merchant/v1/catalog/product-category/delete`,
+          { id: response.data.data[i].category_id, merchant_id: merchantId },
+          {
+            headers: {
+              authorization: token,
+              "x-tenant": "onstruct.hyperzod.app",
+              "x-client-medium": 3,
+            },
+          }
+        );
+      }
+    }
+
+    return true;
+  } catch (error) {
+    console.error("merchant:A Error fetching product list:", error.message);
+    throw new Error("Failed to fetch product list");
+  }
+};
+const merchantD_FetchAndDeleteCatgory = async (token, merchantId) => {
+  try {
+    const response = await axios.get(
+      `https://api.hyperzod.app/merchant/v1/catalog/product-category/list?merchant_id=${merchantId}`,
+      {
+        headers: {
+          authorization: token,
+          "x-tenant": "onstruct.hyperzod.app",
+          "x-client-medium": 3,
+        },
+      }
+    );
+    if (response.data.data.length > 0) {
+      for (let i = 0; i < response.data.data.length; i++) {
+        await axios.post(
+          `https://api.hyperzod.app/merchant/v1/catalog/product-category/delete`,
+          { id: response.data.data[i].category_id, merchant_id: merchantId },
+          {
+            headers: {
+              authorization: token,
+              "x-tenant": "onstruct.hyperzod.app",
+              "x-client-medium": 3,
+            },
+          }
+        );
+      }
+    }
+
+    return true;
+  } catch (error) {
+    console.error("merchant:A Error fetching product list:", error.message);
+    throw new Error("Failed to fetch product list");
+  }
+};
+
 // delete old products
 const merchantA_BulkDeleteProduct = async (products, token, merchantId) => {
   try {
@@ -742,4 +879,9 @@ module.exports = {
   merchantB_CheckImportStatus,
   merchantC_CheckImportStatus,
   merchantD_CheckImportStatus,
+
+  merchantA_FetchAndDeleteCatgory,
+  merchantB_FetchAndDeleteCatgory,
+  merchantC_FetchAndDeleteCatgory,
+  merchantD_FetchAndDeleteCatgory,
 };
