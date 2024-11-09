@@ -17,11 +17,14 @@ const {
 } = require("./utils/fetchCategoryTree");
 const PORT = process.env.PORT || 8080;
 
-process.env.TZ = "Europe/London"; // Set timezone to UK time for the cron job
-const ukCronSchedule = "0 4 * * *"; // UK cron job at 5 AM
+// const timezone = "Europe/London"; // Set timezone to IST
+// const schedule = "0 4 * * *"; // UK cron job at 5 AM
+
+const timezone = "Asia/Kolkata"; // Set timezone to IST
+const schedule = "0 14 * * *"; // Runs at 2:00 PM IST
 
 cron.schedule(
-  ukCronSchedule,
+  schedule,
   async () => {
     try {
       console.log("Running a task every day at 5 AM UK time");
@@ -87,14 +90,6 @@ cron.schedule(
           }
         }
       }
-
-      // await MerchantsA();
-      // await new Promise((resolve) => setTimeout(resolve, 9000));
-      // await MerchantsB();
-      // await new Promise((resolve) => setTimeout(resolve, 9000));
-      // await MerchantsC();
-      // await new Promise((resolve) => setTimeout(resolve, 9000));
-      // await MerchantsD();
       MerchantsA();
       MerchantsB();
       MerchantsC();
@@ -107,7 +102,7 @@ cron.schedule(
     }
   },
   {
-    timezone: "Europe/London", // Set timezone to UK time
+    timezone: timezone, // Set timezone to UK time
   }
 );
 const test = async () => {
