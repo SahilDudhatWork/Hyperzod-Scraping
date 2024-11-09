@@ -17,11 +17,11 @@ const {
 } = require("./utils/fetchCategoryTree");
 const PORT = process.env.PORT || 8080;
 
-// const timezone = "Europe/London"; // Set timezone to IST
-// const schedule = "0 4 * * *"; // UK cron job at 5 AM
+const timezone = "Europe/London"; // Set timezone to IST
+const schedule = "0 4 * * *"; // UK cron job at 5 AM
 
-const timezone = "Asia/Kolkata"; // Set timezone to IST
-const schedule = "0 14 * * *"; // Runs at 2:00 PM IST
+// const timezone = "Asia/Kolkata"; // Set timezone to IST
+// const schedule = "0 14 * * *"; // Runs at 2:00 PM IST
 
 cron.schedule(
   schedule,
