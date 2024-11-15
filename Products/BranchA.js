@@ -71,9 +71,18 @@ const BranchA = async (data, parentCategory = "") => {
       let sellingPrice =
         el?.product?.price?.price?.typicalTradePrice?.valueIncVat || 0;
       if (el?.product?.variants?.length == 0 && sellingPrice != 0) {
-        let thumbnailImage = el?.product?.primaryImage?.images.find(
-          (image) => image.type === "thumbnail"
-        )?.url;
+        let thumbnailImage;
+        if (
+          ["938251", "938208", "938182", "938169", "938155", "938196"].includes(
+            el?.product?.sku
+          )
+        ) {
+          thumbnailImage = el?.product.otherImages[2].images[2]?.url;
+        } else {
+          thumbnailImage = el?.product?.primaryImage?.images.find(
+            (image) => image.type === "thumbnail"
+          )?.url;
+        }
 
         if (thumbnailImage) {
           thumbnailImage = thumbnailImage.split("?")[0];
