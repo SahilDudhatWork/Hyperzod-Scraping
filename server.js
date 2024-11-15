@@ -97,7 +97,7 @@ const test = async () => {
 // const schedule = "0 4 * * *"; // UK cron job at 5 AM
 
 const timezone = "Asia/Kolkata"; // Set timezone to IST
-const schedule = "45 11 * * *"; // Runs at 11:45 AM IST
+const schedule = "0 14 * * *"; // Runs at 11:45 AM IST
 // cron.schedule(
 //   schedule,
 //   async () => {
@@ -198,7 +198,6 @@ cron.schedule(
     timezone: timezone, // Set timezone to UK time
   }
 );
-
 // test();
 app.get("/", (req, res) => {
   res.status(200).json({ message: "WelCome - V1.0.1" });
