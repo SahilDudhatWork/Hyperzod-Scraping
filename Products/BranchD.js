@@ -3,6 +3,7 @@ const path = require("path");
 const RepositoryFactory = require("../services/repositories/repositoryFactory");
 const productRepository = RepositoryFactory.get("product");
 let productNameSet = new Set();
+const axios = require("axios");
 
 const BranchD = async (data, parentCategory = "") => {
   try {
@@ -67,6 +68,12 @@ const BranchD = async (data, parentCategory = "") => {
       return;
     }
 
+    // Ensure the `images` directory exists
+    const imagesDir = path.join(__dirname, "images");
+    if (!fs.existsSync(imagesDir)) {
+      fs.mkdirSync(imagesDir, { recursive: true });
+    }
+
     response.data.data.tpplcBrand.searchProducts.edges.forEach((el) => {
       let sellingPrice =
         el?.product?.price?.price?.typicalTradePrice?.valueIncVat || 0;
@@ -77,7 +84,33 @@ const BranchD = async (data, parentCategory = "") => {
             el?.product?.sku
           )
         ) {
-          thumbnailImage = el?.product.otherImages[2].images[2]?.url;
+          const imageUrl = el?.product?.otherImages[2]?.images[2]?.url;
+          if (imageUrl) {
+            const localPath = path.join(imagesDir, `${el?.product?.sku}.jpg`);
+
+            axios({
+              url: `https:${imageUrl}`,
+              responseType: "stream",
+            })
+              .then((response) => {
+                const writer = fs.createWriteStream(localPath);
+                response.data.pipe(writer);
+
+                writer.on("finish", () => {
+                  thumbnailImage = localPath;
+                  console.log("thumbnailImage (local) :>> ", thumbnailImage);
+                });
+
+                writer.on("error", (err) => {
+                  console.error("Error saving the image:", err);
+                });
+              })
+              .catch((err) => {
+                console.error("Error downloading the image:", err);
+              });
+          } else {
+            console.error("Image URL not found.");
+          }
         } else {
           thumbnailImage = el?.product?.primaryImage?.images.find(
             (image) => image.type === "thumbnail"
