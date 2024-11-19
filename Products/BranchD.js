@@ -86,28 +86,28 @@ const BranchD = async (data, parentCategory = "") => {
         ) {
           const imageUrl = el?.product?.otherImages[2]?.images[2]?.url;
           if (imageUrl) {
-            const localPath = path.join(imagesDir, `${el?.product?.sku}.jpg`);
-
-            axios({
-              url: `https:${imageUrl}`,
-              responseType: "stream",
-            })
-              .then((response) => {
-                const writer = fs.createWriteStream(localPath);
-                response.data.pipe(writer);
-
-                writer.on("finish", () => {
-                  thumbnailImage = localPath;
-                  console.log("thumbnailImage (local) :>> ", thumbnailImage);
-                });
-
-                writer.on("error", (err) => {
-                  console.error("Error saving the image:", err);
-                });
-              })
-              .catch((err) => {
-                console.error("Error downloading the image:", err);
-              });
+            if (el?.product?.sku == "938251") {
+              thumbnailImage =
+                "//raw.githubusercontent.com/SahilDudhatWork/image-hosting/refs/heads/main/sku-938251.jpg";
+            } else if (el?.product?.sku == "938208") {
+              thumbnailImage =
+                "//raw.githubusercontent.com/SahilDudhatWork/image-hosting/refs/heads/main/sku-938208.jpg";
+            } else if (el?.product?.sku == "938182") {
+              thumbnailImage =
+                "//raw.githubusercontent.com/SahilDudhatWork/image-hosting/refs/heads/main/sku-938182.jpg";
+            } else if (el?.product?.sku == "938169") {
+              thumbnailImage =
+                "//raw.githubusercontent.com/SahilDudhatWork/image-hosting/refs/heads/main/sku-938169.jpg";
+            } else if (el?.product?.sku == "938155") {
+              thumbnailImage =
+                "//raw.githubusercontent.com/SahilDudhatWork/image-hosting/refs/heads/main/sku-938155.jpg";
+            } else if (el?.product?.sku == "938196") {
+              thumbnailImage =
+                "//raw.githubusercontent.com/SahilDudhatWork/image-hosting/refs/heads/main/sku-938196.jpg";
+            } else {
+              thumbnailImage =
+                "//raw.githubusercontent.com/SahilDudhatWork/image-hosting/refs/heads/main/sku-938155.jpg";
+            }
           } else {
             console.error("Image URL not found.");
           }
