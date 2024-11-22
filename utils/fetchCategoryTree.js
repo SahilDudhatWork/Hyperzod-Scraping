@@ -101,7 +101,10 @@ const fetchCategoryTree = async () => {
               : [];
             return {
               code: category.code,
-              name: category.name,
+              name:
+                category.name == "Doors, Windows & Joinery"
+                  ? "Doors-Windows & Joinery"
+                  : category.name,
               id: await fetchId(category.code),
               subCategories: uniqueSubCategories,
             };
@@ -111,6 +114,14 @@ const fetchCategoryTree = async () => {
 
     // Filter main categories for uniqueness
     newData = await filterUniqueCategories(newData);
+
+    newData = newData.sort((a, b) => {
+      if (a.name === "Timber & Sheet Materials") return 1; // Move this to the end
+      if (b.name === "Timber & Sheet Materials") return -1;
+      if (a.name === "Doors-Windows & Joinery") return 1; // Ensure this comes after "Timber & Sheet Materials"
+      if (b.name === "Doors-Windows & Joinery") return -1;
+      return 0; // Keep the rest of the order intact
+    });
 
     // Write the final structured data to the JSON file
     fs.writeFile(
