@@ -23,6 +23,7 @@ const test = async () => {
     const csvFilePathBranchB = path.join(__dirname, "./BranchB.csv");
     const csvFilePathBranchC = path.join(__dirname, "./BranchC.csv");
     const csvFilePathBranchD = path.join(__dirname, "./BranchD.csv");
+    const apiLogFile = path.join(__dirname, "./Api-Log.json");
 
     if (fs.existsSync(csvFilePathBranchA)) {
       fs.unlinkSync(csvFilePathBranchA);
@@ -39,6 +40,10 @@ const test = async () => {
     if (fs.existsSync(csvFilePathBranchD)) {
       fs.unlinkSync(csvFilePathBranchD);
       console.log("Existing BranchD file removed.");
+    }
+    if (fs.existsSync(apiLogFile)) {
+      fs.unlinkSync(apiLogFile);
+      console.log("Existing Api Log File file removed.");
     }
 
     await fetchCategoryTree();
@@ -116,7 +121,7 @@ cron.schedule(
     timezone: timezone, // Set timezone to UK time
   }
 );
- test();
+test();
 app.get("/", (req, res) => {
   res.status(200).json({ message: "WelCome - V1.0.1" });
 });

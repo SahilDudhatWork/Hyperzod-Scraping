@@ -3,6 +3,79 @@ const FormData = require("form-data");
 const fs = require("fs");
 const path = require("path");
 
+const logToFile = (logType, message) => {
+  const logFilePath = path.join(__dirname, "Api-Log.json");
+
+  const logEntry = {
+    timestamp: new Date().toLocaleString("en-US", {
+      timeZone: "UTC",
+      hour12: false,
+      year: "numeric",
+      month: "2-digit",
+      day: "2-digit",
+      hour: "2-digit",
+      minute: "2-digit",
+      second: "2-digit",
+    }),
+    timestampIND: new Date().toLocaleString("en-US", {
+      timeZone: "Asia/Kolkata",
+      hour12: false,
+      year: "numeric",
+      month: "2-digit",
+      day: "2-digit",
+      hour: "2-digit",
+      minute: "2-digit",
+      second: "2-digit",
+    }),
+    logType,
+    message,
+  };
+
+  if (fs.existsSync(logFilePath)) {
+    fs.readFile(logFilePath, "utf8", (err, data) => {
+      let logs = [];
+      if (!err && data) {
+        try {
+          logs = JSON.parse(data);
+        } catch (parseErr) {
+          console.error("Error parsing log file:", parseErr);
+          logs = [];
+
+          fs.writeFileSync(
+            logFilePath,
+            JSON.stringify([logEntry], null, 2),
+            "utf8"
+          );
+        }
+      }
+      logs.push(logEntry);
+
+      fs.writeFile(
+        logFilePath,
+        JSON.stringify(logs, null, 2),
+        "utf8",
+        (writeErr) => {
+          if (writeErr) {
+            console.error("Error writing to log file:", writeErr);
+          }
+        }
+      );
+    });
+  } else {
+    const logs = [logEntry];
+    fs.writeFile(
+      logFilePath,
+      JSON.stringify(logs, null, 2),
+      "utf8",
+      (writeErr) => {
+        if (writeErr) {
+          console.error("Error writing to log file:", writeErr);
+        }
+      }
+    );
+  }
+};
+
 const loginUser = async () => {
   const data = {
     email: "sahildudhat03@gmail.com",
@@ -21,9 +94,13 @@ const loginUser = async () => {
         },
       }
     );
+    logToFile("success", "Login successful.");
 
     return response.data.data.access_token;
   } catch (error) {
+    const errorMessage = error.response ? error.response.data : error.message;
+    logToFile("error", `Error logging in: ${errorMessage}`);
+
     console.error(
       "Error logging in:",
       error.response ? error.response.data : error.message
@@ -44,8 +121,17 @@ const merchantA_GetProductList = async (page, pageLimit, token, merchantId) => {
         },
       }
     );
+    logToFile(
+      "success",
+      `Fetched product list for Merchant A, ${response.data.data.length} products found.`
+    );
     return response.data.data.data;
   } catch (error) {
+    const errorMessage = error.response ? error.response.data : error.message;
+    logToFile(
+      "error",
+      `Merchant A - Error fetching product list: ${errorMessage}`
+    );
     console.error("merchant:A Error fetching product list:", error.message);
     throw new Error("Failed to fetch product list");
   }
@@ -62,8 +148,17 @@ const merchantB_GetProductList = async (page, pageLimit, token, merchantId) => {
         },
       }
     );
+    logToFile(
+      "success",
+      `Fetched product list for Merchant B, ${response.data.data.length} products found.`
+    );
     return response.data.data.data;
   } catch (error) {
+    const errorMessage = error.response ? error.response.data : error.message;
+    logToFile(
+      "error",
+      `Merchant B - Error fetching product list: ${errorMessage}`
+    );
     console.error("merchant:B Error fetching product list:", error.message);
     throw new Error("Failed to fetch product list");
   }
@@ -80,8 +175,17 @@ const merchantC_GetProductList = async (page, pageLimit, token, merchantId) => {
         },
       }
     );
+    logToFile(
+      "success",
+      `Fetched product list for Merchant C, ${response.data.data.length} products found.`
+    );
     return response.data.data.data;
   } catch (error) {
+    const errorMessage = error.response ? error.response.data : error.message;
+    logToFile(
+      "error",
+      `Merchant C - Error fetching product list: ${errorMessage}`
+    );
     console.error("merchant:C Error fetching product list:", error.message);
     throw new Error("Failed to fetch product list");
   }
@@ -98,8 +202,17 @@ const merchantD_GetProductList = async (page, pageLimit, token, merchantId) => {
         },
       }
     );
+    logToFile(
+      "success",
+      `Fetched product list for Merchant D, ${response.data.data.length} products found.`
+    );
     return response.data.data.data;
   } catch (error) {
+    const errorMessage = error.response ? error.response.data : error.message;
+    logToFile(
+      "error",
+      `Merchant D - Error fetching product list: ${errorMessage}`
+    );
     console.error("merchant:D Error fetching product list:", error.message);
     throw new Error("Failed to fetch product list");
   }
@@ -131,12 +244,24 @@ const merchantA_FetchAndDeleteCatgory = async (token, merchantId) => {
           }
         );
       }
+      logToFile(
+        "success",
+        `Successfully fetched and deleted categories for Merchant A.`
+      );
     }
 
     return true;
   } catch (error) {
-    console.error("merchant:A Error fetching product list:", error.message);
-    throw new Error("Failed to fetch product list");
+    const errorMessage = error.response ? error.response.data : error.message;
+    logToFile(
+      "error",
+      `Merchant A - Error fetching and deleting categories: ${errorMessage}`
+    );
+    console.error(
+      "merchant:A Error fetching product categories:",
+      error.message
+    );
+    throw new Error("Failed to fetch and delete categories");
   }
 };
 const merchantB_FetchAndDeleteCatgory = async (token, merchantId) => {
@@ -165,12 +290,24 @@ const merchantB_FetchAndDeleteCatgory = async (token, merchantId) => {
           }
         );
       }
+      logToFile(
+        "success",
+        `Successfully fetched and deleted categories for Merchant B.`
+      );
     }
 
     return true;
   } catch (error) {
-    console.error("merchant:A Error fetching product list:", error.message);
-    throw new Error("Failed to fetch product list");
+    const errorMessage = error.response ? error.response.data : error.message;
+    logToFile(
+      "error",
+      `Merchant B - Error fetching and deleting categories: ${errorMessage}`
+    );
+    console.error(
+      "merchant:B Error fetching product categories:",
+      error.message
+    );
+    throw new Error("Failed to fetch and delete categories");
   }
 };
 const merchantC_FetchAndDeleteCatgory = async (token, merchantId) => {
@@ -199,12 +336,24 @@ const merchantC_FetchAndDeleteCatgory = async (token, merchantId) => {
           }
         );
       }
+      logToFile(
+        "success",
+        `Successfully fetched and deleted categories for Merchant C.`
+      );
     }
 
     return true;
   } catch (error) {
-    console.error("merchant:A Error fetching product list:", error.message);
-    throw new Error("Failed to fetch product list");
+    const errorMessage = error.response ? error.response.data : error.message;
+    logToFile(
+      "error",
+      `Merchant C - Error fetching and deleting categories: ${errorMessage}`
+    );
+    console.error(
+      "merchant:C Error fetching product categories:",
+      error.message
+    );
+    throw new Error("Failed to fetch and delete categories");
   }
 };
 const merchantD_FetchAndDeleteCatgory = async (token, merchantId) => {
@@ -233,12 +382,24 @@ const merchantD_FetchAndDeleteCatgory = async (token, merchantId) => {
           }
         );
       }
+      logToFile(
+        "success",
+        `Successfully fetched and deleted categories for Merchant D.`
+      );
     }
 
     return true;
   } catch (error) {
-    console.error("merchant:A Error fetching product list:", error.message);
-    throw new Error("Failed to fetch product list");
+    const errorMessage = error.response ? error.response.data : error.message;
+    logToFile(
+      "error",
+      `Merchant D - Error fetching and deleting categories: ${errorMessage}`
+    );
+    console.error(
+      "merchant:D Error fetching product categories:",
+      error.message
+    );
+    throw new Error("Failed to fetch and delete categories");
   }
 };
 
@@ -281,9 +442,11 @@ const merchantA_BulkDeleteProduct = async (products, token, merchantId) => {
       );
     }
 
-    console.log("merchant:A All products deleted successfully");
+    logToFile("success", `Merchant A - All products deleted successfully.`);
     return;
   } catch (error) {
+    const errorMessage = error.response ? error.response.data : error.message;
+    logToFile("error", `Merchant A - Error deleting products: ${errorMessage}`);
     console.error("merchant:A Error deleting products:", error);
     throw new Error("Bulk product deletion failed");
   }
@@ -326,9 +489,11 @@ const merchantB_BulkDeleteProduct = async (products, token, merchantId) => {
       );
     }
 
-    console.log("merchant:B All products deleted successfully");
+    logToFile("success", `Merchant B - All products deleted successfully.`);
     return;
   } catch (error) {
+    const errorMessage = error.response ? error.response.data : error.message;
+    logToFile("error", `Merchant B - Error deleting products: ${errorMessage}`);
     console.error("merchant:B Error deleting products:", error);
     throw new Error("Bulk product deletion failed");
   }
@@ -371,9 +536,11 @@ const merchantC_BulkDeleteProduct = async (products, token, merchantId) => {
       );
     }
 
-    console.log("merchant:C All products deleted successfully");
+    logToFile("success", `Merchant C - All products deleted successfully.`);
     return;
   } catch (error) {
+    const errorMessage = error.response ? error.response.data : error.message;
+    logToFile("error", `Merchant C - Error deleting products: ${errorMessage}`);
     console.error("merchant:C Error deleting products:", error);
     throw new Error("Bulk product deletion failed");
   }
@@ -416,9 +583,11 @@ const merchantD_BulkDeleteProduct = async (products, token, merchantId) => {
       );
     }
 
-    console.log("merchant:D All products deleted successfully");
+    logToFile("success", `Merchant D - All products deleted successfully.`);
     return;
   } catch (error) {
+    const errorMessage = error.response ? error.response.data : error.message;
+    logToFile("error", `Merchant D - Error deleting products: ${errorMessage}`);
     console.error("merchant:D Error deleting products:", error);
     throw new Error("Bulk product deletion failed");
   }
@@ -436,10 +605,17 @@ const merchantA_CheckImportStatus = async (token, merchantId) => {
         "x-tenant": "onstruct.hyperzod.app",
       },
     });
-    return response?.data?.data?.data.length > 0
-      ? response?.data?.data?.data[0]?.import_status
-      : "completed";
+    const status =
+      response?.data?.data?.data.length > 0
+        ? response?.data?.data?.data[0]?.import_status
+        : "completed";
+    logToFile("success", `Merchant A Import Status: ${status}`);
+    return status;
   } catch (error) {
+    logToFile(
+      "error",
+      `Merchant A Error checking import status: ${error.message}`
+    );
     console.error("merchant:A Error checking import status:", error);
     throw error;
   }
@@ -455,10 +631,17 @@ const merchantB_CheckImportStatus = async (token, merchantId) => {
         "x-tenant": "onstruct.hyperzod.app",
       },
     });
-    return response?.data?.data?.data.length > 0
-      ? response?.data?.data?.data[0]?.import_status
-      : "completed";
+    const status =
+      response?.data?.data?.data.length > 0
+        ? response?.data?.data?.data[0]?.import_status
+        : "completed";
+    logToFile("success", `Merchant B Import Status: ${status}`);
+    return status;
   } catch (error) {
+    logToFile(
+      "error",
+      `Merchant B Error checking import status: ${error.message}`
+    );
     console.error("merchant:B Error checking import status:", error);
     throw error;
   }
@@ -474,10 +657,17 @@ const merchantC_CheckImportStatus = async (token, merchantId) => {
         "x-tenant": "onstruct.hyperzod.app",
       },
     });
-    return response?.data?.data?.data.length > 0
-      ? response?.data?.data?.data[0]?.import_status
-      : "completed";
+    const status =
+      response?.data?.data?.data.length > 0
+        ? response?.data?.data?.data[0]?.import_status
+        : "completed";
+    logToFile("success", `Merchant C Import Status: ${status}`);
+    return status;
   } catch (error) {
+    logToFile(
+      "error",
+      `Merchant C Error checking import status: ${error.message}`
+    );
     console.error("merchant:C Error checking import status:", error);
     throw error;
   }
@@ -493,10 +683,17 @@ const merchantD_CheckImportStatus = async (token, merchantId) => {
         "x-tenant": "onstruct.hyperzod.app",
       },
     });
-    return response?.data?.data?.data.length > 0
-      ? response?.data?.data?.data[0]?.import_status
-      : "completed";
+    const status =
+      response?.data?.data?.data.length > 0
+        ? response?.data?.data?.data[0]?.import_status
+        : "completed";
+    logToFile("success", `Merchant D Import Status: ${status}`);
+    return status;
   } catch (error) {
+    logToFile(
+      "error",
+      `Merchant D Error checking import status: ${error.message}`
+    );
     console.error("merchant:D Error checking import status:", error);
     throw error;
   }
@@ -522,8 +719,10 @@ const merchantA_HyperzodUpload = async (token, filePath) => {
         },
       }
     );
+    logToFile("success", "Merchant A file uploaded successfully");
     return response.data;
   } catch (error) {
+    logToFile("error", `Merchant A Error uploading file: ${error.message}`);
     console.error("merchant:A Error uploading file:", error.message);
     throw new Error("File upload failed");
   }
@@ -547,8 +746,10 @@ const merchantB_HyperzodUpload = async (token, filePath) => {
         },
       }
     );
+    logToFile("success", "Merchant B file uploaded successfully");
     return response.data;
   } catch (error) {
+    logToFile("error", `Merchant B Error uploading file: ${error.message}`);
     console.error("merchant:B Error uploading file:", error.message);
     throw new Error("File upload failed");
   }
@@ -572,8 +773,10 @@ const merchantC_HyperzodUpload = async (token, filePath) => {
         },
       }
     );
+    logToFile("success", "Merchant C file uploaded successfully");
     return response.data;
   } catch (error) {
+    logToFile("error", `Merchant C Error uploading file: ${error.message}`);
     console.error("merchant:C Error uploading file:", error.message);
     throw new Error("File upload failed");
   }
@@ -597,8 +800,10 @@ const merchantD_HyperzodUpload = async (token, filePath) => {
         },
       }
     );
+    logToFile("success", "Merchant D file uploaded successfully");
     return response.data;
   } catch (error) {
+    logToFile("error", `Merchant D Error uploading file: ${error.message}`);
     console.error("merchant:D Error uploading file:", error.message);
     throw new Error("File upload failed");
   }
@@ -626,17 +831,24 @@ const merchantA_ValidateProductImport = async (data, token, merchantId) => {
         },
       }
     );
+    logToFile(
+      "success",
+      `Merchant A product import validated successfully for merchantId: ${merchantId}`
+    );
     return response.data;
   } catch (error) {
     if (error.response.data.message === "An import is already processing.") {
       await merchantA_ValidateProductImport(data, token, merchantId);
     }
+    logToFile(
+      "error",
+      `Merchant A Error in product import validation: ${error.response.data.message}`
+    );
     console.log(
       "merchant:A Error in product import validation Hyperzod: :>> ",
       error.response.data.message
     );
     return error.message;
-    // throw new Error("Validation failed");
   }
 };
 const merchantB_ValidateProductImport = async (data, token, merchantId) => {
@@ -660,17 +872,24 @@ const merchantB_ValidateProductImport = async (data, token, merchantId) => {
         },
       }
     );
+    logToFile(
+      "success",
+      `Merchant B product import validated successfully for merchantId: ${merchantId}`
+    );
     return response.data;
   } catch (error) {
     if (error.response.data.message === "An import is already processing.") {
       await merchantB_ValidateProductImport(data, token, merchantId);
     }
+    logToFile(
+      "error",
+      `Merchant B Error in product import validation: ${error.response.data.message}`
+    );
     console.log(
       "merchant:B Error in product import validation Hyperzod: :>> ",
       error.response.data.message
     );
     return error.message;
-    // throw new Error("Validation failed");
   }
 };
 const merchantC_ValidateProductImport = async (data, token, merchantId) => {
@@ -694,17 +913,24 @@ const merchantC_ValidateProductImport = async (data, token, merchantId) => {
         },
       }
     );
+    logToFile(
+      "success",
+      `Merchant C product import validated successfully for merchantId: ${merchantId}`
+    );
     return response.data;
   } catch (error) {
     if (error.response.data.message === "An import is already processing.") {
       await merchantC_ValidateProductImport(data, token, merchantId);
     }
+    logToFile(
+      "error",
+      `Merchant C Error in product import validation: ${error.response.data.message}`
+    );
     console.log(
       "merchant:C Error in product import validation Hyperzod: :>> ",
       error.response.data.message
     );
     return error.message;
-    // throw new Error("Validation failed");
   }
 };
 const merchantD_ValidateProductImport = async (data, token, merchantId) => {
@@ -728,17 +954,24 @@ const merchantD_ValidateProductImport = async (data, token, merchantId) => {
         },
       }
     );
+    logToFile(
+      "success",
+      `Merchant D product import validated successfully for merchantId: ${merchantId}`
+    );
     return response.data;
   } catch (error) {
     if (error.response.data.message === "An import is already processing.") {
       await merchantD_ValidateProductImport(data, token, merchantId);
     }
+    logToFile(
+      "error",
+      `Merchant D Error in product import validation: ${error.response.data.message}`
+    );
     console.log(
       "merchant:D Error in product import validation Hyperzod: :>> ",
       error.response.data.message
     );
     return error.message;
-    // throw new Error("Validation failed");
   }
 };
 
@@ -763,8 +996,13 @@ const merchantA_ImportProductData = async (data, token, merchantId) => {
         },
       }
     );
+    logToFile(
+      "success",
+      `Merchant A product import successful for importId: ${data.import_id}`
+    );
     return response.data;
   } catch (error) {
+    logToFile("error", `Merchant A Error in product import: ${error.message}`);
     console.error("merchant:A Error in product import:", error.message);
     throw new Error("Product import failed");
   }
@@ -789,8 +1027,13 @@ const merchantB_ImportProductData = async (data, token, merchantId) => {
         },
       }
     );
+    logToFile(
+      "success",
+      `Merchant B product import successful for importId: ${data.import_id}`
+    );
     return response.data;
   } catch (error) {
+    logToFile("error", `Merchant B Error in product import: ${error.message}`);
     console.error("merchant:B Error in product import:", error.message);
     throw new Error("Product import failed");
   }
@@ -815,8 +1058,13 @@ const merchantC_ImportProductData = async (data, token, merchantId) => {
         },
       }
     );
+    logToFile(
+      "success",
+      `Merchant C product import successful for importId: ${data.import_id}`
+    );
     return response.data;
   } catch (error) {
+    logToFile("error", `Merchant C Error in product import: ${error.message}`);
     console.error("merchant:C Error in product import:", error.message);
     throw new Error("Product import failed");
   }
@@ -841,8 +1089,13 @@ const merchantD_ImportProductData = async (data, token, merchantId) => {
         },
       }
     );
+    logToFile(
+      "success",
+      `Merchant D product import successful for importId: ${data.import_id}`
+    );
     return response.data;
   } catch (error) {
+    logToFile("error", `Merchant D Error in product import: ${error.message}`);
     console.error("merchant:D Error in product import:", error.message);
     throw new Error("Product import failed");
   }
