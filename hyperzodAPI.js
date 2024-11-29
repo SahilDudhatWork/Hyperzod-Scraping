@@ -123,7 +123,7 @@ const merchantA_GetProductList = async (page, pageLimit, token, merchantId) => {
     );
     logToFile(
       "success",
-      `Fetched product list for Merchant A, ${response.data.data.length} products found.`
+      `Fetched product list for Merchant A, ${response.data.data.data.length} products found.`
     );
     return response.data.data.data;
   } catch (error) {
@@ -150,7 +150,7 @@ const merchantB_GetProductList = async (page, pageLimit, token, merchantId) => {
     );
     logToFile(
       "success",
-      `Fetched product list for Merchant B, ${response.data.data.length} products found.`
+      `Fetched product list for Merchant B, ${response.data.data.data.length} products found.`
     );
     return response.data.data.data;
   } catch (error) {
@@ -177,7 +177,7 @@ const merchantC_GetProductList = async (page, pageLimit, token, merchantId) => {
     );
     logToFile(
       "success",
-      `Fetched product list for Merchant C, ${response.data.data.length} products found.`
+      `Fetched product list for Merchant C, ${response.data.data.data.length} products found.`
     );
     return response.data.data.data;
   } catch (error) {
@@ -204,7 +204,7 @@ const merchantD_GetProductList = async (page, pageLimit, token, merchantId) => {
     );
     logToFile(
       "success",
-      `Fetched product list for Merchant D, ${response.data.data.length} products found.`
+      `Fetched product list for Merchant D, ${response.data.data.data.length} products found.`
     );
     return response.data.data.data;
   } catch (error) {
