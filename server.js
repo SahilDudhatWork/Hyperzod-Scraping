@@ -87,10 +87,10 @@ const test = async () => {
       }
     }
 
-    MerchantsA();
-    MerchantsB();
-    MerchantsC();
-    MerchantsD();
+    await MerchantsA();
+    await MerchantsB();
+    await MerchantsC();
+    await MerchantsD();
     console.log(
       "\x1b[32m*=*=*=*=*=*=*=*=*=*/\x1b[0m \x1b[31mAll Products successfully Imported.\x1b[0m \x1b[32m/*=*=*=*=*=*=*=*=*=*\x1b[0m"
     );
