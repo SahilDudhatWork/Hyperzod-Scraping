@@ -121,7 +121,7 @@ cron.schedule(
     timezone: timezone, // Set timezone to UK time
   }
 );
-test();
+// test();
 app.get("/", (req, res) => {
   res.status(200).json({ message: "WelCome - V1.0.1" });
 });
