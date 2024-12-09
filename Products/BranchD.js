@@ -175,21 +175,21 @@ const BranchD = async (data, parentCategory = "") => {
     ].join(",");
 
     // ======== / Temporary / =======
-    let finalProducts = [];
-    const remaining = 250 - totalProduct;
+    // let finalProducts = [];
+    // const remaining = 250 - totalProduct;
 
-    if (remaining > 0) {
-      if (productArray.length > remaining) {
-        finalProducts = productArray.slice(0, remaining);
-        totalProduct += remaining;
-      } else {
-        finalProducts = productArray;
-        totalProduct += productArray.length;
-      }
-    }
-    productArray = finalProducts;
+    // if (remaining > 0) {
+    //   if (productArray.length > remaining) {
+    //     finalProducts = productArray.slice(0, remaining);
+    //     totalProduct += remaining;
+    //   } else {
+    //     finalProducts = productArray;
+    //     totalProduct += productArray.length;
+    //   }
+    // }
+    // productArray = finalProducts;
 
-    if (totalProduct > 250) return;
+    // if (totalProduct > 250) return;
     // ======== / Temporary / =======
 
     if (productArray.length == 0) return;
