@@ -5,6 +5,7 @@ const productRepository = RepositoryFactory.get("product");
 let productNameSet = new Set();
 const axios = require("axios");
 
+let totalProduct = 0;
 const BranchA = async (data, parentCategory = "") => {
   try {
     let body = {
@@ -154,7 +155,6 @@ const BranchA = async (data, parentCategory = "") => {
         }
       }
     });
-
     const csvHeaders = [
       "productid",
       "productname",
@@ -172,6 +172,26 @@ const BranchA = async (data, parentCategory = "") => {
       "productlabels",
       "producttags",
     ].join(",");
+
+    // ======== / Temporary / =======
+    let finalProducts = [];
+    const remaining = 50 - totalProduct;
+
+    if (remaining > 0) {
+      if (productArray.length > remaining) {
+        finalProducts = productArray.slice(0, remaining);
+        totalProduct += remaining;
+      } else {
+        finalProducts = productArray;
+        totalProduct += productArray.length;
+      }
+    }
+    productArray = finalProducts;
+
+    if (totalProduct > 50) return;
+    // ======== / Temporary / =======
+
+    if (productArray.length == 0) return;
 
     // Step 3: Format the CSV content for the validated products
     let csvContent = productArray
