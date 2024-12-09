@@ -176,7 +176,7 @@ const BranchB = async (data, parentCategory = "") => {
 
     // ======== / Temporary / =======
     let finalProducts = [];
-    const remaining = 50 - totalProduct;
+    const remaining = 250 - totalProduct;
 
     if (remaining > 0) {
       if (productArray.length > remaining) {
@@ -189,7 +189,7 @@ const BranchB = async (data, parentCategory = "") => {
     }
     productArray = finalProducts;
 
-    if (totalProduct > 50) return;
+    if (totalProduct > 250) return;
     // ======== / Temporary / =======
 
     if (productArray.length == 0) return;
