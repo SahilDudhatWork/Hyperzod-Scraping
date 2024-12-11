@@ -98,11 +98,11 @@ const test = async () => {
     console.error("Error during initial execution:", error);
   }
 };
-// const timezone = "Europe/London"; // Set timezone to UK
-// const schedule = "0 4 * * *"; // UK cron job at 4 AM
+const timezone = "Europe/London"; // Set timezone to UK
+const schedule = "0 4 * * *"; // UK cron job at 4 AM
 
-const timezone = "Asia/Kolkata"; // Set timezone to IST
-const schedule = "0 1 * * *"; // Runs at 6:30 AM IST
+// const timezone = "Asia/Kolkata"; // Set timezone to IST
+// const schedule = "0 1 * * *"; // Runs at 6:30 AM IST
 
 cron.schedule(
   schedule,
