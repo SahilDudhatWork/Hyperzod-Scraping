@@ -4,7 +4,6 @@ const RepositoryFactory = require("../services/repositories/repositoryFactory");
 const productRepository = RepositoryFactory.get("product");
 let productNameSet = new Set();
 
-let totalProduct = 0;
 const BranchA = async (data, parentCategory = "") => {
   try {
     let body = {
@@ -76,7 +75,7 @@ const BranchA = async (data, parentCategory = "") => {
 
     response.data.data.tpplcBrand.searchProducts.edges.forEach((el) => {
       let sellingPrice =
-        el?.product?.price?.price?.typicalTradePrice?.valueIncVat || 0;
+        el?.product?.price?.price?.typicalTradePrice?.valueExVat || 0;
       if (el?.product?.variants?.length == 0 && sellingPrice != 0) {
         let thumbnailImage;
         if (
@@ -172,24 +171,6 @@ const BranchA = async (data, parentCategory = "") => {
       "producttags",
     ].join(",");
 
-    // ======== / Temporary / =======
-    // let finalProducts = [];
-    // const remaining = 250 - totalProduct;
-
-    // if (remaining > 0) {
-    //   if (productArray.length > remaining) {
-    //     finalProducts = productArray.slice(0, remaining);
-    //     totalProduct += remaining;
-    //   } else {
-    //     finalProducts = productArray;
-    //     totalProduct += productArray.length;
-    //   }
-    // }
-    // productArray = finalProducts;
-
-    // if (totalProduct > 250) return;
-    // ======== / Temporary / =======
-
     if (productArray.length == 0) return;
 
     // Step 3: Format the CSV content for the validated products
@@ -214,6 +195,8 @@ const BranchA = async (data, parentCategory = "") => {
           `${product.inventory}`,
           `"${parentCategory}"`,
           `${product.sellingPrice}`,
+          `""`,
+          `20`,
         ];
         return row.join(",");
       })
