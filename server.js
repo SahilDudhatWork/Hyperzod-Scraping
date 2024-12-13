@@ -138,11 +138,11 @@ const cron = require("node-cron");
 const fs = require("fs");
 const path = require("path");
 const app = express();
+
 const {
   fetchCategoryTree,
   readCategoryTree,
 } = require("./utils/fetchCategoryTree");
-
 const BranchA = require("./Products/BranchA");
 const BranchB = require("./Products/BranchB");
 const BranchC = require("./Products/BranchC");
@@ -153,10 +153,15 @@ const MerchantsC = require("./Merchants/MerchantsC");
 const MerchantsD = require("./Merchants/MerchantsD");
 
 const PORT = process.env.PORT || 8080;
-// const timezone = "Europe/London";
-// const schedule = "0 4 * * *";
-const timezone = "Asia/Kolkata"; // Indian Standard Time
-const schedule = "00 16 * * *"; // 3:47 PM IST
+// const timezone = "Asia/Kolkata"; // Indian Standard Time
+// const schedule = "47 15 * * *"; // 3:47 PM IST
+
+// const timezone = "Europe/London"; // Set timezone to UK
+// const schedule = "0 4 * * *"; // UK cron job at 4 AM
+
+const timezone = "Europe/London"; // Set timezone to UK
+const schedule = "20 11 * * *"; // UK cron job at 4 AM
+
 
 const clearFiles = () => {
   const files = [
@@ -176,39 +181,59 @@ const clearFiles = () => {
   });
 };
 
-const processSubCategories = async (categories, parentName) => {
+const processBranch = async (BranchFunction, categories, parentName) => {
   for (const category of categories) {
-    await Promise.all([
-      BranchA(category, parentName),
-      BranchB(category, parentName),
-      BranchC(category, parentName),
-      BranchD(category, parentName),
-    ]);
+    await BranchFunction(category, parentName);
     if (category.subCategories.length > 0) {
-      await processSubCategories(category.subCategories, parentName);
+      await processBranch(BranchFunction, category.subCategories, parentName);
     }
   }
+};
+
+const processCategories = async (
+  BranchFunction,
+  MerchantFunction,
+  branchName
+) => {
+  console.log(`Starting ${branchName} processing...`);
+
+  const readCategoryTreeResult = await readCategoryTree();
+  console.log(
+    `Fetched categories for ${branchName}:`,
+    readCategoryTreeResult.length
+  );
+
+  for (const category of readCategoryTreeResult) {
+    if (
+      category.name !== "Tool Hire" &&
+      category.name !== "Benchmarx Kitchens"
+    ) {
+      await processBranch(
+        BranchFunction,
+        category.subCategories,
+        category.name
+      );
+    }
+  }
+
+  console.log(
+    `Completed ${branchName} processing. Starting Merchant processing...`
+  );
+  await MerchantFunction();
+  console.log(`${branchName} and Merchant processing completed.`);
 };
 
 const test = async () => {
   try {
     console.log("Starting product import task...");
-    await clearFiles();
+    clearFiles();
     await fetchCategoryTree();
 
-    const readCategoryTreeResult = await readCategoryTree();
-    console.log("Fetched categories:", readCategoryTreeResult.length);
+    await processCategories(BranchA, MerchantsA, "BranchA");
+    await processCategories(BranchB, MerchantsB, "BranchB");
+    await processCategories(BranchC, MerchantsC, "BranchC");
+    await processCategories(BranchD, MerchantsD, "BranchD");
 
-    for (const category of readCategoryTreeResult) {
-      if (
-        category.name !== "Tool Hire" &&
-        category.name !== "Benchmarx Kitchens"
-      ) {
-        await processSubCategories(category.subCategories, category.name);
-      }
-    }
-
-    await Promise.all([MerchantsA(), MerchantsB(), MerchantsC(), MerchantsD()]);
     console.log("All products successfully imported.");
   } catch (error) {
     console.error("Error during task execution:", error.message);
