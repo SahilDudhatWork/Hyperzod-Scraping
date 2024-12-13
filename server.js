@@ -133,127 +133,137 @@
 // ! =-=-=-=-=-=-
 // ! =-=-=-=-=-=-
 
+// Import required modules
 const express = require("express");
 const cron = require("node-cron");
 const fs = require("fs");
 const path = require("path");
 const app = express();
 
-const {
-  fetchCategoryTree,
-  readCategoryTree,
-} = require("./utils/fetchCategoryTree");
 const BranchA = require("./Products/BranchA");
 const BranchB = require("./Products/BranchB");
 const BranchC = require("./Products/BranchC");
 const BranchD = require("./Products/BranchD");
+
 const MerchantsA = require("./Merchants/MerchantsA");
 const MerchantsB = require("./Merchants/MerchantsB");
 const MerchantsC = require("./Merchants/MerchantsC");
 const MerchantsD = require("./Merchants/MerchantsD");
 
+const {
+  fetchCategoryTree,
+  readCategoryTree,
+} = require("./utils/fetchCategoryTree");
+
 const PORT = process.env.PORT || 8080;
-// const timezone = "Asia/Kolkata"; // Indian Standard Time
-// const schedule = "47 15 * * *"; // 3:47 PM IST
+const timezone = "Europe/London";
+const schedule = "20 42 * * *";
+// const timezone = "Europe/London";
+// const schedule = "0 4 * * *";
 
-// const timezone = "Europe/London"; // Set timezone to UK
-// const schedule = "0 4 * * *"; // UK cron job at 4 AM
-
-const timezone = "Europe/London"; // Set timezone to UK
-const schedule = "20 11 * * *"; // UK cron job at 4 AM
-
-
-const clearFiles = () => {
-  const files = [
+// Function to clean up existing files
+const cleanupFiles = async () => {
+  const filesToRemove = [
     "./BranchA.csv",
     "./BranchB.csv",
     "./BranchC.csv",
     "./BranchD.csv",
     "./Api-Log.json",
   ];
-  files.forEach((file) => {
-    try {
-      const filePath = path.join(__dirname, file);
-      if (fs.existsSync(filePath)) fs.unlinkSync(filePath);
-    } catch (error) {
-      console.error(`Error removing file ${file}:`, error.message);
-    }
-  });
-};
 
-const processBranch = async (BranchFunction, categories, parentName) => {
-  for (const category of categories) {
-    await BranchFunction(category, parentName);
-    if (category.subCategories.length > 0) {
-      await processBranch(BranchFunction, category.subCategories, parentName);
+  for (const file of filesToRemove) {
+    const filePath = path.join(__dirname, file);
+    if (fs.existsSync(filePath)) {
+      fs.unlinkSync(filePath);
+      console.log(`Removed file: ${file}`);
     }
   }
 };
 
-const processCategories = async (
-  BranchFunction,
-  MerchantFunction,
-  branchName
-) => {
-  console.log(`Starting ${branchName} processing...`);
-
-  const readCategoryTreeResult = await readCategoryTree();
-  console.log(
-    `Fetched categories for ${branchName}:`,
-    readCategoryTreeResult.length
-  );
-
-  for (const category of readCategoryTreeResult) {
+// Function to process a branch
+const processBranch = async (branchFunction, categoryTree, branchName) => {
+  for (const category of categoryTree) {
     if (
       category.name !== "Tool Hire" &&
       category.name !== "Benchmarx Kitchens"
     ) {
-      await processBranch(
-        BranchFunction,
-        category.subCategories,
-        category.name
-      );
+      console.log(`Processing category: ${category.name}`);
+
+      for (const subCategory of category.subCategories) {
+        await branchFunction(subCategory, branchName);
+
+        for (const subSubCategory of subCategory.subCategories) {
+          await branchFunction(subSubCategory, branchName);
+
+          for (const subSubSubCategory of subSubCategory.subCategories) {
+            await branchFunction(subSubSubCategory, branchName);
+          }
+        }
+      }
     }
   }
-
-  console.log(
-    `Completed ${branchName} processing. Starting Merchant processing...`
-  );
-  await MerchantFunction();
-  console.log(`${branchName} and Merchant processing completed.`);
 };
 
-const test = async () => {
+// Function to process a merchant
+const processMerchant = async (merchantFunction) => {
+  await merchantFunction();
+};
+
+// Main task runner
+const taskRunner = async () => {
   try {
-    console.log("Starting product import task...");
-    clearFiles();
+    console.log(
+      "Task started: Cleaning up files and processing branches/merchants"
+    );
+
+    await cleanupFiles();
     await fetchCategoryTree();
+    await new Promise((resolve) => setTimeout(resolve, 5000));
 
-    await processCategories(BranchA, MerchantsA, "BranchA");
-    await processCategories(BranchB, MerchantsB, "BranchB");
-    await processCategories(BranchC, MerchantsC, "BranchC");
-    await processCategories(BranchD, MerchantsD, "BranchD");
+    const categoryTree = await readCategoryTree();
+    console.log(`Category tree loaded with ${categoryTree.length} items.`);
 
-    console.log("All products successfully imported.");
+    // Sequential processing
+    await processBranch(BranchA, categoryTree, "BranchA");
+    await processMerchant(MerchantsA);
+
+    await processBranch(BranchB, categoryTree, "BranchB");
+    await processMerchant(MerchantsB);
+
+    await processBranch(BranchC, categoryTree, "BranchC");
+    await processMerchant(MerchantsC);
+
+    await processBranch(BranchD, categoryTree, "BranchD");
+    await processMerchant(MerchantsD);
+
+    console.log(
+      "\x1b[32m*=*=*=*=*=*=*=*=*=*/\x1b[0m \x1b[31mAll Products successfully Imported.\x1b[0m \x1b[32m/*=*=*=*=*=*=*=*=*=*\x1b[0m"
+    );
   } catch (error) {
-    console.error("Error during task execution:", error.message);
+    console.error("Error during task execution:", error);
   }
 };
 
+// Schedule the cron job
 cron.schedule(
   schedule,
   async () => {
-    console.log("Cron job started");
-    await test();
-    console.log("Cron job completed");
+    console.log("Running the scheduled task.");
+    await taskRunner();
   },
-  { timezone }
+  {
+    timezone: timezone,
+  }
 );
 
+// Initial run
+taskRunner();
+
+// Set up the server
 app.get("/", (req, res) => {
   res.status(200).json({ message: "Welcome - V1.0.1" });
 });
 
-app.listen(PORT, () => {
-  console.log(`Server is running on port ${PORT}`);
+app.listen(PORT, "0.0.0.0", () => {
+  console.log(`Server is running on http://localhost:${PORT}`);
 });
