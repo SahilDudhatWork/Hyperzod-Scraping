@@ -157,7 +157,7 @@ const {
 
 const PORT = process.env.PORT || 8080;
 const timezone = "Europe/London";
-const schedule = "20 42 * * *";
+const schedule = "46 11 * * *";
 // const timezone = "Europe/London";
 // const schedule = "0 4 * * *";
 
