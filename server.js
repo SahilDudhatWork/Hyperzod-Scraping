@@ -157,9 +157,7 @@ const {
 
 const PORT = process.env.PORT || 8080;
 const timezone = "Europe/London";
-const schedule = "46 11 * * *";
-// const timezone = "Europe/London";
-// const schedule = "0 4 * * *";
+const schedule = "0 4 * * *";
 
 // Function to clean up existing files
 const cleanupFiles = async () => {
