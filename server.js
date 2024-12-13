@@ -156,7 +156,7 @@ const PORT = process.env.PORT || 8080;
 // const timezone = "Europe/London";
 // const schedule = "0 4 * * *";
 const timezone = "Asia/Kolkata"; // Indian Standard Time
-const schedule = "50 15 * * *"; // 3:47 PM IST
+const schedule = "00 16 * * *"; // 3:47 PM IST
 
 const clearFiles = () => {
   const files = [
