@@ -144,52 +144,52 @@ cron.schedule(
 );
 
 // Run all tasks sequentially for testing
-(async () => {
-  try {
-    const branches = [
-      {
-        branchFunction: BranchA,
-        merchantFunction: MerchantsA,
-        name: "BranchA",
-      },
-      {
-        branchFunction: BranchB,
-        merchantFunction: MerchantsB,
-        name: "BranchB",
-      },
-      {
-        branchFunction: BranchC,
-        merchantFunction: MerchantsC,
-        name: "BranchC",
-      },
-      {
-        branchFunction: BranchD,
-        merchantFunction: MerchantsD,
-        name: "BranchD",
-      },
-    ];
+// (async () => {
+//   try {
+//     const branches = [
+//       {
+//         branchFunction: BranchA,
+//         merchantFunction: MerchantsA,
+//         name: "BranchA",
+//       },
+//       {
+//         branchFunction: BranchB,
+//         merchantFunction: MerchantsB,
+//         name: "BranchB",
+//       },
+//       {
+//         branchFunction: BranchC,
+//         merchantFunction: MerchantsC,
+//         name: "BranchC",
+//       },
+//       {
+//         branchFunction: BranchD,
+//         merchantFunction: MerchantsD,
+//         name: "BranchD",
+//       },
+//     ];
 
-    for (const branch of branches) {
-      const startTime = new Date(); // Capture start time
-      console.log(
-        `Starting testing for ${branch.name} at ${startTime.toLocaleString()}`
-      );
+//     for (const branch of branches) {
+//       const startTime = new Date(); // Capture start time
+//       console.log(
+//         `Starting testing for ${branch.name} at ${startTime.toLocaleString()}`
+//       );
 
-      await taskRunner(
-        branch.branchFunction,
-        branch.merchantFunction,
-        branch.name
-      );
+//       await taskRunner(
+//         branch.branchFunction,
+//         branch.merchantFunction,
+//         branch.name
+//       );
 
-      const endTime = new Date(); // Capture end time
-      console.log(
-        `Completed testing for ${branch.name} at ${endTime.toLocaleString()}`
-      );
-    }
-  } catch (error) {
-    console.error(`Error in testing execution:`, error);
-  }
-})();
+//       const endTime = new Date(); // Capture end time
+//       console.log(
+//         `Completed testing for ${branch.name} at ${endTime.toLocaleString()}`
+//       );
+//     }
+//   } catch (error) {
+//     console.error(`Error in testing execution:`, error);
+//   }
+// })();
 
 // Set up the server
 app.get("/", (req, res) => {
