@@ -115,81 +115,53 @@ cron.schedule(
   { timezone: timezone }
 );
 
-//! *--*-* testing
-//! *--*-*
-
-// Separate cron jobs for each branch and merchant with 30-minute gaps starting at 7:30 AM
-cron.schedule(
-  "30 7 * * *", // Runs at 7:30 AM UK time
-  async () => await taskRunner(BranchA, MerchantsA, "BranchA"),
-  { timezone: timezone }
-);
-
-cron.schedule(
-  "0 8 * * *", // Runs at 8:00 AM UK time
-  async () => await taskRunner(BranchB, MerchantsB, "BranchB"),
-  { timezone: timezone }
-);
-
-cron.schedule(
-  "30 8 * * *", // Runs at 8:30 AM UK time
-  async () => await taskRunner(BranchC, MerchantsC, "BranchC"),
-  { timezone: timezone }
-);
-
-cron.schedule(
-  "0 9 * * *", // Runs at 9:00 AM UK time
-  async () => await taskRunner(BranchD, MerchantsD, "BranchD"),
-  { timezone: timezone }
-);
-
 // Run all tasks sequentially for testing
-// (async () => {
-//   try {
-//     const branches = [
-//       {
-//         branchFunction: BranchA,
-//         merchantFunction: MerchantsA,
-//         name: "BranchA",
-//       },
-//       {
-//         branchFunction: BranchB,
-//         merchantFunction: MerchantsB,
-//         name: "BranchB",
-//       },
-//       {
-//         branchFunction: BranchC,
-//         merchantFunction: MerchantsC,
-//         name: "BranchC",
-//       },
-//       {
-//         branchFunction: BranchD,
-//         merchantFunction: MerchantsD,
-//         name: "BranchD",
-//       },
-//     ];
+(async () => {
+  try {
+    const branches = [
+      {
+        branchFunction: BranchA,
+        merchantFunction: MerchantsA,
+        name: "BranchA",
+      },
+      {
+        branchFunction: BranchB,
+        merchantFunction: MerchantsB,
+        name: "BranchB",
+      },
+      {
+        branchFunction: BranchC,
+        merchantFunction: MerchantsC,
+        name: "BranchC",
+      },
+      {
+        branchFunction: BranchD,
+        merchantFunction: MerchantsD,
+        name: "BranchD",
+      },
+    ];
 
-//     for (const branch of branches) {
-//       const startTime = new Date(); // Capture start time
-//       console.log(
-//         `Starting testing for ${branch.name} at ${startTime.toLocaleString()}`
-//       );
+    for (const branch of branches) {
+      const startTime = new Date(); // Capture start time
+      console.log(
+        `Starting testing for ${branch.name} at ${startTime.toLocaleString()}`
+      );
 
-//       await taskRunner(
-//         branch.branchFunction,
-//         branch.merchantFunction,
-//         branch.name
-//       );
+      await taskRunner(
+        branch.branchFunction,
+        branch.merchantFunction,
+        branch.name
+      );
 
-//       const endTime = new Date(); // Capture end time
-//       console.log(
-//         `Completed testing for ${branch.name} at ${endTime.toLocaleString()}`
-//       );
-//     }
-//   } catch (error) {
-//     console.error(`Error in testing execution:`, error);
-//   }
-// })();
+      const endTime = new Date(); // Capture end time
+      console.log(
+        `Completed testing for ${branch.name} at ${endTime.toLocaleString()}`
+      );
+    }
+  } catch (error) {
+    console.error(`Error in testing execution:`, error);
+  }
+})();
 
 // Set up the server
 app.get("/", (req, res) => {
