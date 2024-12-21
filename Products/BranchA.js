@@ -128,10 +128,14 @@ const BranchA = async (data, parentCategory = "") => {
         let productName = el?.product.name.trim();
         let productDescription = el?.product.description;
         productName = productName.replace("Travis Perkins", "Buildgo");
+        productName = productName.replace("4Trade", "Buildgo");
+        productName = productName.replace("4TRADE", "Buildgo");
         productDescription = productDescription.replace(
           "Travis Perkins",
           "Buildgo"
         );
+        productDescription = productDescription.replace("4Trade", "Buildgo");
+        productDescription = productDescription.replace("4TRADE", "Buildgo");
 
         const uniqueIdentifier = `${productCategory}-${productName}`;
         if (status === "ACTIVE" && !productNameSet.has(uniqueIdentifier)) {
