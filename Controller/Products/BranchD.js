@@ -128,6 +128,8 @@ const BranchD = async (data, parentCategory = "") => {
         let productName = el?.product.name.trim().replace(/"/g, '""');
         let productDescription = el?.product.description;
         productName = productName.replace("Travis Perkins", "Buildgo");
+        productName = productName.replace("4Trade", "Buildgo");
+        productName = productName.replace("4TRADE", "Buildgo");
         productDescription = productDescription.replace(
           "Travis Perkins",
           "Buildgo"
