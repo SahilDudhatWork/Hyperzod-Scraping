@@ -1,14 +1,15 @@
 const {
   loginUser,
-  merchantC_GetProductList,
-  merchantC_BulkDeleteProduct,
-  merchantC_HyperzodUpload,
-  merchantC_ValidateProductImport,
-  merchantC_ImportProductData,
-  merchantC_CheckImportStatus,
-  merchantC_FetchAndDeleteCatgory,
+  merchantB_GetProductList,
+  merchantB_BulkDeleteProduct,
+  merchantB_HyperzodUpload,
+  merchantB_ValidateProductImport,
+  merchantB_ImportProductData,
+  merchantB_CheckImportStatus,
+  merchantB_FetchAndDeleteCatgory,
 } = require("../hyperzodAPI");
 const fs = require("fs");
+const path = require("path");
 const csv = require("csv-parser");
 const { Parser } = require("json2csv");
 
@@ -43,7 +44,10 @@ function writeChunkToCSV(chunk, chunkIndex, headers) {
   return new Promise((resolve, reject) => {
     const json2csvParser = new Parser({ fields: headers });
     const csvData = json2csvParser.parse(chunk);
-    const filePath = `./temp_chunk_C_${chunkIndex}.csv`;
+    const filePath = path.join(
+      __dirname,
+      `../../Temp/temp_chunk_B_${chunkIndex}.csv`
+    );
 
     fs.writeFile(filePath, csvData, (err) => {
       if (err) return reject(err);
@@ -72,13 +76,13 @@ async function processChunkWithRetry(
       const tempFilePath = await writeChunkToCSV(chunk, chunkIndex, headers);
 
       // Upload the temporary CSV file
-      const uploadResult = await merchantC_HyperzodUpload(token, tempFilePath);
+      const uploadResult = await merchantB_HyperzodUpload(token, tempFilePath);
       if (!uploadResult || uploadResult.status_code !== 200) {
         throw new Error(`Failed to upload chunk ${chunkIndex + 1}`);
       }
 
       // Validate the uploaded chunk
-      const validationResult = await merchantC_ValidateProductImport(
+      const validationResult = await merchantB_ValidateProductImport(
         uploadResult.data,
         token,
         merchantId
@@ -88,7 +92,7 @@ async function processChunkWithRetry(
       }
 
       // Import the validated products
-      const importResult = await merchantC_ImportProductData(
+      const importResult = await merchantB_ImportProductData(
         validationResult.data,
         token,
         merchantId
@@ -98,7 +102,7 @@ async function processChunkWithRetry(
       }
 
       console.log(
-        `merchant-C: Chunk ${chunkIndex + 1} import successful:`,
+        `merchant-B: Chunk ${chunkIndex + 1} import successful:`,
         importResult.message
       );
 
@@ -110,7 +114,7 @@ async function processChunkWithRetry(
     } catch (error) {
       retryCount++;
       console.error(
-        `merchant-C: Error processing chunk ${
+        `merchant-B: Error processing chunk ${
           chunkIndex + 1
         }, retrying in 1 Minit (Attempt ${retryCount})...`,
         error.message
@@ -119,28 +123,29 @@ async function processChunkWithRetry(
     }
   }
 }
+
 async function waitForCompletion(token, merchantId) {
   let status;
   do {
-    status = await merchantC_CheckImportStatus(token, merchantId);
-    console.log(`merchant-C: Current import status: ${status}`);
+    status = await merchantB_CheckImportStatus(token, merchantId);
+    console.log(`merchant-B: Current import status: ${status}`);
     if (status !== "processing") break;
 
     await sleep(30000); // Check every 30 sec
   } while (status !== "completed");
 }
 // Main function to handle the CSV upload in chunks with delay
-const MerchantsC = async () => {
+const MerchantsB = async () => {
   try {
     const token = `Bearer ${await loginUser()}`;
-    const merchantId = "66f67a9863e7cad5c0021c91";
+    const merchantId = "66feb0274ba29a6a3e0e2e8d";
     const page = 1;
     const pageLimit = 300;
 
     // Step 1: Fetch and delete existing products
     while (true) {
       // Fetch the product list for the current page
-      const getProductListResult = await merchantC_GetProductList(
+      const getProductListResult = await merchantB_GetProductList(
         page,
         pageLimit,
         token,
@@ -149,12 +154,12 @@ const MerchantsC = async () => {
 
       // If there are no more products to delete, break the loop
       if (getProductListResult.length === 0) {
-        console.log("merchant-C: NO Products for delete.");
+        console.log("merchant-B: NO Products for delete.");
         break;
       }
 
       // Delete the fetched products
-      await merchantC_BulkDeleteProduct(
+      await merchantB_BulkDeleteProduct(
         getProductListResult,
         token,
         merchantId
@@ -162,34 +167,34 @@ const MerchantsC = async () => {
 
       // Log progress
       console.log(
-        `merchant-C: Deleted ${getProductListResult.length} products from page ${page}.`
+        `merchant-B: Deleted ${getProductListResult.length} products from page ${page}.`
       );
     }
-    await merchantC_FetchAndDeleteCatgory(token, merchantId);
-    console.log(`merchant-C: Deleted all categories.`);
+    await merchantB_FetchAndDeleteCatgory(token, merchantId);
+    console.log(`merchant-B: Deleted all categories.`);
 
     // Step 2: Read CSV and split data into chunks of 500 rows
-    const { data: csvData, headers } = await readCSV("./BranchC.csv");
+    const { data: csvData, headers } = await readCSV("./Temp/BranchB.csv");
     const chunks = chunkArray(csvData, 250);
 
     // Step 3: Process each chunk individually with retry on failure and 5 min delay between successful chunks
     for (let i = 0; i < chunks.length; i++) {
-      console.log(`merchant-C: Processing chunk ${i + 1} of ${chunks.length}`);
-      console.log("merchant-C: chunks data length-->", chunks[i].length);
+      console.log(`merchant-B: Processing chunk ${i + 1} of ${chunks.length}`);
+      console.log("merchant-B: chunks data length-->", chunks[i].length);
       // Process the chunk with retry logic
       await processChunkWithRetry(chunks[i], i, headers, token, merchantId);
       await waitForCompletion(token, merchantId);
       console.log(
-        `merchant-C: Chunk ${i + 1} completed. Moving to next chunk.`
+        `merchant-B: Chunk ${i + 1} completed. Moving to next chunk.`
       );
     }
 
     console.log(
-      "\x1b[32m*=*=*=*=*=*=*=*=*=*/\x1b[0m \x1b[31m MerchantsC - All chunks processed successfully.\x1b[0m \x1b[32m/*=*=*=*=*=*=*=*=*=*\x1b[0m"
+      "\x1b[32m*=*=*=*=*=*=*=*=*=*/\x1b[0m \x1b[31m MerchantsB - All chunks processed successfully.\x1b[0m \x1b[32m/*=*=*=*=*=*=*=*=*=*\x1b[0m"
     );
   } catch (error) {
     console.error("Error in CSV import process:", error.message);
   }
 };
 
-module.exports = MerchantsC;
+module.exports = MerchantsB;

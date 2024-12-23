@@ -125,7 +125,7 @@ const fetchCategoryTree = async () => {
 
     // Write the final structured data to the JSON file
     fs.writeFile(
-      "./categoryTree.json",
+      "./Temp/categoryTree.json",
       JSON.stringify(newData, null, 2),
       (err) => {
         if (err) {
@@ -146,7 +146,7 @@ const fetchCategoryTree = async () => {
 // Function to read the category tree JSON file
 const readCategoryTree = () => {
   return new Promise((resolve, reject) => {
-    fs.readFile("./categoryTree.json", "utf8", (err, data) => {
+    fs.readFile("./Temp/categoryTree.json", "utf8", (err, data) => {
       if (err) return reject(err);
       try {
         if (data) {

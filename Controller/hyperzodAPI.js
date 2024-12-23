@@ -1,10 +1,12 @@
+const RepositoryFactory = require("../services/repositories/repositoryFactory");
+const productRepository = RepositoryFactory.get("product");
 const axios = require("axios");
 const FormData = require("form-data");
 const fs = require("fs");
 const path = require("path");
 
 const logToFile = (logType, message) => {
-  const logFilePath = path.join(__dirname, "Api-Log.json");
+  const logFilePath = path.join(__dirname, "../Temp/Api-Log.json");
 
   const logEntry = {
     timestamp: new Date().toLocaleString("en-US", {
@@ -702,7 +704,7 @@ const merchantD_CheckImportStatus = async (token, merchantId) => {
 // upload csv
 const merchantA_HyperzodUpload = async (token, filePath) => {
   const form = new FormData();
-  form.append("file", fs.createReadStream(path.join(__dirname, filePath)));
+  form.append("file", fs.createReadStream(filePath));
   form.append("user_id", "214999");
   form.append("tenant_id", "4266");
 
@@ -729,7 +731,7 @@ const merchantA_HyperzodUpload = async (token, filePath) => {
 };
 const merchantB_HyperzodUpload = async (token, filePath) => {
   const form = new FormData();
-  form.append("file", fs.createReadStream(path.join(__dirname, filePath)));
+  form.append("file", fs.createReadStream(filePath));
   form.append("user_id", "214999");
   form.append("tenant_id", "4266");
 
@@ -756,7 +758,7 @@ const merchantB_HyperzodUpload = async (token, filePath) => {
 };
 const merchantC_HyperzodUpload = async (token, filePath) => {
   const form = new FormData();
-  form.append("file", fs.createReadStream(path.join(__dirname, filePath)));
+  form.append("file", fs.createReadStream(filePath));
   form.append("user_id", "214999");
   form.append("tenant_id", "4266");
 
@@ -783,7 +785,7 @@ const merchantC_HyperzodUpload = async (token, filePath) => {
 };
 const merchantD_HyperzodUpload = async (token, filePath) => {
   const form = new FormData();
-  form.append("file", fs.createReadStream(path.join(__dirname, filePath)));
+  form.append("file", fs.createReadStream(filePath));
   form.append("user_id", "214999");
   form.append("tenant_id", "4266");
 
@@ -1101,6 +1103,82 @@ const merchantD_ImportProductData = async (data, token, merchantId) => {
   }
 };
 
+// = = = = Update product API's = = = = //
+const searchProducts = async (sku, branchIds) => {
+  try {
+    const response = await axios({
+      method: "post",
+      url: "https://www.travisperkins.co.uk/federation-graphql?op=tpplcProductBySKU",
+      data: {
+        operationName: "tpplcProductBySKU",
+        variables: {
+          productSku: sku,
+          salesChannel: "ECOMMERCE",
+          brandId: "tp",
+        },
+        query:
+          "query tpplcProductBySKU($salesChannel: TpplcSalesChannel!, $brandId: ID!, $productSku: String!) {\n  tpplcBrand(brandId: $brandId) {\n    tpplcProductBySku(productSku: $productSku, salesChannel: $salesChannel) {\n      ...TPPLCProductFields\n }\n  }\n}\n\nfragment TPPLCProductFields on TpplcProduct {\n  id\n  sku\n  name}",
+      },
+    });
+
+    const getProQty = await getProductsQty(
+      response.data.data.tpplcBrand.tpplcProductBySku.id,
+      branchIds
+    );
+
+    return getProQty;
+  } catch (error) {
+    console.error("Error:", error.message);
+  }
+};
+
+const getProductsQty = async (productIds, branchIds) => {
+  try {
+    let qtyData = {
+      operationName: "stockTpplc",
+      variables: {
+        branchIds: branchIds,
+        productIds: productIds,
+      },
+      query: `query stockTpplc($branchIds: [ID!]!, $productIds: [ID!]!) {
+        tpplcStock(branchIds: $branchIds, productIds: $productIds) {
+          stock {
+            branchId
+            productId
+            quantity
+            uom
+            __typename
+          }
+          __typename
+        }
+      }`,
+    };
+
+    const qtyResponse = await productRepository.getProductsQty(qtyData);
+    const getProductsQty = qtyResponse.data.data.tpplcStock.stock.map(
+      (stockItem) => stockItem.quantity
+    );
+    return getProductsQty;
+  } catch (error) {
+    console.log("error :>> ", error);
+  }
+};
+
+const updateProduct = async (payload, token) => {
+  try {
+    const url =
+      "https://api.hyperzod.app/merchant/v1/catalog/product/stock/updateCountBulk";
+    const headers = {
+      authorization: token,
+      "x-tenant": "onstruct.hyperzod.app",
+    };
+    const response = await axios.post(url, payload, { headers });
+    console.log("response.data.success :>> ", response.data);
+  } catch (error) {
+    console.error(error.response?.data || error.message);
+  }
+};
+
 module.exports = {
   loginUser,
   merchantA_GetProductList,
@@ -1137,4 +1215,7 @@ module.exports = {
   merchantB_FetchAndDeleteCatgory,
   merchantC_FetchAndDeleteCatgory,
   merchantD_FetchAndDeleteCatgory,
+
+  searchProducts,
+  updateProduct,
 };

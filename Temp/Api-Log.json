@@ -1,0 +1,1586 @@
+[
+  {
+    "timestamp": "12/23/2024, 11:52:50",
+    "timestampIND": "12/23/2024, 17:22:50",
+    "logType": "success",
+    "message": "Login successful."
+  },
+  {
+    "timestamp": "12/23/2024, 11:52:50",
+    "timestampIND": "12/23/2024, 17:22:50",
+    "logType": "success",
+    "message": "Fetched product list for Merchant B, 300 products found."
+  },
+  {
+    "timestamp": "12/23/2024, 11:52:56",
+    "timestampIND": "12/23/2024, 17:22:56",
+    "logType": "success",
+    "message": "Merchant B - All products deleted successfully."
+  },
+  {
+    "timestamp": "12/23/2024, 11:52:57",
+    "timestampIND": "12/23/2024, 17:22:57",
+    "logType": "success",
+    "message": "Fetched product list for Merchant B, 300 products found."
+  },
+  {
+    "timestamp": "12/23/2024, 11:53:04",
+    "timestampIND": "12/23/2024, 17:23:04",
+    "logType": "success",
+    "message": "Merchant B - All products deleted successfully."
+  },
+  {
+    "timestamp": "12/23/2024, 11:53:04",
+    "timestampIND": "12/23/2024, 17:23:04",
+    "logType": "success",
+    "message": "Fetched product list for Merchant B, 300 products found."
+  },
+  {
+    "timestamp": "12/23/2024, 11:53:10",
+    "timestampIND": "12/23/2024, 17:23:10",
+    "logType": "success",
+    "message": "Merchant B - All products deleted successfully."
+  },
+  {
+    "timestamp": "12/23/2024, 11:53:11",
+    "timestampIND": "12/23/2024, 17:23:11",
+    "logType": "success",
+    "message": "Fetched product list for Merchant B, 300 products found."
+  },
+  {
+    "timestamp": "12/23/2024, 11:53:16",
+    "timestampIND": "12/23/2024, 17:23:16",
+    "logType": "success",
+    "message": "Merchant B - All products deleted successfully."
+  },
+  {
+    "timestamp": "12/23/2024, 11:53:17",
+    "timestampIND": "12/23/2024, 17:23:17",
+    "logType": "success",
+    "message": "Fetched product list for Merchant B, 300 products found."
+  },
+  {
+    "timestamp": "12/23/2024, 11:53:23",
+    "timestampIND": "12/23/2024, 17:23:23",
+    "logType": "success",
+    "message": "Merchant B - All products deleted successfully."
+  },
+  {
+    "timestamp": "12/23/2024, 11:53:23",
+    "timestampIND": "12/23/2024, 17:23:23",
+    "logType": "success",
+    "message": "Fetched product list for Merchant B, 300 products found."
+  },
+  {
+    "timestamp": "12/23/2024, 11:53:29",
+    "timestampIND": "12/23/2024, 17:23:29",
+    "logType": "success",
+    "message": "Merchant B - All products deleted successfully."
+  },
+  {
+    "timestamp": "12/23/2024, 11:53:29",
+    "timestampIND": "12/23/2024, 17:23:29",
+    "logType": "success",
+    "message": "Fetched product list for Merchant B, 300 products found."
+  },
+  {
+    "timestamp": "12/23/2024, 11:53:35",
+    "timestampIND": "12/23/2024, 17:23:35",
+    "logType": "success",
+    "message": "Merchant B - All products deleted successfully."
+  },
+  {
+    "timestamp": "12/23/2024, 11:53:36",
+    "timestampIND": "12/23/2024, 17:23:36",
+    "logType": "success",
+    "message": "Fetched product list for Merchant B, 101 products found."
+  },
+  {
+    "timestamp": "12/23/2024, 11:53:38",
+    "timestampIND": "12/23/2024, 17:23:38",
+    "logType": "success",
+    "message": "Merchant B - All products deleted successfully."
+  },
+  {
+    "timestamp": "12/23/2024, 11:53:38",
+    "timestampIND": "12/23/2024, 17:23:38",
+    "logType": "success",
+    "message": "Fetched product list for Merchant B, 0 products found."
+  },
+  {
+    "timestamp": "12/23/2024, 11:53:41",
+    "timestampIND": "12/23/2024, 17:23:41",
+    "logType": "success",
+    "message": "Successfully fetched and deleted categories for Merchant B."
+  },
+  {
+    "timestamp": "12/23/2024, 11:53:42",
+    "timestampIND": "12/23/2024, 17:23:42",
+    "logType": "success",
+    "message": "Merchant B file uploaded successfully"
+  },
+  {
+    "timestamp": "12/23/2024, 11:53:44",
+    "timestampIND": "12/23/2024, 17:23:44",
+    "logType": "success",
+    "message": "Merchant B product import validated successfully for merchantId: 66feb0274ba29a6a3e0e2e8d"
+  },
+  {
+    "timestamp": "12/23/2024, 11:53:44",
+    "timestampIND": "12/23/2024, 17:23:44",
+    "logType": "success",
+    "message": "Merchant B product import successful for importId: 67694f48a3e49bb58a00496a"
+  },
+  {
+    "timestamp": "12/23/2024, 11:53:44",
+    "timestampIND": "12/23/2024, 17:23:44",
+    "logType": "success",
+    "message": "Merchant B Import Status: processing"
+  },
+  {
+    "timestamp": "12/23/2024, 11:54:15",
+    "timestampIND": "12/23/2024, 17:24:15",
+    "logType": "success",
+    "message": "Merchant B Import Status: processing"
+  },
+  {
+    "timestamp": "12/23/2024, 11:54:46",
+    "timestampIND": "12/23/2024, 17:24:46",
+    "logType": "success",
+    "message": "Merchant B Import Status: completed"
+  },
+  {
+    "timestamp": "12/23/2024, 11:54:47",
+    "timestampIND": "12/23/2024, 17:24:47",
+    "logType": "success",
+    "message": "Merchant B file uploaded successfully"
+  },
+  {
+    "timestamp": "12/23/2024, 11:54:49",
+    "timestampIND": "12/23/2024, 17:24:49",
+    "logType": "success",
+    "message": "Merchant B product import validated successfully for merchantId: 66feb0274ba29a6a3e0e2e8d"
+  },
+  {
+    "timestamp": "12/23/2024, 11:54:49",
+    "timestampIND": "12/23/2024, 17:24:49",
+    "logType": "success",
+    "message": "Merchant B product import successful for importId: 67694f8922ec8f5ce0021bb8"
+  },
+  {
+    "timestamp": "12/23/2024, 11:54:50",
+    "timestampIND": "12/23/2024, 17:24:50",
+    "logType": "success",
+    "message": "Merchant B Import Status: processing"
+  },
+  {
+    "timestamp": "12/23/2024, 11:55:21",
+    "timestampIND": "12/23/2024, 17:25:21",
+    "logType": "success",
+    "message": "Merchant B Import Status: processing"
+  },
+  {
+    "timestamp": "12/23/2024, 11:55:52",
+    "timestampIND": "12/23/2024, 17:25:52",
+    "logType": "success",
+    "message": "Merchant B Import Status: completed"
+  },
+  {
+    "timestamp": "12/23/2024, 11:55:52",
+    "timestampIND": "12/23/2024, 17:25:52",
+    "logType": "success",
+    "message": "Merchant B file uploaded successfully"
+  },
+  {
+    "timestamp": "12/23/2024, 11:55:54",
+    "timestampIND": "12/23/2024, 17:25:54",
+    "logType": "success",
+    "message": "Merchant B product import validated successfully for merchantId: 66feb0274ba29a6a3e0e2e8d"
+  },
+  {
+    "timestamp": "12/23/2024, 11:55:55",
+    "timestampIND": "12/23/2024, 17:25:55",
+    "logType": "success",
+    "message": "Merchant B product import successful for importId: 67694fcaa3e49bb58a00496c"
+  },
+  {
+    "timestamp": "12/23/2024, 11:55:56",
+    "timestampIND": "12/23/2024, 17:25:56",
+    "logType": "success",
+    "message": "Merchant B Import Status: processing"
+  },
+  {
+    "timestamp": "12/23/2024, 11:56:27",
+    "timestampIND": "12/23/2024, 17:26:27",
+    "logType": "success",
+    "message": "Merchant B Import Status: processing"
+  },
+  {
+    "timestamp": "12/23/2024, 11:56:58",
+    "timestampIND": "12/23/2024, 17:26:58",
+    "logType": "success",
+    "message": "Merchant B Import Status: completed"
+  },
+  {
+    "timestamp": "12/23/2024, 11:56:59",
+    "timestampIND": "12/23/2024, 17:26:59",
+    "logType": "success",
+    "message": "Merchant B file uploaded successfully"
+  },
+  {
+    "timestamp": "12/23/2024, 11:57:01",
+    "timestampIND": "12/23/2024, 17:27:01",
+    "logType": "success",
+    "message": "Merchant B product import validated successfully for merchantId: 66feb0274ba29a6a3e0e2e8d"
+  },
+  {
+    "timestamp": "12/23/2024, 11:57:01",
+    "timestampIND": "12/23/2024, 17:27:01",
+    "logType": "success",
+    "message": "Merchant B product import successful for importId: 6769500dedf84f6d5c0458f7"
+  },
+  {
+    "timestamp": "12/23/2024, 11:57:02",
+    "timestampIND": "12/23/2024, 17:27:02",
+    "logType": "success",
+    "message": "Merchant B Import Status: processing"
+  },
+  {
+    "timestamp": "12/23/2024, 11:57:34",
+    "timestampIND": "12/23/2024, 17:27:34",
+    "logType": "success",
+    "message": "Merchant B Import Status: processing"
+  },
+  {
+    "timestamp": "12/23/2024, 11:58:04",
+    "timestampIND": "12/23/2024, 17:28:04",
+    "logType": "success",
+    "message": "Merchant B Import Status: completed"
+  },
+  {
+    "timestamp": "12/23/2024, 11:58:05",
+    "timestampIND": "12/23/2024, 17:28:05",
+    "logType": "success",
+    "message": "Merchant B file uploaded successfully"
+  },
+  {
+    "timestamp": "12/23/2024, 11:58:07",
+    "timestampIND": "12/23/2024, 17:28:07",
+    "logType": "success",
+    "message": "Merchant B product import validated successfully for merchantId: 66feb0274ba29a6a3e0e2e8d"
+  },
+  {
+    "timestamp": "12/23/2024, 11:58:07",
+    "timestampIND": "12/23/2024, 17:28:07",
+    "logType": "success",
+    "message": "Merchant B product import successful for importId: 6769504f22ec8f5ce0021bbb"
+  },
+  {
+    "timestamp": "12/23/2024, 11:58:08",
+    "timestampIND": "12/23/2024, 17:28:08",
+    "logType": "success",
+    "message": "Merchant B Import Status: processing"
+  },
+  {
+    "timestamp": "12/23/2024, 11:58:39",
+    "timestampIND": "12/23/2024, 17:28:39",
+    "logType": "success",
+    "message": "Merchant B Import Status: processing"
+  },
+  {
+    "timestamp": "12/23/2024, 11:59:09",
+    "timestampIND": "12/23/2024, 17:29:09",
+    "logType": "success",
+    "message": "Merchant B Import Status: completed"
+  },
+  {
+    "timestamp": "12/23/2024, 11:59:11",
+    "timestampIND": "12/23/2024, 17:29:11",
+    "logType": "success",
+    "message": "Merchant B file uploaded successfully"
+  },
+  {
+    "timestamp": "12/23/2024, 11:59:14",
+    "timestampIND": "12/23/2024, 17:29:14",
+    "logType": "success",
+    "message": "Merchant B product import validated successfully for merchantId: 66feb0274ba29a6a3e0e2e8d"
+  },
+  {
+    "timestamp": "12/23/2024, 11:59:14",
+    "timestampIND": "12/23/2024, 17:29:14",
+    "logType": "success",
+    "message": "Merchant B product import successful for importId: 67695091a3e49bb58a00496e"
+  },
+  {
+    "timestamp": "12/23/2024, 11:59:14",
+    "timestampIND": "12/23/2024, 17:29:14",
+    "logType": "success",
+    "message": "Merchant B Import Status: processing"
+  },
+  {
+    "timestamp": "12/23/2024, 11:59:46",
+    "timestampIND": "12/23/2024, 17:29:46",
+    "logType": "success",
+    "message": "Merchant B Import Status: processing"
+  },
+  {
+    "timestamp": "12/23/2024, 12:00:17",
+    "timestampIND": "12/23/2024, 17:30:17",
+    "logType": "success",
+    "message": "Merchant B Import Status: completed"
+  },
+  {
+    "timestamp": "12/23/2024, 12:00:18",
+    "timestampIND": "12/23/2024, 17:30:18",
+    "logType": "success",
+    "message": "Merchant B file uploaded successfully"
+  },
+  {
+    "timestamp": "12/23/2024, 12:00:20",
+    "timestampIND": "12/23/2024, 17:30:20",
+    "logType": "success",
+    "message": "Merchant B product import validated successfully for merchantId: 66feb0274ba29a6a3e0e2e8d"
+  },
+  {
+    "timestamp": "12/23/2024, 12:00:20",
+    "timestampIND": "12/23/2024, 17:30:20",
+    "logType": "success",
+    "message": "Merchant B product import successful for importId: 676950d4edf84f6d5c0458fb"
+  },
+  {
+    "timestamp": "12/23/2024, 12:00:21",
+    "timestampIND": "12/23/2024, 17:30:21",
+    "logType": "success",
+    "message": "Merchant B Import Status: processing"
+  },
+  {
+    "timestamp": "12/23/2024, 12:00:51",
+    "timestampIND": "12/23/2024, 17:30:51",
+    "logType": "success",
+    "message": "Merchant B Import Status: processing"
+  },
+  {
+    "timestamp": "12/23/2024, 12:01:22",
+    "timestampIND": "12/23/2024, 17:31:22",
+    "logType": "success",
+    "message": "Merchant B Import Status: completed"
+  },
+  {
+    "timestamp": "12/23/2024, 12:01:24",
+    "timestampIND": "12/23/2024, 17:31:24",
+    "logType": "success",
+    "message": "Merchant B file uploaded successfully"
+  },
+  {
+    "timestamp": "12/23/2024, 12:01:27",
+    "timestampIND": "12/23/2024, 17:31:27",
+    "logType": "success",
+    "message": "Merchant B product import validated successfully for merchantId: 66feb0274ba29a6a3e0e2e8d"
+  },
+  {
+    "timestamp": "12/23/2024, 12:01:27",
+    "timestampIND": "12/23/2024, 17:31:27",
+    "logType": "success",
+    "message": "Merchant B product import successful for importId: 67695117edf84f6d5c0458fc"
+  },
+  {
+    "timestamp": "12/23/2024, 12:01:28",
+    "timestampIND": "12/23/2024, 17:31:28",
+    "logType": "success",
+    "message": "Merchant B Import Status: processing"
+  },
+  {
+    "timestamp": "12/23/2024, 12:01:59",
+    "timestampIND": "12/23/2024, 17:31:59",
+    "logType": "success",
+    "message": "Merchant B Import Status: completed"
+  },
+  {
+    "timestamp": "12/23/2024, 12:02:00",
+    "timestampIND": "12/23/2024, 17:32:00",
+    "logType": "success",
+    "message": "Merchant B file uploaded successfully"
+  },
+  {
+    "timestamp": "12/23/2024, 12:02:03",
+    "timestampIND": "12/23/2024, 17:32:03",
+    "logType": "success",
+    "message": "Merchant B product import validated successfully for merchantId: 66feb0274ba29a6a3e0e2e8d"
+  },
+  {
+    "timestamp": "12/23/2024, 12:02:03",
+    "timestampIND": "12/23/2024, 17:32:03",
+    "logType": "success",
+    "message": "Merchant B product import successful for importId: 6769513ba3e49bb58a004970"
+  },
+  {
+    "timestamp": "12/23/2024, 12:02:04",
+    "timestampIND": "12/23/2024, 17:32:04",
+    "logType": "success",
+    "message": "Merchant B Import Status: processing"
+  },
+  {
+    "timestamp": "12/23/2024, 12:02:34",
+    "timestampIND": "12/23/2024, 17:32:34",
+    "logType": "success",
+    "message": "Merchant B Import Status: completed"
+  },
+  {
+    "timestamp": "12/23/2024, 12:13:24",
+    "timestampIND": "12/23/2024, 17:43:24",
+    "logType": "success",
+    "message": "Login successful."
+  },
+  {
+    "timestamp": "12/23/2024, 12:13:24",
+    "timestampIND": "12/23/2024, 17:43:24",
+    "logType": "success",
+    "message": "Fetched product list for Merchant C, 300 products found."
+  },
+  {
+    "timestamp": "12/23/2024, 12:13:30",
+    "timestampIND": "12/23/2024, 17:43:30",
+    "logType": "success",
+    "message": "Merchant C - All products deleted successfully."
+  },
+  {
+    "timestamp": "12/23/2024, 12:13:31",
+    "timestampIND": "12/23/2024, 17:43:31",
+    "logType": "success",
+    "message": "Fetched product list for Merchant C, 300 products found."
+  },
+  {
+    "timestamp": "12/23/2024, 12:13:36",
+    "timestampIND": "12/23/2024, 17:43:36",
+    "logType": "success",
+    "message": "Merchant C - All products deleted successfully."
+  },
+  {
+    "timestamp": "12/23/2024, 12:13:37",
+    "timestampIND": "12/23/2024, 17:43:37",
+    "logType": "success",
+    "message": "Fetched product list for Merchant C, 300 products found."
+  },
+  {
+    "timestamp": "12/23/2024, 12:13:43",
+    "timestampIND": "12/23/2024, 17:43:43",
+    "logType": "success",
+    "message": "Merchant C - All products deleted successfully."
+  },
+  {
+    "timestamp": "12/23/2024, 12:13:43",
+    "timestampIND": "12/23/2024, 17:43:43",
+    "logType": "success",
+    "message": "Fetched product list for Merchant C, 300 products found."
+  },
+  {
+    "timestamp": "12/23/2024, 12:13:49",
+    "timestampIND": "12/23/2024, 17:43:49",
+    "logType": "success",
+    "message": "Merchant C - All products deleted successfully."
+  },
+  {
+    "timestamp": "12/23/2024, 12:13:49",
+    "timestampIND": "12/23/2024, 17:43:49",
+    "logType": "success",
+    "message": "Fetched product list for Merchant C, 300 products found."
+  },
+  {
+    "timestamp": "12/23/2024, 12:13:55",
+    "timestampIND": "12/23/2024, 17:43:55",
+    "logType": "success",
+    "message": "Merchant C - All products deleted successfully."
+  },
+  {
+    "timestamp": "12/23/2024, 12:13:56",
+    "timestampIND": "12/23/2024, 17:43:56",
+    "logType": "success",
+    "message": "Fetched product list for Merchant C, 300 products found."
+  },
+  {
+    "timestamp": "12/23/2024, 12:14:02",
+    "timestampIND": "12/23/2024, 17:44:02",
+    "logType": "success",
+    "message": "Merchant C - All products deleted successfully."
+  },
+  {
+    "timestamp": "12/23/2024, 12:14:03",
+    "timestampIND": "12/23/2024, 17:44:03",
+    "logType": "success",
+    "message": "Fetched product list for Merchant C, 300 products found."
+  },
+  {
+    "timestamp": "12/23/2024, 12:14:09",
+    "timestampIND": "12/23/2024, 17:44:09",
+    "logType": "success",
+    "message": "Merchant C - All products deleted successfully."
+  },
+  {
+    "timestamp": "12/23/2024, 12:14:09",
+    "timestampIND": "12/23/2024, 17:44:09",
+    "logType": "success",
+    "message": "Fetched product list for Merchant C, 300 products found."
+  },
+  {
+    "timestamp": "12/23/2024, 12:14:15",
+    "timestampIND": "12/23/2024, 17:44:15",
+    "logType": "success",
+    "message": "Merchant C - All products deleted successfully."
+  },
+  {
+    "timestamp": "12/23/2024, 12:14:15",
+    "timestampIND": "12/23/2024, 17:44:15",
+    "logType": "success",
+    "message": "Fetched product list for Merchant C, 158 products found."
+  },
+  {
+    "timestamp": "12/23/2024, 12:14:19",
+    "timestampIND": "12/23/2024, 17:44:19",
+    "logType": "success",
+    "message": "Merchant C - All products deleted successfully."
+  },
+  {
+    "timestamp": "12/23/2024, 12:14:19",
+    "timestampIND": "12/23/2024, 17:44:19",
+    "logType": "success",
+    "message": "Fetched product list for Merchant C, 0 products found."
+  },
+  {
+    "timestamp": "12/23/2024, 12:14:22",
+    "timestampIND": "12/23/2024, 17:44:22",
+    "logType": "success",
+    "message": "Successfully fetched and deleted categories for Merchant C."
+  },
+  {
+    "timestamp": "12/23/2024, 12:14:23",
+    "timestampIND": "12/23/2024, 17:44:23",
+    "logType": "success",
+    "message": "Merchant C file uploaded successfully"
+  },
+  {
+    "timestamp": "12/23/2024, 12:14:25",
+    "timestampIND": "12/23/2024, 17:44:25",
+    "logType": "success",
+    "message": "Merchant C product import validated successfully for merchantId: 66f67a9863e7cad5c0021c91"
+  },
+  {
+    "timestamp": "12/23/2024, 12:14:25",
+    "timestampIND": "12/23/2024, 17:44:25",
+    "logType": "success",
+    "message": "Merchant C product import successful for importId: 67695421edf84f6d5c0458fd"
+  },
+  {
+    "timestamp": "12/23/2024, 12:14:26",
+    "timestampIND": "12/23/2024, 17:44:26",
+    "logType": "success",
+    "message": "Merchant C Import Status: processing"
+  },
+  {
+    "timestamp": "12/23/2024, 12:14:56",
+    "timestampIND": "12/23/2024, 17:44:56",
+    "logType": "success",
+    "message": "Merchant C Import Status: processing"
+  },
+  {
+    "timestamp": "12/23/2024, 12:15:27",
+    "timestampIND": "12/23/2024, 17:45:27",
+    "logType": "success",
+    "message": "Merchant C Import Status: completed"
+  },
+  {
+    "timestamp": "12/23/2024, 12:15:29",
+    "timestampIND": "12/23/2024, 17:45:29",
+    "logType": "success",
+    "message": "Merchant C file uploaded successfully"
+  },
+  {
+    "timestamp": "12/23/2024, 12:15:31",
+    "timestampIND": "12/23/2024, 17:45:31",
+    "logType": "success",
+    "message": "Merchant C product import validated successfully for merchantId: 66f67a9863e7cad5c0021c91"
+  },
+  {
+    "timestamp": "12/23/2024, 12:15:31",
+    "timestampIND": "12/23/2024, 17:45:31",
+    "logType": "success",
+    "message": "Merchant C product import successful for importId: 6769546322ec8f5ce0021bbd"
+  },
+  {
+    "timestamp": "12/23/2024, 12:15:31",
+    "timestampIND": "12/23/2024, 17:45:31",
+    "logType": "success",
+    "message": "Merchant C Import Status: processing"
+  },
+  {
+    "timestamp": "12/23/2024, 12:16:02",
+    "timestampIND": "12/23/2024, 17:46:02",
+    "logType": "success",
+    "message": "Merchant C Import Status: processing"
+  },
+  {
+    "timestamp": "12/23/2024, 12:16:33",
+    "timestampIND": "12/23/2024, 17:46:33",
+    "logType": "success",
+    "message": "Merchant C Import Status: completed"
+  },
+  {
+    "timestamp": "12/23/2024, 12:16:35",
+    "timestampIND": "12/23/2024, 17:46:35",
+    "logType": "success",
+    "message": "Merchant C file uploaded successfully"
+  },
+  {
+    "timestamp": "12/23/2024, 12:16:37",
+    "timestampIND": "12/23/2024, 17:46:37",
+    "logType": "success",
+    "message": "Merchant C product import validated successfully for merchantId: 66f67a9863e7cad5c0021c91"
+  },
+  {
+    "timestamp": "12/23/2024, 12:16:38",
+    "timestampIND": "12/23/2024, 17:46:38",
+    "logType": "success",
+    "message": "Merchant C product import successful for importId: 676954a4a3e49bb58a004974"
+  },
+  {
+    "timestamp": "12/23/2024, 12:16:39",
+    "timestampIND": "12/23/2024, 17:46:39",
+    "logType": "success",
+    "message": "Merchant C Import Status: processing"
+  },
+  {
+    "timestamp": "12/23/2024, 12:17:10",
+    "timestampIND": "12/23/2024, 17:47:10",
+    "logType": "success",
+    "message": "Merchant C Import Status: completed"
+  },
+  {
+    "timestamp": "12/23/2024, 12:17:11",
+    "timestampIND": "12/23/2024, 17:47:11",
+    "logType": "success",
+    "message": "Merchant C file uploaded successfully"
+  },
+  {
+    "timestamp": "12/23/2024, 12:17:13",
+    "timestampIND": "12/23/2024, 17:47:13",
+    "logType": "success",
+    "message": "Merchant C product import validated successfully for merchantId: 66f67a9863e7cad5c0021c91"
+  },
+  {
+    "timestamp": "12/23/2024, 12:17:13",
+    "timestampIND": "12/23/2024, 17:47:13",
+    "logType": "success",
+    "message": "Merchant C product import successful for importId: 676954c922ec8f5ce0021bbf"
+  },
+  {
+    "timestamp": "12/23/2024, 12:17:14",
+    "timestampIND": "12/23/2024, 17:47:14",
+    "logType": "success",
+    "message": "Merchant C Import Status: processing"
+  },
+  {
+    "timestamp": "12/23/2024, 12:17:45",
+    "timestampIND": "12/23/2024, 17:47:45",
+    "logType": "success",
+    "message": "Merchant C Import Status: processing"
+  },
+  {
+    "timestamp": "12/23/2024, 12:18:17",
+    "timestampIND": "12/23/2024, 17:48:17",
+    "logType": "success",
+    "message": "Merchant C Import Status: completed"
+  },
+  {
+    "timestamp": "12/23/2024, 12:18:18",
+    "timestampIND": "12/23/2024, 17:48:18",
+    "logType": "success",
+    "message": "Merchant C file uploaded successfully"
+  },
+  {
+    "timestamp": "12/23/2024, 12:18:20",
+    "timestampIND": "12/23/2024, 17:48:20",
+    "logType": "success",
+    "message": "Merchant C product import validated successfully for merchantId: 66f67a9863e7cad5c0021c91"
+  },
+  {
+    "timestamp": "12/23/2024, 12:18:21",
+    "timestampIND": "12/23/2024, 17:48:21",
+    "logType": "success",
+    "message": "Merchant C product import successful for importId: 6769550cedf84f6d5c0458ff"
+  },
+  {
+    "timestamp": "12/23/2024, 12:18:21",
+    "timestampIND": "12/23/2024, 17:48:21",
+    "logType": "success",
+    "message": "Merchant C Import Status: processing"
+  },
+  {
+    "timestamp": "12/23/2024, 12:18:52",
+    "timestampIND": "12/23/2024, 17:48:52",
+    "logType": "success",
+    "message": "Merchant C Import Status: completed"
+  },
+  {
+    "timestamp": "12/23/2024, 12:18:53",
+    "timestampIND": "12/23/2024, 17:48:53",
+    "logType": "success",
+    "message": "Merchant C file uploaded successfully"
+  },
+  {
+    "timestamp": "12/23/2024, 12:18:55",
+    "timestampIND": "12/23/2024, 17:48:55",
+    "logType": "success",
+    "message": "Merchant C product import validated successfully for merchantId: 66f67a9863e7cad5c0021c91"
+  },
+  {
+    "timestamp": "12/23/2024, 12:18:56",
+    "timestampIND": "12/23/2024, 17:48:56",
+    "logType": "success",
+    "message": "Merchant C product import successful for importId: 6769552fedf84f6d5c045900"
+  },
+  {
+    "timestamp": "12/23/2024, 12:18:56",
+    "timestampIND": "12/23/2024, 17:48:56",
+    "logType": "success",
+    "message": "Merchant C Import Status: processing"
+  },
+  {
+    "timestamp": "12/23/2024, 12:19:27",
+    "timestampIND": "12/23/2024, 17:49:27",
+    "logType": "success",
+    "message": "Merchant C Import Status: processing"
+  },
+  {
+    "timestamp": "12/23/2024, 12:19:58",
+    "timestampIND": "12/23/2024, 17:49:58",
+    "logType": "success",
+    "message": "Merchant C Import Status: completed"
+  },
+  {
+    "timestamp": "12/23/2024, 12:19:59",
+    "timestampIND": "12/23/2024, 17:49:59",
+    "logType": "success",
+    "message": "Merchant C file uploaded successfully"
+  },
+  {
+    "timestamp": "12/23/2024, 12:20:02",
+    "timestampIND": "12/23/2024, 17:50:02",
+    "logType": "success",
+    "message": "Merchant C product import validated successfully for merchantId: 66f67a9863e7cad5c0021c91"
+  },
+  {
+    "timestamp": "12/23/2024, 12:20:03",
+    "timestampIND": "12/23/2024, 17:50:03",
+    "logType": "success",
+    "message": "Merchant C product import successful for importId: 67695572edf84f6d5c045902"
+  },
+  {
+    "timestamp": "12/23/2024, 12:20:03",
+    "timestampIND": "12/23/2024, 17:50:03",
+    "logType": "success",
+    "message": "Merchant C Import Status: processing"
+  },
+  {
+    "timestamp": "12/23/2024, 12:20:34",
+    "timestampIND": "12/23/2024, 17:50:34",
+    "logType": "success",
+    "message": "Merchant C Import Status: processing"
+  },
+  {
+    "timestamp": "12/23/2024, 12:21:04",
+    "timestampIND": "12/23/2024, 17:51:04",
+    "logType": "success",
+    "message": "Merchant C Import Status: completed"
+  },
+  {
+    "timestamp": "12/23/2024, 12:21:06",
+    "timestampIND": "12/23/2024, 17:51:06",
+    "logType": "success",
+    "message": "Merchant C file uploaded successfully"
+  },
+  {
+    "timestamp": "12/23/2024, 12:21:08",
+    "timestampIND": "12/23/2024, 17:51:08",
+    "logType": "success",
+    "message": "Merchant C product import validated successfully for merchantId: 66f67a9863e7cad5c0021c91"
+  },
+  {
+    "timestamp": "12/23/2024, 12:21:09",
+    "timestampIND": "12/23/2024, 17:51:09",
+    "logType": "success",
+    "message": "Merchant C product import successful for importId: 676955b4edf84f6d5c045905"
+  },
+  {
+    "timestamp": "12/23/2024, 12:21:09",
+    "timestampIND": "12/23/2024, 17:51:09",
+    "logType": "success",
+    "message": "Merchant C Import Status: processing"
+  },
+  {
+    "timestamp": "12/23/2024, 12:21:40",
+    "timestampIND": "12/23/2024, 17:51:40",
+    "logType": "success",
+    "message": "Merchant C Import Status: processing"
+  },
+  {
+    "timestamp": "12/23/2024, 12:22:11",
+    "timestampIND": "12/23/2024, 17:52:11",
+    "logType": "success",
+    "message": "Merchant C Import Status: completed"
+  },
+  {
+    "timestamp": "12/23/2024, 12:22:12",
+    "timestampIND": "12/23/2024, 17:52:12",
+    "logType": "success",
+    "message": "Merchant C file uploaded successfully"
+  },
+  {
+    "timestamp": "12/23/2024, 12:22:15",
+    "timestampIND": "12/23/2024, 17:52:15",
+    "logType": "success",
+    "message": "Merchant C product import validated successfully for merchantId: 66f67a9863e7cad5c0021c91"
+  },
+  {
+    "timestamp": "12/23/2024, 12:22:15",
+    "timestampIND": "12/23/2024, 17:52:15",
+    "logType": "success",
+    "message": "Merchant C product import successful for importId: 676955f722ec8f5ce0021bc1"
+  },
+  {
+    "timestamp": "12/23/2024, 12:22:16",
+    "timestampIND": "12/23/2024, 17:52:16",
+    "logType": "success",
+    "message": "Merchant C Import Status: processing"
+  },
+  {
+    "timestamp": "12/23/2024, 12:22:46",
+    "timestampIND": "12/23/2024, 17:52:46",
+    "logType": "success",
+    "message": "Merchant C Import Status: processing"
+  },
+  {
+    "timestamp": "12/23/2024, 12:23:18",
+    "timestampIND": "12/23/2024, 17:53:18",
+    "logType": "success",
+    "message": "Merchant C Import Status: completed"
+  },
+  {
+    "timestamp": "12/23/2024, 12:23:21",
+    "timestampIND": "12/23/2024, 17:53:21",
+    "logType": "success",
+    "message": "Merchant C file uploaded successfully"
+  },
+  {
+    "timestamp": "12/23/2024, 12:23:23",
+    "timestampIND": "12/23/2024, 17:53:23",
+    "logType": "success",
+    "message": "Merchant C product import validated successfully for merchantId: 66f67a9863e7cad5c0021c91"
+  },
+  {
+    "timestamp": "12/23/2024, 12:23:24",
+    "timestampIND": "12/23/2024, 17:53:24",
+    "logType": "success",
+    "message": "Merchant C product import successful for importId: 6769563bedf84f6d5c045907"
+  },
+  {
+    "timestamp": "12/23/2024, 12:23:24",
+    "timestampIND": "12/23/2024, 17:53:24",
+    "logType": "success",
+    "message": "Merchant C Import Status: processing"
+  },
+  {
+    "timestamp": "12/23/2024, 12:23:55",
+    "timestampIND": "12/23/2024, 17:53:55",
+    "logType": "success",
+    "message": "Merchant C Import Status: processing"
+  },
+  {
+    "timestamp": "12/23/2024, 12:24:25",
+    "timestampIND": "12/23/2024, 17:54:25",
+    "logType": "success",
+    "message": "Merchant C Import Status: completed"
+  },
+  {
+    "timestamp": "12/23/2024, 12:24:26",
+    "timestampIND": "12/23/2024, 17:54:26",
+    "logType": "success",
+    "message": "Merchant C file uploaded successfully"
+  },
+  {
+    "timestamp": "12/23/2024, 12:24:27",
+    "timestampIND": "12/23/2024, 17:54:27",
+    "logType": "success",
+    "message": "Merchant C product import validated successfully for merchantId: 66f67a9863e7cad5c0021c91"
+  },
+  {
+    "timestamp": "12/23/2024, 12:24:28",
+    "timestampIND": "12/23/2024, 17:54:28",
+    "logType": "success",
+    "message": "Merchant C product import successful for importId: 6769567ba3e49bb58a004977"
+  },
+  {
+    "timestamp": "12/23/2024, 12:24:28",
+    "timestampIND": "12/23/2024, 17:54:28",
+    "logType": "success",
+    "message": "Merchant C Import Status: processing"
+  },
+  {
+    "timestamp": "12/23/2024, 12:24:58",
+    "timestampIND": "12/23/2024, 17:54:58",
+    "logType": "success",
+    "message": "Merchant C Import Status: completed"
+  },
+  {
+    "timestamp": "12/23/2024, 12:35:49",
+    "timestampIND": "12/23/2024, 18:05:50",
+    "logType": "success",
+    "message": "Login successful."
+  },
+  {
+    "timestamp": "12/23/2024, 12:35:50",
+    "timestampIND": "12/23/2024, 18:05:50",
+    "logType": "success",
+    "message": "Fetched product list for Merchant D, 300 products found."
+  },
+  {
+    "timestamp": "12/23/2024, 12:35:57",
+    "timestampIND": "12/23/2024, 18:05:57",
+    "logType": "success",
+    "message": "Merchant D - All products deleted successfully."
+  },
+  {
+    "timestamp": "12/23/2024, 12:35:57",
+    "timestampIND": "12/23/2024, 18:05:57",
+    "logType": "success",
+    "message": "Fetched product list for Merchant D, 300 products found."
+  },
+  {
+    "timestamp": "12/23/2024, 12:36:05",
+    "timestampIND": "12/23/2024, 18:06:05",
+    "logType": "success",
+    "message": "Merchant D - All products deleted successfully."
+  },
+  {
+    "timestamp": "12/23/2024, 12:36:06",
+    "timestampIND": "12/23/2024, 18:06:06",
+    "logType": "success",
+    "message": "Fetched product list for Merchant D, 300 products found."
+  },
+  {
+    "timestamp": "12/23/2024, 12:36:12",
+    "timestampIND": "12/23/2024, 18:06:12",
+    "logType": "success",
+    "message": "Merchant D - All products deleted successfully."
+  },
+  {
+    "timestamp": "12/23/2024, 12:36:13",
+    "timestampIND": "12/23/2024, 18:06:13",
+    "logType": "success",
+    "message": "Fetched product list for Merchant D, 300 products found."
+  },
+  {
+    "timestamp": "12/23/2024, 12:36:20",
+    "timestampIND": "12/23/2024, 18:06:20",
+    "logType": "success",
+    "message": "Merchant D - All products deleted successfully."
+  },
+  {
+    "timestamp": "12/23/2024, 12:36:20",
+    "timestampIND": "12/23/2024, 18:06:20",
+    "logType": "success",
+    "message": "Fetched product list for Merchant D, 300 products found."
+  },
+  {
+    "timestamp": "12/23/2024, 12:36:27",
+    "timestampIND": "12/23/2024, 18:06:27",
+    "logType": "success",
+    "message": "Merchant D - All products deleted successfully."
+  },
+  {
+    "timestamp": "12/23/2024, 12:36:27",
+    "timestampIND": "12/23/2024, 18:06:27",
+    "logType": "success",
+    "message": "Fetched product list for Merchant D, 300 products found."
+  },
+  {
+    "timestamp": "12/23/2024, 12:36:33",
+    "timestampIND": "12/23/2024, 18:06:33",
+    "logType": "success",
+    "message": "Merchant D - All products deleted successfully."
+  },
+  {
+    "timestamp": "12/23/2024, 12:36:34",
+    "timestampIND": "12/23/2024, 18:06:34",
+    "logType": "success",
+    "message": "Fetched product list for Merchant D, 300 products found."
+  },
+  {
+    "timestamp": "12/23/2024, 12:36:41",
+    "timestampIND": "12/23/2024, 18:06:41",
+    "logType": "success",
+    "message": "Merchant D - All products deleted successfully."
+  },
+  {
+    "timestamp": "12/23/2024, 12:36:41",
+    "timestampIND": "12/23/2024, 18:06:41",
+    "logType": "success",
+    "message": "Fetched product list for Merchant D, 300 products found."
+  },
+  {
+    "timestamp": "12/23/2024, 12:36:48",
+    "timestampIND": "12/23/2024, 18:06:48",
+    "logType": "success",
+    "message": "Merchant D - All products deleted successfully."
+  },
+  {
+    "timestamp": "12/23/2024, 12:36:48",
+    "timestampIND": "12/23/2024, 18:06:48",
+    "logType": "success",
+    "message": "Fetched product list for Merchant D, 300 products found."
+  },
+  {
+    "timestamp": "12/23/2024, 12:36:54",
+    "timestampIND": "12/23/2024, 18:06:54",
+    "logType": "success",
+    "message": "Merchant D - All products deleted successfully."
+  },
+  {
+    "timestamp": "12/23/2024, 12:36:55",
+    "timestampIND": "12/23/2024, 18:06:55",
+    "logType": "success",
+    "message": "Fetched product list for Merchant D, 43 products found."
+  },
+  {
+    "timestamp": "12/23/2024, 12:36:56",
+    "timestampIND": "12/23/2024, 18:06:56",
+    "logType": "success",
+    "message": "Merchant D - All products deleted successfully."
+  },
+  {
+    "timestamp": "12/23/2024, 12:36:56",
+    "timestampIND": "12/23/2024, 18:06:56",
+    "logType": "success",
+    "message": "Fetched product list for Merchant D, 0 products found."
+  },
+  {
+    "timestamp": "12/23/2024, 12:37:01",
+    "timestampIND": "12/23/2024, 18:07:01",
+    "logType": "success",
+    "message": "Successfully fetched and deleted categories for Merchant D."
+  },
+  {
+    "timestamp": "12/23/2024, 12:37:02",
+    "timestampIND": "12/23/2024, 18:07:02",
+    "logType": "success",
+    "message": "Merchant D file uploaded successfully"
+  },
+  {
+    "timestamp": "12/23/2024, 12:37:04",
+    "timestampIND": "12/23/2024, 18:07:04",
+    "logType": "success",
+    "message": "Merchant D product import validated successfully for merchantId: 66f67d6105f843b99b0fc062"
+  },
+  {
+    "timestamp": "12/23/2024, 12:37:04",
+    "timestampIND": "12/23/2024, 18:07:04",
+    "logType": "success",
+    "message": "Merchant D product import successful for importId: 6769596f22ec8f5ce0021bc5"
+  },
+  {
+    "timestamp": "12/23/2024, 12:37:04",
+    "timestampIND": "12/23/2024, 18:07:04",
+    "logType": "success",
+    "message": "Merchant D Import Status: processing"
+  },
+  {
+    "timestamp": "12/23/2024, 12:37:35",
+    "timestampIND": "12/23/2024, 18:07:35",
+    "logType": "success",
+    "message": "Merchant D Import Status: processing"
+  },
+  {
+    "timestamp": "12/23/2024, 12:38:06",
+    "timestampIND": "12/23/2024, 18:08:06",
+    "logType": "success",
+    "message": "Merchant D Import Status: completed"
+  },
+  {
+    "timestamp": "12/23/2024, 12:38:08",
+    "timestampIND": "12/23/2024, 18:08:08",
+    "logType": "success",
+    "message": "Merchant D file uploaded successfully"
+  },
+  {
+    "timestamp": "12/23/2024, 12:38:10",
+    "timestampIND": "12/23/2024, 18:08:10",
+    "logType": "success",
+    "message": "Merchant D product import validated successfully for merchantId: 66f67d6105f843b99b0fc062"
+  },
+  {
+    "timestamp": "12/23/2024, 12:38:10",
+    "timestampIND": "12/23/2024, 18:08:10",
+    "logType": "success",
+    "message": "Merchant D product import successful for importId: 676959b2a3e49bb58a00497c"
+  },
+  {
+    "timestamp": "12/23/2024, 12:38:10",
+    "timestampIND": "12/23/2024, 18:08:10",
+    "logType": "success",
+    "message": "Merchant D Import Status: processing"
+  },
+  {
+    "timestamp": "12/23/2024, 12:38:41",
+    "timestampIND": "12/23/2024, 18:08:41",
+    "logType": "success",
+    "message": "Merchant D Import Status: completed"
+  },
+  {
+    "timestamp": "12/23/2024, 12:38:42",
+    "timestampIND": "12/23/2024, 18:08:42",
+    "logType": "success",
+    "message": "Merchant D file uploaded successfully"
+  },
+  {
+    "timestamp": "12/23/2024, 12:38:44",
+    "timestampIND": "12/23/2024, 18:08:44",
+    "logType": "success",
+    "message": "Merchant D product import validated successfully for merchantId: 66f67d6105f843b99b0fc062"
+  },
+  {
+    "timestamp": "12/23/2024, 12:38:45",
+    "timestampIND": "12/23/2024, 18:08:45",
+    "logType": "success",
+    "message": "Merchant D product import successful for importId: 676959d4a3e49bb58a00497d"
+  },
+  {
+    "timestamp": "12/23/2024, 12:38:46",
+    "timestampIND": "12/23/2024, 18:08:46",
+    "logType": "success",
+    "message": "Merchant D Import Status: processing"
+  },
+  {
+    "timestamp": "12/23/2024, 12:39:17",
+    "timestampIND": "12/23/2024, 18:09:17",
+    "logType": "success",
+    "message": "Merchant D Import Status: processing"
+  },
+  {
+    "timestamp": "12/23/2024, 12:39:47",
+    "timestampIND": "12/23/2024, 18:09:47",
+    "logType": "success",
+    "message": "Merchant D Import Status: completed"
+  },
+  {
+    "timestamp": "12/23/2024, 12:39:49",
+    "timestampIND": "12/23/2024, 18:09:49",
+    "logType": "success",
+    "message": "Merchant D file uploaded successfully"
+  },
+  {
+    "timestamp": "12/23/2024, 12:39:50",
+    "timestampIND": "12/23/2024, 18:09:50",
+    "logType": "success",
+    "message": "Merchant D product import validated successfully for merchantId: 66f67d6105f843b99b0fc062"
+  },
+  {
+    "timestamp": "12/23/2024, 12:39:51",
+    "timestampIND": "12/23/2024, 18:09:51",
+    "logType": "success",
+    "message": "Merchant D product import successful for importId: 67695a1622ec8f5ce0021bc6"
+  },
+  {
+    "timestamp": "12/23/2024, 12:39:51",
+    "timestampIND": "12/23/2024, 18:09:51",
+    "logType": "success",
+    "message": "Merchant D Import Status: processing"
+  },
+  {
+    "timestamp": "12/23/2024, 12:40:22",
+    "timestampIND": "12/23/2024, 18:10:22",
+    "logType": "success",
+    "message": "Merchant D Import Status: processing"
+  },
+  {
+    "timestamp": "12/23/2024, 12:40:52",
+    "timestampIND": "12/23/2024, 18:10:52",
+    "logType": "success",
+    "message": "Merchant D Import Status: completed"
+  },
+  {
+    "timestamp": "12/23/2024, 12:40:54",
+    "timestampIND": "12/23/2024, 18:10:54",
+    "logType": "success",
+    "message": "Merchant D file uploaded successfully"
+  },
+  {
+    "timestamp": "12/23/2024, 12:40:56",
+    "timestampIND": "12/23/2024, 18:10:56",
+    "logType": "success",
+    "message": "Merchant D product import validated successfully for merchantId: 66f67d6105f843b99b0fc062"
+  },
+  {
+    "timestamp": "12/23/2024, 12:40:56",
+    "timestampIND": "12/23/2024, 18:10:56",
+    "logType": "success",
+    "message": "Merchant D product import successful for importId: 67695a58a3e49bb58a00497e"
+  },
+  {
+    "timestamp": "12/23/2024, 12:40:57",
+    "timestampIND": "12/23/2024, 18:10:57",
+    "logType": "success",
+    "message": "Merchant D Import Status: processing"
+  },
+  {
+    "timestamp": "12/23/2024, 12:41:27",
+    "timestampIND": "12/23/2024, 18:11:27",
+    "logType": "success",
+    "message": "Merchant D Import Status: processing"
+  },
+  {
+    "timestamp": "12/23/2024, 12:41:58",
+    "timestampIND": "12/23/2024, 18:11:58",
+    "logType": "success",
+    "message": "Merchant D Import Status: completed"
+  },
+  {
+    "timestamp": "12/23/2024, 12:41:59",
+    "timestampIND": "12/23/2024, 18:11:59",
+    "logType": "success",
+    "message": "Merchant D file uploaded successfully"
+  },
+  {
+    "timestamp": "12/23/2024, 12:42:02",
+    "timestampIND": "12/23/2024, 18:12:02",
+    "logType": "success",
+    "message": "Merchant D product import validated successfully for merchantId: 66f67d6105f843b99b0fc062"
+  },
+  {
+    "timestamp": "12/23/2024, 12:42:02",
+    "timestampIND": "12/23/2024, 18:12:02",
+    "logType": "success",
+    "message": "Merchant D product import successful for importId: 67695a99edf84f6d5c045910"
+  },
+  {
+    "timestamp": "12/23/2024, 12:42:02",
+    "timestampIND": "12/23/2024, 18:12:02",
+    "logType": "success",
+    "message": "Merchant D Import Status: processing"
+  },
+  {
+    "timestamp": "12/23/2024, 12:42:33",
+    "timestampIND": "12/23/2024, 18:12:33",
+    "logType": "success",
+    "message": "Merchant D Import Status: completed"
+  },
+  {
+    "timestamp": "12/23/2024, 12:42:35",
+    "timestampIND": "12/23/2024, 18:12:35",
+    "logType": "success",
+    "message": "Merchant D file uploaded successfully"
+  },
+  {
+    "timestamp": "12/23/2024, 12:42:37",
+    "timestampIND": "12/23/2024, 18:12:37",
+    "logType": "success",
+    "message": "Merchant D product import validated successfully for merchantId: 66f67d6105f843b99b0fc062"
+  },
+  {
+    "timestamp": "12/23/2024, 12:42:37",
+    "timestampIND": "12/23/2024, 18:12:37",
+    "logType": "success",
+    "message": "Merchant D product import successful for importId: 67695abd22ec8f5ce0021bc7"
+  },
+  {
+    "timestamp": "12/23/2024, 12:42:37",
+    "timestampIND": "12/23/2024, 18:12:37",
+    "logType": "success",
+    "message": "Merchant D Import Status: processing"
+  },
+  {
+    "timestamp": "12/23/2024, 12:43:08",
+    "timestampIND": "12/23/2024, 18:13:08",
+    "logType": "success",
+    "message": "Merchant D Import Status: processing"
+  },
+  {
+    "timestamp": "12/23/2024, 12:43:40",
+    "timestampIND": "12/23/2024, 18:13:40",
+    "logType": "success",
+    "message": "Merchant D Import Status: completed"
+  },
+  {
+    "timestamp": "12/23/2024, 12:43:42",
+    "timestampIND": "12/23/2024, 18:13:42",
+    "logType": "success",
+    "message": "Merchant D file uploaded successfully"
+  },
+  {
+    "timestamp": "12/23/2024, 12:43:44",
+    "timestampIND": "12/23/2024, 18:13:44",
+    "logType": "success",
+    "message": "Merchant D product import validated successfully for merchantId: 66f67d6105f843b99b0fc062"
+  },
+  {
+    "timestamp": "12/23/2024, 12:43:45",
+    "timestampIND": "12/23/2024, 18:13:45",
+    "logType": "success",
+    "message": "Merchant D product import successful for importId: 67695b00a3e49bb58a00497f"
+  },
+  {
+    "timestamp": "12/23/2024, 12:43:45",
+    "timestampIND": "12/23/2024, 18:13:45",
+    "logType": "success",
+    "message": "Merchant D Import Status: processing"
+  },
+  {
+    "timestamp": "12/23/2024, 12:44:16",
+    "timestampIND": "12/23/2024, 18:14:16",
+    "logType": "success",
+    "message": "Merchant D Import Status: processing"
+  },
+  {
+    "timestamp": "12/23/2024, 12:44:47",
+    "timestampIND": "12/23/2024, 18:14:47",
+    "logType": "success",
+    "message": "Merchant D Import Status: completed"
+  },
+  {
+    "timestamp": "12/23/2024, 12:44:48",
+    "timestampIND": "12/23/2024, 18:14:48",
+    "logType": "success",
+    "message": "Merchant D file uploaded successfully"
+  },
+  {
+    "timestamp": "12/23/2024, 12:44:51",
+    "timestampIND": "12/23/2024, 18:14:51",
+    "logType": "success",
+    "message": "Merchant D product import validated successfully for merchantId: 66f67d6105f843b99b0fc062"
+  },
+  {
+    "timestamp": "12/23/2024, 12:44:52",
+    "timestampIND": "12/23/2024, 18:14:52",
+    "logType": "success",
+    "message": "Merchant D product import successful for importId: 67695b43edf84f6d5c045911"
+  },
+  {
+    "timestamp": "12/23/2024, 12:44:52",
+    "timestampIND": "12/23/2024, 18:14:52",
+    "logType": "success",
+    "message": "Merchant D Import Status: processing"
+  },
+  {
+    "timestamp": "12/23/2024, 12:45:23",
+    "timestampIND": "12/23/2024, 18:15:23",
+    "logType": "success",
+    "message": "Merchant D Import Status: processing"
+  },
+  {
+    "timestamp": "12/23/2024, 12:45:53",
+    "timestampIND": "12/23/2024, 18:15:53",
+    "logType": "success",
+    "message": "Merchant D Import Status: completed"
+  },
+  {
+    "timestamp": "12/23/2024, 12:45:54",
+    "timestampIND": "12/23/2024, 18:15:54",
+    "logType": "success",
+    "message": "Merchant D file uploaded successfully"
+  },
+  {
+    "timestamp": "12/23/2024, 12:45:57",
+    "timestampIND": "12/23/2024, 18:15:57",
+    "logType": "success",
+    "message": "Merchant D product import validated successfully for merchantId: 66f67d6105f843b99b0fc062"
+  },
+  {
+    "timestamp": "12/23/2024, 12:45:57",
+    "timestampIND": "12/23/2024, 18:15:57",
+    "logType": "success",
+    "message": "Merchant D product import successful for importId: 67695b8522ec8f5ce0021bc8"
+  },
+  {
+    "timestamp": "12/23/2024, 12:45:58",
+    "timestampIND": "12/23/2024, 18:15:58",
+    "logType": "success",
+    "message": "Merchant D Import Status: processing"
+  },
+  {
+    "timestamp": "12/23/2024, 12:46:29",
+    "timestampIND": "12/23/2024, 18:16:29",
+    "logType": "success",
+    "message": "Merchant D Import Status: processing"
+  },
+  {
+    "timestamp": "12/23/2024, 12:46:59",
+    "timestampIND": "12/23/2024, 18:16:59",
+    "logType": "success",
+    "message": "Merchant D Import Status: completed"
+  },
+  {
+    "timestamp": "12/23/2024, 12:47:01",
+    "timestampIND": "12/23/2024, 18:17:01",
+    "logType": "success",
+    "message": "Merchant D file uploaded successfully"
+  },
+  {
+    "timestamp": "12/23/2024, 12:47:04",
+    "timestampIND": "12/23/2024, 18:17:04",
+    "logType": "success",
+    "message": "Merchant D product import validated successfully for merchantId: 66f67d6105f843b99b0fc062"
+  },
+  {
+    "timestamp": "12/23/2024, 12:47:04",
+    "timestampIND": "12/23/2024, 18:17:04",
+    "logType": "success",
+    "message": "Merchant D product import successful for importId: 67695bc7edf84f6d5c045912"
+  },
+  {
+    "timestamp": "12/23/2024, 12:47:04",
+    "timestampIND": "12/23/2024, 18:17:04",
+    "logType": "success",
+    "message": "Merchant D Import Status: processing"
+  },
+  {
+    "timestamp": "12/23/2024, 12:47:35",
+    "timestampIND": "12/23/2024, 18:17:35",
+    "logType": "success",
+    "message": "Merchant D Import Status: processing"
+  },
+  {
+    "timestamp": "12/23/2024, 12:48:07",
+    "timestampIND": "12/23/2024, 18:18:07",
+    "logType": "success",
+    "message": "Merchant D Import Status: completed"
+  },
+  {
+    "timestamp": "12/23/2024, 12:48:08",
+    "timestampIND": "12/23/2024, 18:18:08",
+    "logType": "success",
+    "message": "Login successful."
+  },
+  {
+    "timestamp": "12/23/2024, 12:48:08",
+    "timestampIND": "12/23/2024, 18:18:08",
+    "logType": "success",
+    "message": "Fetched product list for Merchant A, 300 products found."
+  },
+  {
+    "timestamp": "12/23/2024, 12:48:09",
+    "timestampIND": "12/23/2024, 18:18:09",
+    "logType": "success",
+    "message": "Fetched product list for Merchant A, 300 products found."
+  },
+  {
+    "timestamp": "12/23/2024, 12:48:10",
+    "timestampIND": "12/23/2024, 18:18:10",
+    "logType": "success",
+    "message": "Fetched product list for Merchant A, 300 products found."
+  },
+  {
+    "timestamp": "12/23/2024, 12:48:10",
+    "timestampIND": "12/23/2024, 18:18:10",
+    "logType": "success",
+    "message": "Fetched product list for Merchant A, 300 products found."
+  },
+  {
+    "timestamp": "12/23/2024, 12:48:11",
+    "timestampIND": "12/23/2024, 18:18:11",
+    "logType": "success",
+    "message": "Fetched product list for Merchant A, 300 products found."
+  },
+  {
+    "timestamp": "12/23/2024, 12:48:12",
+    "timestampIND": "12/23/2024, 18:18:12",
+    "logType": "success",
+    "message": "Fetched product list for Merchant A, 300 products found."
+  },
+  {
+    "timestamp": "12/23/2024, 12:48:12",
+    "timestampIND": "12/23/2024, 18:18:12",
+    "logType": "success",
+    "message": "Fetched product list for Merchant A, 300 products found."
+  },
+  {
+    "timestamp": "12/23/2024, 12:48:13",
+    "timestampIND": "12/23/2024, 18:18:13",
+    "logType": "success",
+    "message": "Fetched product list for Merchant A, 300 products found."
+  },
+  {
+    "timestamp": "12/23/2024, 12:48:13",
+    "timestampIND": "12/23/2024, 18:18:13",
+    "logType": "success",
+    "message": "Fetched product list for Merchant A, 300 products found."
+  },
+  {
+    "timestamp": "12/23/2024, 12:48:14",
+    "timestampIND": "12/23/2024, 18:18:14",
+    "logType": "success",
+    "message": "Fetched product list for Merchant A, 151 products found."
+  },
+  {
+    "timestamp": "12/23/2024, 12:48:14",
+    "timestampIND": "12/23/2024, 18:18:14",
+    "logType": "success",
+    "message": "Fetched product list for Merchant A, 0 products found."
+  },
+  {
+    "timestamp": "12/23/2024, 12:51:03",
+    "timestampIND": "12/23/2024, 18:21:03",
+    "logType": "success",
+    "message": "Login successful."
+  },
+  {
+    "timestamp": "12/23/2024, 12:51:04",
+    "timestampIND": "12/23/2024, 18:21:04",
+    "logType": "success",
+    "message": "Fetched product list for Merchant B, 300 products found."
+  },
+  {
+    "timestamp": "12/23/2024, 12:51:04",
+    "timestampIND": "12/23/2024, 18:21:04",
+    "logType": "success",
+    "message": "Fetched product list for Merchant B, 300 products found."
+  },
+  {
+    "timestamp": "12/23/2024, 12:51:04",
+    "timestampIND": "12/23/2024, 18:21:04",
+    "logType": "success",
+    "message": "Fetched product list for Merchant B, 300 products found."
+  },
+  {
+    "timestamp": "12/23/2024, 12:51:05",
+    "timestampIND": "12/23/2024, 18:21:05",
+    "logType": "success",
+    "message": "Fetched product list for Merchant B, 300 products found."
+  },
+  {
+    "timestamp": "12/23/2024, 12:51:05",
+    "timestampIND": "12/23/2024, 18:21:05",
+    "logType": "success",
+    "message": "Fetched product list for Merchant B, 300 products found."
+  },
+  {
+    "timestamp": "12/23/2024, 12:51:06",
+    "timestampIND": "12/23/2024, 18:21:06",
+    "logType": "success",
+    "message": "Fetched product list for Merchant B, 300 products found."
+  },
+  {
+    "timestamp": "12/23/2024, 12:51:06",
+    "timestampIND": "12/23/2024, 18:21:06",
+    "logType": "success",
+    "message": "Fetched product list for Merchant B, 300 products found."
+  },
+  {
+    "timestamp": "12/23/2024, 12:51:06",
+    "timestampIND": "12/23/2024, 18:21:06",
+    "logType": "success",
+    "message": "Fetched product list for Merchant B, 99 products found."
+  },
+  {
+    "timestamp": "12/23/2024, 12:51:07",
+    "timestampIND": "12/23/2024, 18:21:07",
+    "logType": "success",
+    "message": "Fetched product list for Merchant B, 0 products found."
+  }
+]

@@ -3,14 +3,18 @@ const cron = require("node-cron");
 const fs = require("fs");
 const path = require("path");
 const app = express();
-const BranchA = require("./Products/BranchA");
-const BranchB = require("./Products/BranchB");
-const BranchC = require("./Products/BranchC");
-const BranchD = require("./Products/BranchD");
-const MerchantsA = require("./Merchants/MerchantsA");
-const MerchantsB = require("./Merchants/MerchantsB");
-const MerchantsC = require("./Merchants/MerchantsC");
-const MerchantsD = require("./Merchants/MerchantsD");
+const BranchA = require("./Controller/Products/BranchA");
+const BranchB = require("./Controller/Products/BranchB");
+const BranchC = require("./Controller/Products/BranchC");
+const BranchD = require("./Controller/Products/BranchD");
+const MerchantsA = require("./Controller/Merchants/MerchantsA");
+const MerchantsB = require("./Controller/Merchants/MerchantsB");
+const MerchantsC = require("./Controller/Merchants/MerchantsC");
+const MerchantsD = require("./Controller/Merchants/MerchantsD");
+const MB_A = require("./Controller/UpdateProduct/MB_A");
+const MB_B = require("./Controller/UpdateProduct/MB_B");
+const MB_C = require("./Controller/UpdateProduct/MB_C");
+const MB_D = require("./Controller/UpdateProduct/MB_D");
 const {
   fetchCategoryTree,
   readCategoryTree,
@@ -20,14 +24,7 @@ const PORT = process.env.PORT || 8080;
 const timezone = "Europe/London"; // Set timezone to UK
 
 // Utility function to remove files
-const cleanupFiles = async () => {
-  const files = [
-    "./BranchA.csv",
-    "./BranchB.csv",
-    "./BranchC.csv",
-    "./BranchD.csv",
-    "./Api-Log.json",
-  ];
+const cleanupFiles = async (files) => {
   for (const file of files) {
     const filePath = path.join(__dirname, file);
     if (fs.existsSync(filePath)) {
@@ -77,7 +74,6 @@ const processBranchAndMerchant = async (
 const taskRunner = async (branchFunction, merchantFunction, branchName) => {
   try {
     console.log(`Starting task for ${branchName}`);
-    await cleanupFiles();
     await fetchCategoryTree();
     await processBranchAndMerchant(
       branchFunction,
@@ -92,32 +88,86 @@ const taskRunner = async (branchFunction, merchantFunction, branchName) => {
 
 // Separate cron jobs for each branch and merchant
 cron.schedule(
-  "30 3 * * *", // Runs at 3:30 AM UK time
-  async () => await taskRunner(BranchA, MerchantsA, "BranchA"),
+  "30 3 * * 0", // Runs at 3:30 AM UK time every Sunday
+  async () => {
+    const files = [
+      "./Temp/BranchA.csv",
+      "./Temp/JSON_BranchA.json",
+      "./Temp/Api-Log.json",
+    ];
+    await cleanupFiles(files);
+    await taskRunner(BranchA, MerchantsA, "BranchA");
+  },
   { timezone: timezone }
 );
 
 cron.schedule(
-  "0 4 * * *", // Runs at 4:00 AM UK time
-  async () => await taskRunner(BranchB, MerchantsB, "BranchB"),
+  "0 4 * * 0", // Runs at 4:00 AM UK time every Sunday
+  async () => {
+    const files = [
+      "./Temp/BranchB.csv",
+      "./Temp/JSON_BranchB.json",
+      "./Temp/Api-Log.json",
+    ];
+    await cleanupFiles(files);
+    await taskRunner(BranchB, MerchantsB, "BranchB");
+  },
   { timezone: timezone }
 );
 
 cron.schedule(
-  "30 4 * * *", // Runs at 4:30 AM UK time
-  async () => await taskRunner(BranchC, MerchantsC, "BranchC"),
+  "30 4 * * 0", // Runs at 4:30 AM UK time every Sunday
+  async () => {
+    const files = [
+      "./Temp/BranchC.csv",
+      "./Temp/JSON_BranchC.json",
+      "./Temp/Api-Log.json",
+    ];
+    await cleanupFiles(files);
+    await taskRunner(BranchC, MerchantsC, "BranchC");
+  },
   { timezone: timezone }
 );
 
 cron.schedule(
-  "0 5 * * *", // Runs at 5:00 AM UK time
-  async () => await taskRunner(BranchD, MerchantsD, "BranchD"),
+  "0 5 * * 0", // Runs at 5:00 AM UK time every Sunday
+  async () => {
+    const files = [
+      "./Temp/BranchD.csv",
+      "./Temp/JSON_BranchD.json",
+      "./Temp/Api-Log.json",
+    ];
+    await cleanupFiles(files);
+    await taskRunner(BranchD, MerchantsD, "BranchD");
+  },
   { timezone: timezone }
 );
+
+cron.schedule("0 4 * * 1-6", async () => {
+  console.log(
+    "Running the cron job at 4:00 AM UK time (Mon-Sat) For Product Update"
+  );
+  await MB_A();
+  await MB_B();
+  await MB_C();
+  await MB_D();
+});
 
 // Run all tasks sequentially for testing
 (async () => {
   try {
+    const files = [
+      "./Temp/BranchA.csv",
+      "./Temp/JSON_BranchA.json",
+      "./Temp/BranchB.csv",
+      "./Temp/JSON_BranchB.json",
+      "./Temp/BranchC.csv",
+      "./Temp/JSON_BranchC.json",
+      "./Temp/BranchD.csv",
+      "./Temp/JSON_BranchD.json",
+      "./Temp/Api-Log.json",
+    ];
+    await cleanupFiles(files);
     const branches = [
       {
         branchFunction: BranchA,
@@ -140,20 +190,17 @@ cron.schedule(
         name: "BranchD",
       },
     ];
-
     for (const branch of branches) {
-      const startTime = new Date(); // Capture start time
+      const startTime = new Date();
       console.log(
         `Starting testing for ${branch.name} at ${startTime.toLocaleString()}`
       );
-
       await taskRunner(
         branch.branchFunction,
         branch.merchantFunction,
         branch.name
       );
-
-      const endTime = new Date(); // Capture end time
+      const endTime = new Date();
       console.log(
         `Completed testing for ${branch.name} at ${endTime.toLocaleString()}`
       );
@@ -162,6 +209,13 @@ cron.schedule(
     console.error(`Error in testing execution:`, error);
   }
 })();
+
+// (async () => {
+//   await MB_A();
+//   await MB_B();
+//   await MB_C();
+//   await MB_D();
+// })();
 
 // Set up the server
 app.get("/", (req, res) => {

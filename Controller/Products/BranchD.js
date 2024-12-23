@@ -1,10 +1,10 @@
 const fs = require("fs");
 const path = require("path");
-const RepositoryFactory = require("../services/repositories/repositoryFactory");
+const RepositoryFactory = require("../../services/repositories/repositoryFactory");
 const productRepository = RepositoryFactory.get("product");
 let productNameSet = new Set();
 
-const BranchC = async (data, parentCategory = "") => {
+const BranchD = async (data, parentCategory = "") => {
   try {
     let body = {
       operationName: "searchProducts",
@@ -17,7 +17,7 @@ const BranchC = async (data, parentCategory = "") => {
           facets: [
             {
               name: "localised",
-              values: ["0216", "SE15 6TH"],
+              values: ["0212", "SE15 6TH"],
             },
           ],
           first: 100,
@@ -38,7 +38,7 @@ const BranchC = async (data, parentCategory = "") => {
     let qtyData = {
       operationName: "stockTpplc",
       variables: {
-        branchIds: ["0216"],
+        branchIds: ["0212"],
         productIds: productIds,
       },
       query: `query stockTpplc($branchIds: [ID!]!, $productIds: [ID!]!) {
@@ -125,16 +125,20 @@ const BranchC = async (data, parentCategory = "") => {
 
         // Check status and product name for duplicates
         let productCategory = parentCategory.trim();
-        let productName = el?.product.name.trim();
+        let productName = el?.product.name.trim().replace(/"/g, '""');
         let productDescription = el?.product.description;
         productName = productName.replace("Travis Perkins", "Buildgo");
         productDescription = productDescription.replace(
           "Travis Perkins",
           "Buildgo"
         );
+
         const uniqueIdentifier = `${productCategory}-${productName}`;
         if (status === "ACTIVE" && !productNameSet.has(uniqueIdentifier)) {
           productNameSet.add(uniqueIdentifier); // Track the product name to avoid duplicates
+          const randomTanDigitNumber = Math.floor(
+            1000000000 + Math.random() * 9000000000
+          );
 
           productArray.push({
             id: el?.product.sku || "N/A",
@@ -148,11 +152,11 @@ const BranchC = async (data, parentCategory = "") => {
             costPrice: sellingPrice,
             status: status,
             inventory: inventoryQty,
+            randomTanDigitNumber,
           });
         }
       }
     });
-
     const csvHeaders = [
       "productid",
       "productname",
@@ -179,16 +183,13 @@ const BranchC = async (data, parentCategory = "") => {
         let percentageAmount = (15 / 100) * product.sellingPrice;
         let totalSellingPrice = product.sellingPrice + percentageAmount;
         let formattedTotalSellingPrice = totalSellingPrice.toFixed(2);
-        const randomTanDigitNumber = Math.floor(
-          1000000000 + Math.random() * 9000000000
-        );
 
         const row = [
           `""`,
-          `"${product.name.replace(/"/g, '""')}"`,
+          `"${product.name}"`,
           `"${product.image}"`,
           `"${product.description.replace(/"/g, '""')}"`,
-          `"${randomTanDigitNumber}"`,
+          `"${product.randomTanDigitNumber}"`,
           `"${product.min},${product.max}"`,
           `${formattedTotalSellingPrice}`,
           `"${product.status}"`,
@@ -202,7 +203,10 @@ const BranchC = async (data, parentCategory = "") => {
       })
       .join("\n");
 
-    const csvFilePath = path.join(__dirname, "../BranchC.csv");
+    // ========================
+    // =========  CSV
+    // ========================
+    const csvFilePath = path.join(__dirname, "../../Temp/BranchD.csv");
     const fileExists = fs.existsSync(csvFilePath);
 
     // Step 4: Write or append the CSV
@@ -212,7 +216,7 @@ const BranchC = async (data, parentCategory = "") => {
           console.error("Error writing file", err);
         } else {
           // console.log(
-          //   "Successfully wrote productArray with headers to BranchC"
+          //   "Successfully wrote productArray with headers to BranchD"
           // );
         }
       });
@@ -221,13 +225,47 @@ const BranchC = async (data, parentCategory = "") => {
         if (err) {
           console.error("Error appending to file", err);
         } else {
-          // console.log("Successfully appended new products to BranchC");
+          // console.log("Successfully appended new products to BranchD");
         }
       });
+    }
+
+    // ========================
+    // =========  JSON
+    // ========================
+
+    const jsonFilePath = path.join(__dirname, "../../Temp/JSON_BranchD.json");
+
+    // Check if the file exists
+    if (fs.existsSync(jsonFilePath)) {
+      // Append new data to the existing JSON file
+      const existingData = JSON.parse(fs.readFileSync(jsonFilePath, "utf-8"));
+      const mergedData = existingData.concat(productArray);
+
+      fs.writeFile(jsonFilePath, JSON.stringify(mergedData, null, 2), (err) => {
+        if (err) {
+          console.error("Error appending to JSON file:", err);
+        } else {
+          // console.log("Successfully appended data to JSON_BranchD.json");
+        }
+      });
+    } else {
+      // Create a new JSON file
+      fs.writeFile(
+        jsonFilePath,
+        JSON.stringify(productArray, null, 2),
+        (err) => {
+          if (err) {
+            console.error("Error creating JSON file:", err);
+          } else {
+            console.log("Successfully created JSON_BranchD.json");
+          }
+        }
+      );
     }
   } catch (error) {
     console.error("Error fetching data :-", error.message);
   }
 };
 
-module.exports = BranchC;
+module.exports = BranchD;
