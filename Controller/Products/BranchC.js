@@ -134,6 +134,8 @@ const BranchC = async (data, parentCategory = "") => {
           "Travis Perkins",
           "Buildgo"
         );
+        productDescription = productDescription.replace("4Trade", "Buildgo");
+        productDescription = productDescription.replace("4TRADE", "Buildgo");
 
         const uniqueIdentifier = `${productCategory}-${productName}`;
         if (status === "ACTIVE" && !productNameSet.has(uniqueIdentifier)) {
