@@ -45,7 +45,6 @@ const MB_C = async () => {
       return;
     }
 
-    const notMatching = [];
     const stockCounts = [];
     let index = 0;
     for (const product of hzProducts) {
@@ -59,9 +58,6 @@ const MB_C = async () => {
           result[0] !== product.product_quantity.max_quantity
         } -> Index: ${index}`
       );
-      if (result.length > 1) {
-        notMatching.push(`Sku: ${product.sku} -> Name: ${product.name}`);
-      }
 
       if (result[0] !== product.product_quantity.max_quantity) {
         stockCounts.push({
@@ -76,7 +72,6 @@ const MB_C = async () => {
     };
     await updateProduct(payload, token);
 
-    console.log("MB_C -> notMatching :>> ", notMatching, notMatching.length);
     console.log("MB_C -> Total hzProducts fetched:", hzProducts.length);
     console.log("MB_C -> readJson.length :>> ", readJson.length);
 
