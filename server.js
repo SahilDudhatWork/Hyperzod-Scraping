@@ -90,11 +90,7 @@ const taskRunner = async (branchFunction, merchantFunction, branchName) => {
 cron.schedule(
   "30 3 * * 0", // Runs at 3:30 AM UK time every Sunday
   async () => {
-    const files = [
-      "./Temp/BranchA.csv",
-      "./Temp/JSON_BranchA.json",
-      "./Temp/Api-Log.json",
-    ];
+    const files = ["./Temp/BranchA.csv", "./Temp/Api-Log.json"];
     await cleanupFiles(files);
     await taskRunner(BranchA, MerchantsA, "BranchA");
   },
@@ -104,11 +100,7 @@ cron.schedule(
 cron.schedule(
   "0 4 * * 0", // Runs at 4:00 AM UK time every Sunday
   async () => {
-    const files = [
-      "./Temp/BranchB.csv",
-      "./Temp/JSON_BranchB.json",
-      "./Temp/Api-Log.json",
-    ];
+    const files = ["./Temp/BranchB.csv", "./Temp/Api-Log.json"];
     await cleanupFiles(files);
     await taskRunner(BranchB, MerchantsB, "BranchB");
   },
@@ -118,11 +110,7 @@ cron.schedule(
 cron.schedule(
   "30 4 * * 0", // Runs at 4:30 AM UK time every Sunday
   async () => {
-    const files = [
-      "./Temp/BranchC.csv",
-      "./Temp/JSON_BranchC.json",
-      "./Temp/Api-Log.json",
-    ];
+    const files = ["./Temp/BranchC.csv", "./Temp/Api-Log.json"];
     await cleanupFiles(files);
     await taskRunner(BranchC, MerchantsC, "BranchC");
   },
@@ -132,11 +120,7 @@ cron.schedule(
 cron.schedule(
   "0 5 * * 0", // Runs at 5:00 AM UK time every Sunday
   async () => {
-    const files = [
-      "./Temp/BranchD.csv",
-      "./Temp/JSON_BranchD.json",
-      "./Temp/Api-Log.json",
-    ];
+    const files = ["./Temp/BranchD.csv", "./Temp/Api-Log.json"];
     await cleanupFiles(files);
     await taskRunner(BranchD, MerchantsD, "BranchD");
   },
@@ -158,13 +142,9 @@ cron.schedule("0 4 * * 1-6", async () => {
   try {
     const files = [
       "./Temp/BranchA.csv",
-      "./Temp/JSON_BranchA.json",
       "./Temp/BranchB.csv",
-      "./Temp/JSON_BranchB.json",
       "./Temp/BranchC.csv",
-      "./Temp/JSON_BranchC.json",
       "./Temp/BranchD.csv",
-      "./Temp/JSON_BranchD.json",
       "./Temp/Api-Log.json",
     ];
     await cleanupFiles(files);
@@ -205,17 +185,14 @@ cron.schedule("0 4 * * 1-6", async () => {
         `Completed testing for ${branch.name} at ${endTime.toLocaleString()}`
       );
     }
+    await MB_A();
+    await MB_B();
+    await MB_C();
+    await MB_D();
   } catch (error) {
     console.error(`Error in testing execution:`, error);
   }
 })();
-
-// (async () => {
-//   await MB_A();
-//   await MB_B();
-//   await MB_C();
-//   await MB_D();
-// })();
 
 // Set up the server
 app.get("/", (req, res) => {

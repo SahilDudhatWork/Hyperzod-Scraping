@@ -4,8 +4,6 @@ const {
   searchProducts,
   updateProduct,
 } = require("../hyperzodAPI");
-const fs = require("fs");
-const path = require("path");
 
 const MB_B = async () => {
   try {
@@ -36,45 +34,37 @@ const MB_B = async () => {
       return;
     }
 
-    const jsonFilePath = path.join(__dirname, "../../Temp/JSON_BranchB.json");
-    let readJson = await fs.readFileSync(jsonFilePath, "utf-8");
-    readJson = JSON.parse(readJson);
-
-    if (readJson.length === 0) {
-      console.log("JSON_BranchB.json is empty.");
-      return;
-    }
-
     const stockCounts = [];
     let index = 0;
     for (const product of hzProducts) {
-      const getProduct = readJson.find(
-        (i) => i.randomTanDigitNumber == product.sku
-      );
-      const result = await searchProducts(getProduct.sku, ["0344", "SE15 6TH"]);
+      const sku = product.sku.slice(0, 6);
+      const [result] = await searchProducts(sku, ["0344", "SE15 6TH"]);
       index++;
       console.log(
         `MB_B -> Sku: ${product.sku} -> Qty: ${result} -> Match: ${
-          result[0] !== product.product_quantity.max_quantity
+          result !== product.product_quantity.max_quantity
         } -> Index: ${index}`
       );
 
-      if (result[0] !== product.product_quantity.max_quantity) {
+      if (result !== product.product_quantity.max_quantity) {
         stockCounts.push({
           product_id: product.product_id,
-          stock_count: result[0],
+          stock_count: result,
         });
       }
     }
-    const payload = {
-      merchant_id: merchantId,
-      stock_counts: stockCounts,
-    };
-    await updateProduct(payload, token);
+    if (stockCounts.length > 0) {
+      const payload = {
+        merchant_id: merchantId,
+        stock_counts: stockCounts,
+      };
+      await updateProduct(payload, token);
+    } else {
+      console.log("MB_B -> No stock count to update.");
+    }
 
-    console.log("MB_B -> Total hzProducts fetched:", hzProducts.length);
-    console.log("MB_B -> readJson.length :>> ", readJson.length);
-
+    console.log("MB_B -> Total hzProducts :", hzProducts.length);
+    console.log("MB_B -> Total stockCounts :", stockCounts.length);
     console.log(
       "\x1b[32m*=*=*=*=*=*=*=*=*=*/\x1b[0m \x1b[31m MB_B - All chunks processed successfully.\x1b[0m \x1b[32m/*=*=*=*=*=*=*=*=*=*\x1b[0m"
     );
