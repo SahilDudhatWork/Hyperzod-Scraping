@@ -86,46 +86,46 @@ const taskRunner = async (branchFunction, merchantFunction, branchName) => {
   }
 };
 
-// Separate cron jobs for each branch and merchant
-cron.schedule(
-  "30 3 * * 0", // Runs at 3:30 AM UK time every Sunday
-  async () => {
-    const files = ["./Temp/BranchA.csv", "./Temp/Api-Log.json"];
-    await cleanupFiles(files);
-    await taskRunner(BranchA, MerchantsA, "BranchA");
-  },
-  { timezone: timezone }
-);
+// // Separate cron jobs for each branch and merchant
+// cron.schedule(
+//   "30 3 * * 0", // Runs at 3:30 AM UK time every Sunday
+//   async () => {
+//     const files = ["./Temp/BranchA.csv", "./Temp/Api-Log.json"];
+//     await cleanupFiles(files);
+//     await taskRunner(BranchA, MerchantsA, "BranchA");
+//   },
+//   { timezone: timezone }
+// );
 
-cron.schedule(
-  "0 4 * * 0", // Runs at 4:00 AM UK time every Sunday
-  async () => {
-    const files = ["./Temp/BranchB.csv", "./Temp/Api-Log.json"];
-    await cleanupFiles(files);
-    await taskRunner(BranchB, MerchantsB, "BranchB");
-  },
-  { timezone: timezone }
-);
+// cron.schedule(
+//   "0 4 * * 0", // Runs at 4:00 AM UK time every Sunday
+//   async () => {
+//     const files = ["./Temp/BranchB.csv", "./Temp/Api-Log.json"];
+//     await cleanupFiles(files);
+//     await taskRunner(BranchB, MerchantsB, "BranchB");
+//   },
+//   { timezone: timezone }
+// );
 
-cron.schedule(
-  "30 4 * * 0", // Runs at 4:30 AM UK time every Sunday
-  async () => {
-    const files = ["./Temp/BranchC.csv", "./Temp/Api-Log.json"];
-    await cleanupFiles(files);
-    await taskRunner(BranchC, MerchantsC, "BranchC");
-  },
-  { timezone: timezone }
-);
+// cron.schedule(
+//   "30 4 * * 0", // Runs at 4:30 AM UK time every Sunday
+//   async () => {
+//     const files = ["./Temp/BranchC.csv", "./Temp/Api-Log.json"];
+//     await cleanupFiles(files);
+//     await taskRunner(BranchC, MerchantsC, "BranchC");
+//   },
+//   { timezone: timezone }
+// );
 
-cron.schedule(
-  "0 5 * * 0", // Runs at 5:00 AM UK time every Sunday
-  async () => {
-    const files = ["./Temp/BranchD.csv", "./Temp/Api-Log.json"];
-    await cleanupFiles(files);
-    await taskRunner(BranchD, MerchantsD, "BranchD");
-  },
-  { timezone: timezone }
-);
+// cron.schedule(
+//   "0 5 * * 0", // Runs at 5:00 AM UK time every Sunday
+//   async () => {
+//     const files = ["./Temp/BranchD.csv", "./Temp/Api-Log.json"];
+//     await cleanupFiles(files);
+//     await taskRunner(BranchD, MerchantsD, "BranchD");
+//   },
+//   { timezone: timezone }
+// );
 
 cron.schedule("0 4 * * 1-6", async () => {
   console.log(
@@ -140,51 +140,51 @@ cron.schedule("0 4 * * 1-6", async () => {
 // Run all tasks sequentially for testing
 (async () => {
   try {
-    const files = [
-      "./Temp/BranchA.csv",
-      "./Temp/BranchB.csv",
-      "./Temp/BranchC.csv",
-      "./Temp/BranchD.csv",
-      "./Temp/Api-Log.json",
-    ];
-    await cleanupFiles(files);
-    const branches = [
-      {
-        branchFunction: BranchA,
-        merchantFunction: MerchantsA,
-        name: "BranchA",
-      },
-      {
-        branchFunction: BranchB,
-        merchantFunction: MerchantsB,
-        name: "BranchB",
-      },
-      {
-        branchFunction: BranchC,
-        merchantFunction: MerchantsC,
-        name: "BranchC",
-      },
-      {
-        branchFunction: BranchD,
-        merchantFunction: MerchantsD,
-        name: "BranchD",
-      },
-    ];
-    for (const branch of branches) {
-      const startTime = new Date();
-      console.log(
-        `Starting testing for ${branch.name} at ${startTime.toLocaleString()}`
-      );
-      await taskRunner(
-        branch.branchFunction,
-        branch.merchantFunction,
-        branch.name
-      );
-      const endTime = new Date();
-      console.log(
-        `Completed testing for ${branch.name} at ${endTime.toLocaleString()}`
-      );
-    }
+    // const files = [
+    //   "./Temp/BranchA.csv",
+    //   "./Temp/BranchB.csv",
+    //   "./Temp/BranchC.csv",
+    //   "./Temp/BranchD.csv",
+    //   "./Temp/Api-Log.json",
+    // ];
+    // await cleanupFiles(files);
+    // const branches = [
+    //   {
+    //     branchFunction: BranchA,
+    //     merchantFunction: MerchantsA,
+    //     name: "BranchA",
+    //   },
+    //   {
+    //     branchFunction: BranchB,
+    //     merchantFunction: MerchantsB,
+    //     name: "BranchB",
+    //   },
+    //   {
+    //     branchFunction: BranchC,
+    //     merchantFunction: MerchantsC,
+    //     name: "BranchC",
+    //   },
+    //   {
+    //     branchFunction: BranchD,
+    //     merchantFunction: MerchantsD,
+    //     name: "BranchD",
+    //   },
+    // ];
+    // for (const branch of branches) {
+    //   const startTime = new Date();
+    //   console.log(
+    //     `Starting testing for ${branch.name} at ${startTime.toLocaleString()}`
+    //   );
+    //   await taskRunner(
+    //     branch.branchFunction,
+    //     branch.merchantFunction,
+    //     branch.name
+    //   );
+    //   const endTime = new Date();
+    //   console.log(
+    //     `Completed testing for ${branch.name} at ${endTime.toLocaleString()}`
+    //   );
+    // }
     await MB_A();
     await MB_B();
     await MB_C();
