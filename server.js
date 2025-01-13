@@ -140,51 +140,51 @@ cron.schedule("0 4 * * 1-6", async () => {
 // Run all tasks sequentially for testing
 (async () => {
   try {
-    // const files = [
-    //   "./Temp/BranchA.csv",
-    //   "./Temp/BranchB.csv",
-    //   "./Temp/BranchC.csv",
-    //   "./Temp/BranchD.csv",
-    //   "./Temp/Api-Log.json",
-    // ];
-    // await cleanupFiles(files);
-    // const branches = [
-    //   {
-    //     branchFunction: BranchA,
-    //     merchantFunction: MerchantsA,
-    //     name: "BranchA",
-    //   },
-    //   {
-    //     branchFunction: BranchB,
-    //     merchantFunction: MerchantsB,
-    //     name: "BranchB",
-    //   },
-    //   {
-    //     branchFunction: BranchC,
-    //     merchantFunction: MerchantsC,
-    //     name: "BranchC",
-    //   },
-    //   {
-    //     branchFunction: BranchD,
-    //     merchantFunction: MerchantsD,
-    //     name: "BranchD",
-    //   },
-    // ];
-    // for (const branch of branches) {
-    //   const startTime = new Date();
-    //   console.log(
-    //     `Starting testing for ${branch.name} at ${startTime.toLocaleString()}`
-    //   );
-    //   await taskRunner(
-    //     branch.branchFunction,
-    //     branch.merchantFunction,
-    //     branch.name
-    //   );
-    //   const endTime = new Date();
-    //   console.log(
-    //     `Completed testing for ${branch.name} at ${endTime.toLocaleString()}`
-    //   );
-    // }
+    const files = [
+      "./Temp/BranchA.csv",
+      "./Temp/BranchB.csv",
+      "./Temp/BranchC.csv",
+      "./Temp/BranchD.csv",
+      "./Temp/Api-Log.json",
+    ];
+    await cleanupFiles(files);
+    const branches = [
+      {
+        branchFunction: BranchA,
+        merchantFunction: MerchantsA,
+        name: "BranchA",
+      },
+      {
+        branchFunction: BranchB,
+        merchantFunction: MerchantsB,
+        name: "BranchB",
+      },
+      {
+        branchFunction: BranchC,
+        merchantFunction: MerchantsC,
+        name: "BranchC",
+      },
+      {
+        branchFunction: BranchD,
+        merchantFunction: MerchantsD,
+        name: "BranchD",
+      },
+    ];
+    for (const branch of branches) {
+      const startTime = new Date();
+      console.log(
+        `Starting testing for ${branch.name} at ${startTime.toLocaleString()}`
+      );
+      await taskRunner(
+        branch.branchFunction,
+        branch.merchantFunction,
+        branch.name
+      );
+      const endTime = new Date();
+      console.log(
+        `Completed testing for ${branch.name} at ${endTime.toLocaleString()}`
+      );
+    }
     await MB_A();
     await MB_B();
     await MB_C();
