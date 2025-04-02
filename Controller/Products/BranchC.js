@@ -79,9 +79,21 @@ const BranchC = async (data, parentCategory = "") => {
       if (el?.product?.variants?.length == 0 && sellingPrice != 0) {
         let thumbnailImage;
         if (
-          ["938251", "938208", "938182", "938169", "938155", "938196"].includes(
-            el?.product?.sku
-          )
+          [
+            "938251",
+            "938208",
+            "938182",
+            "938169",
+            "938155",
+            "938196",
+            "996242",
+            "996244",
+            "996248",
+            "996241",
+            "996272",
+            "938191",
+            "996245",
+          ].includes(el?.product?.sku)
         ) {
           const imageUrl = el?.product?.otherImages[2]?.images[2]?.url;
           if (imageUrl) {
@@ -109,6 +121,29 @@ const BranchC = async (data, parentCategory = "") => {
             }
           } else {
             console.error("Image URL not found.");
+          }
+
+          if (el?.product?.sku == "996242") {
+            thumbnailImage =
+              "//raw.githubusercontent.com/SahilDudhatWork/image-hosting/refs/heads/main/sku-938208.jpg";
+          } else if (el?.product?.sku == "996244") {
+            thumbnailImage =
+              "//raw.githubusercontent.com/SahilDudhatWork/image-hosting/refs/heads/main/sku-938182.jpg";
+          } else if (el?.product?.sku == "996248") {
+            thumbnailImage =
+              "//raw.githubusercontent.com/SahilDudhatWork/image-hosting/refs/heads/main/sku-938251.jpg";
+          } else if (el?.product?.sku == "996241") {
+            thumbnailImage =
+              "//raw.githubusercontent.com/SahilDudhatWork/image-hosting/refs/heads/main/sku-938196.jpg";
+          } else if (el?.product?.sku == "996272") {
+            thumbnailImage =
+              "//raw.githubusercontent.com/SahilDudhatWork/image-hosting/refs/heads/main/sku-996272.jpg";
+          } else if (el?.product?.sku == "938191") {
+            thumbnailImage =
+              "//raw.githubusercontent.com/SahilDudhatWork/image-hosting/refs/heads/main/sku-938191.jpg";
+          } else if (el?.product?.sku == "996245") {
+            thumbnailImage =
+              "//raw.githubusercontent.com/SahilDudhatWork/image-hosting/refs/heads/main/sku-938191.jpg";
           }
         } else {
           thumbnailImage = el?.product?.primaryImage?.images.find(
