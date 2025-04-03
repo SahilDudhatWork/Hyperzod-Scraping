@@ -74,6 +74,7 @@ const BranchC = async (data, parentCategory = "") => {
     }
 
     response.data.data.tpplcBrand.searchProducts.edges.forEach((el) => {
+      let productName = el?.product.name.trim().replace(/"/g, '""');
       let sellingPrice =
         el?.product?.price?.price?.typicalTradePrice?.valueExVat || 0;
       if (el?.product?.variants?.length == 0 && sellingPrice != 0) {
@@ -123,25 +124,47 @@ const BranchC = async (data, parentCategory = "") => {
             console.error("Image URL not found.");
           }
 
-          if (el?.product?.sku == "996242") {
+          
+          if (
+            el?.product?.sku == "996242" ||
+            productName == "Travis Perkins Grit/Sharp Sand Trade Pack"
+          ) {
             thumbnailImage =
               "//raw.githubusercontent.com/SahilDudhatWork/image-hosting/refs/heads/main/sku-938208.jpg";
-          } else if (el?.product?.sku == "996244") {
+          } else if (
+            el?.product?.sku == "996244" ||
+            productName == "Travis Perkins Gravel and Shingle Trade Pack 10mm"
+          ) {
             thumbnailImage =
               "//raw.githubusercontent.com/SahilDudhatWork/image-hosting/refs/heads/main/sku-938182.jpg";
-          } else if (el?.product?.sku == "996248") {
+          } else if (
+            el?.product?.sku == "996248" ||
+            productName == "Travis Perkins MOT Type 1 Sub Base Trade Pack"
+          ) {
             thumbnailImage =
               "//raw.githubusercontent.com/SahilDudhatWork/image-hosting/refs/heads/main/sku-938251.jpg";
-          } else if (el?.product?.sku == "996241") {
+          } else if (
+            el?.product?.sku == "996241" ||
+            productName == "Plastering Sand Trade Pack"
+          ) {
             thumbnailImage =
               "//raw.githubusercontent.com/SahilDudhatWork/image-hosting/refs/heads/main/sku-938196.jpg";
-          } else if (el?.product?.sku == "996272") {
+          } else if (
+            el?.product?.sku == "996272" ||
+            productName == "Silver Sand Trade Pack"
+          ) {
             thumbnailImage =
               "//raw.githubusercontent.com/SahilDudhatWork/image-hosting/refs/heads/main/sku-996272.jpg";
-          } else if (el?.product?.sku == "938191") {
+          } else if (
+            el?.product?.sku == "938191" ||
+            productName == "Travis Perkins Gravel and Shingle Bulk Bag 20mm"
+          ) {
             thumbnailImage =
               "//raw.githubusercontent.com/SahilDudhatWork/image-hosting/refs/heads/main/sku-938191.jpg";
-          } else if (el?.product?.sku == "996245") {
+          } else if (
+            el?.product?.sku == "996245" ||
+            productName == "Travis Perkins Gravel and Shingle Trade Pack 20mm"
+          ) {
             thumbnailImage =
               "//raw.githubusercontent.com/SahilDudhatWork/image-hosting/refs/heads/main/sku-938191.jpg";
           }
@@ -160,7 +183,7 @@ const BranchC = async (data, parentCategory = "") => {
 
         // Check status and product name for duplicates
         let productCategory = parentCategory.trim();
-        let productName = el?.product.name.trim().replace(/"/g, '""');
+        // let productName = el?.product.name.trim().replace(/"/g, '""');
         let productDescription = el?.product.description;
         productName = productName.replace("Travis Perkins", "Buildgo");
         productName = productName.replace("4Trade", "Buildgo");
