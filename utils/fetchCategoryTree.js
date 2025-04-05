@@ -115,11 +115,24 @@ const fetchCategoryTree = async () => {
     // Filter main categories for uniqueness
     newData = await filterUniqueCategories(newData);
 
+    // Define the custom order for specific categories
+    const customOrder = [
+      "Building Materials",
+      "Plumbing",
+      "Electrical & Lighting",
+      "Tools & Workwear",
+      "Decorating & Interiors",
+      "Fixings & Adhesives",
+    ];
+
     newData = newData.sort((a, b) => {
-      if (a.name === "Timber & Sheet Materials") return 1; // Move this to the end
-      if (b.name === "Timber & Sheet Materials") return -1;
-      if (a.name === "Doors-Windows & Joinery") return 1; // Ensure this comes after "Timber & Sheet Materials"
-      if (b.name === "Doors-Windows & Joinery") return -1;
+      const indexA = customOrder.indexOf(a.name);
+      const indexB = customOrder.indexOf(b.name);
+
+      if (indexA !== -1 && indexB === -1) return -1; // a is in custom order, b is not
+      if (indexA === -1 && indexB !== -1) return 1; // b is in custom order, a is not
+      if (indexA !== -1 && indexB !== -1) return indexA - indexB; // both are in custom order
+
       return 0; // Keep the rest of the order intact
     });
 
