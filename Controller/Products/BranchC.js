@@ -94,6 +94,8 @@ const BranchC = async (data, parentCategory = "") => {
             "996272",
             "938191",
             "996245",
+            "996239",
+            "996226",
           ].includes(el?.product?.sku)
         ) {
           const imageUrl = el?.product?.otherImages[2]?.images[2]?.url;
@@ -124,7 +126,6 @@ const BranchC = async (data, parentCategory = "") => {
             console.error("Image URL not found.");
           }
 
-          
           if (
             el?.product?.sku == "996242" ||
             productName == "Travis Perkins Grit/Sharp Sand Trade Pack"
@@ -167,6 +168,18 @@ const BranchC = async (data, parentCategory = "") => {
           ) {
             thumbnailImage =
               "//raw.githubusercontent.com/SahilDudhatWork/image-hosting/refs/heads/main/sku-938191.jpg";
+          } else if (
+            el?.product?.sku == "996239" ||
+            productName == "Travis Perkins Building Sand Trade Pack"
+          ) {
+            thumbnailImage =
+              "//raw.githubusercontent.com/SahilDudhatWork/image-hosting/refs/heads/main/sku-938208.jpg";
+          } else if (
+            el?.product?.sku == "996226" ||
+            productName == "Travis Perkins Sand and Stone Ballast Trade Pack"
+          ) {
+            thumbnailImage =
+              "//raw.githubusercontent.com/SahilDudhatWork/image-hosting/refs/heads/main/sku-938208.jpg";
           }
         } else {
           thumbnailImage = el?.product?.primaryImage?.images.find(
