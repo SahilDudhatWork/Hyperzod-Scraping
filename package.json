@@ -11,13 +11,27 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "axios": "^1.7.7",
-    "cheerio": "^1.0.0",
-    "csv-parser": "^3.0.0",
+    "axios": "^1.11.0",
+    "basic-ftp": "^5.0.5",
+    "cheerio": "^1.1.0",
+    "csv-parse": "^6.1.0",
+    "csv-parser": "^3.2.0",
+    "csv-writer": "^1.6.0",
+    "dotenv": "^17.2.0",
     "express": "^4.21.0",
+    "fast-csv": "^5.0.5",
     "fs": "^0.0.1-security",
+    "ftp": "^0.3.10",
+    "google-auth-library": "^10.1.0",
+    "image-size": "^2.0.2",
     "json2csv": "^6.0.0-alpha.2",
     "node-cron": "^3.0.3",
-    "puppeteer": "^23.4.1"
+    "openai": "^5.8.2",
+    "puppeteer": "^23.11.1",
+    "puppeteer-extra": "^3.3.6",
+    "puppeteer-extra-plugin-anonymize-ua": "^2.4.6",
+    "puppeteer-extra-plugin-stealth": "^2.11.2",
+    "string-similarity": "^4.0.4",
+    "xlsx": "^0.18.5"
   }
 }

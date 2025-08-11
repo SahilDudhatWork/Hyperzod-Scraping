@@ -127,24 +127,24 @@ const taskRunner = async (branchFunction, merchantFunction, branchName) => {
 //   { timezone: timezone }
 // );
 
-cron.schedule("0 4 * * 1-6", async () => {
-  console.log(
-    "Running the cron job at 4:00 AM UK time (Mon-Sat) For Product Update"
-  );
-  await MB_A();
-  await MB_B();
-  await MB_C();
-  await MB_D();
-});
+// cron.schedule("0 4 * * 1-6", async () => {
+//   console.log(
+//     "Running the cron job at 4:00 AM UK time (Mon-Sat) For Product Update"
+//   );
+//   await MB_A();
+//   await MB_B();
+//   await MB_C();
+//   await MB_D();
+// });
 
 // Run all tasks sequentially for testing
 (async () => {
   try {
     const files = [
       "./Temp/BranchA.csv",
-      "./Temp/BranchB.csv",
-      "./Temp/BranchC.csv",
-      "./Temp/BranchD.csv",
+      // "./Temp/BranchB.csv",
+      // "./Temp/BranchC.csv",
+      // "./Temp/BranchD.csv",
       "./Temp/Api-Log.json",
     ];
     await cleanupFiles(files);
@@ -154,21 +154,21 @@ cron.schedule("0 4 * * 1-6", async () => {
         merchantFunction: MerchantsA,
         name: "BranchA",
       },
-      {
-        branchFunction: BranchB,
-        merchantFunction: MerchantsB,
-        name: "BranchB",
-      },
-      {
-        branchFunction: BranchC,
-        merchantFunction: MerchantsC,
-        name: "BranchC",
-      },
-      {
-        branchFunction: BranchD,
-        merchantFunction: MerchantsD,
-        name: "BranchD",
-      },
+      // {
+      //   branchFunction: BranchB,
+      //   merchantFunction: MerchantsB,
+      //   name: "BranchB",
+      // },
+      // {
+      //   branchFunction: BranchC,
+      //   merchantFunction: MerchantsC,
+      //   name: "BranchC",
+      // },
+      // {
+      //   branchFunction: BranchD,
+      //   merchantFunction: MerchantsD,
+      //   name: "BranchD",
+      // },
     ];
     for (const branch of branches) {
       const startTime = new Date();
@@ -185,10 +185,10 @@ cron.schedule("0 4 * * 1-6", async () => {
         `Completed testing for ${branch.name} at ${endTime.toLocaleString()}`
       );
     }
-    await MB_A();
-    await MB_B();
-    await MB_C();
-    await MB_D();
+    // await MB_A();
+    // await MB_B();
+    // await MB_C();
+    // await MB_D();
   } catch (error) {
     console.error(`Error in testing execution:`, error);
   }

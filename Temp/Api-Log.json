@@ -1,0 +1,860 @@
+[
+  {
+    "timestamp": "07/18/2025, 05:27:25",
+    "timestampIND": "07/18/2025, 10:57:25",
+    "logType": "success",
+    "message": "Login successful."
+  },
+  {
+    "timestamp": "07/18/2025, 05:27:26",
+    "timestampIND": "07/18/2025, 10:57:26",
+    "logType": "success",
+    "message": "Fetched product list for Merchant A, 300 products found."
+  },
+  {
+    "timestamp": "07/18/2025, 05:27:27",
+    "timestampIND": "07/18/2025, 10:57:27",
+    "logType": "success",
+    "message": "Fetched product list for Merchant A, 300 products found."
+  },
+  {
+    "timestamp": "07/18/2025, 05:27:27",
+    "timestampIND": "07/18/2025, 10:57:27",
+    "logType": "success",
+    "message": "Fetched product list for Merchant A, 300 products found."
+  },
+  {
+    "timestamp": "07/18/2025, 05:27:29",
+    "timestampIND": "07/18/2025, 10:57:29",
+    "logType": "success",
+    "message": "Fetched product list for Merchant A, 300 products found."
+  },
+  {
+    "timestamp": "07/18/2025, 05:27:30",
+    "timestampIND": "07/18/2025, 10:57:30",
+    "logType": "success",
+    "message": "Fetched product list for Merchant A, 300 products found."
+  },
+  {
+    "timestamp": "07/18/2025, 05:27:31",
+    "timestampIND": "07/18/2025, 10:57:31",
+    "logType": "success",
+    "message": "Fetched product list for Merchant A, 300 products found."
+  },
+  {
+    "timestamp": "07/18/2025, 05:27:31",
+    "timestampIND": "07/18/2025, 10:57:31",
+    "logType": "success",
+    "message": "Fetched product list for Merchant A, 300 products found."
+  },
+  {
+    "timestamp": "07/18/2025, 05:27:32",
+    "timestampIND": "07/18/2025, 10:57:32",
+    "logType": "success",
+    "message": "Fetched product list for Merchant A, 300 products found."
+  },
+  {
+    "timestamp": "07/18/2025, 05:27:33",
+    "timestampIND": "07/18/2025, 10:57:33",
+    "logType": "success",
+    "message": "Fetched product list for Merchant A, 300 products found."
+  },
+  {
+    "timestamp": "07/18/2025, 05:27:33",
+    "timestampIND": "07/18/2025, 10:57:33",
+    "logType": "success",
+    "message": "Fetched product list for Merchant A, 300 products found."
+  },
+  {
+    "timestamp": "07/18/2025, 05:27:34",
+    "timestampIND": "07/18/2025, 10:57:34",
+    "logType": "success",
+    "message": "Fetched product list for Merchant A, 300 products found."
+  },
+  {
+    "timestamp": "07/18/2025, 05:27:35",
+    "timestampIND": "07/18/2025, 10:57:35",
+    "logType": "success",
+    "message": "Fetched product list for Merchant A, 300 products found."
+  },
+  {
+    "timestamp": "07/18/2025, 05:27:35",
+    "timestampIND": "07/18/2025, 10:57:35",
+    "logType": "success",
+    "message": "Fetched product list for Merchant A, 300 products found."
+  },
+  {
+    "timestamp": "07/18/2025, 05:27:36",
+    "timestampIND": "07/18/2025, 10:57:36",
+    "logType": "success",
+    "message": "Fetched product list for Merchant A, 300 products found."
+  },
+  {
+    "timestamp": "07/18/2025, 05:27:36",
+    "timestampIND": "07/18/2025, 10:57:36",
+    "logType": "success",
+    "message": "Fetched product list for Merchant A, 300 products found."
+  },
+  {
+    "timestamp": "07/18/2025, 05:27:37",
+    "timestampIND": "07/18/2025, 10:57:37",
+    "logType": "success",
+    "message": "Fetched product list for Merchant A, 300 products found."
+  },
+  {
+    "timestamp": "07/18/2025, 05:27:38",
+    "timestampIND": "07/18/2025, 10:57:38",
+    "logType": "success",
+    "message": "Fetched product list for Merchant A, 300 products found."
+  },
+  {
+    "timestamp": "07/18/2025, 05:27:38",
+    "timestampIND": "07/18/2025, 10:57:38",
+    "logType": "success",
+    "message": "Fetched product list for Merchant A, 300 products found."
+  },
+  {
+    "timestamp": "07/18/2025, 05:27:39",
+    "timestampIND": "07/18/2025, 10:57:39",
+    "logType": "success",
+    "message": "Fetched product list for Merchant A, 300 products found."
+  },
+  {
+    "timestamp": "07/18/2025, 05:27:40",
+    "timestampIND": "07/18/2025, 10:57:40",
+    "logType": "success",
+    "message": "Fetched product list for Merchant A, 300 products found."
+  },
+  {
+    "timestamp": "07/18/2025, 05:27:40",
+    "timestampIND": "07/18/2025, 10:57:40",
+    "logType": "success",
+    "message": "Fetched product list for Merchant A, 300 products found."
+  },
+  {
+    "timestamp": "07/18/2025, 05:27:41",
+    "timestampIND": "07/18/2025, 10:57:41",
+    "logType": "success",
+    "message": "Fetched product list for Merchant A, 300 products found."
+  },
+  {
+    "timestamp": "07/18/2025, 05:27:42",
+    "timestampIND": "07/18/2025, 10:57:42",
+    "logType": "success",
+    "message": "Fetched product list for Merchant A, 300 products found."
+  },
+  {
+    "timestamp": "07/18/2025, 05:27:42",
+    "timestampIND": "07/18/2025, 10:57:42",
+    "logType": "success",
+    "message": "Fetched product list for Merchant A, 300 products found."
+  },
+  {
+    "timestamp": "07/18/2025, 05:27:43",
+    "timestampIND": "07/18/2025, 10:57:43",
+    "logType": "success",
+    "message": "Fetched product list for Merchant A, 300 products found."
+  },
+  {
+    "timestamp": "07/18/2025, 05:27:43",
+    "timestampIND": "07/18/2025, 10:57:43",
+    "logType": "success",
+    "message": "Fetched product list for Merchant A, 300 products found."
+  },
+  {
+    "timestamp": "07/18/2025, 05:27:44",
+    "timestampIND": "07/18/2025, 10:57:44",
+    "logType": "success",
+    "message": "Fetched product list for Merchant A, 300 products found."
+  },
+  {
+    "timestamp": "07/18/2025, 05:27:45",
+    "timestampIND": "07/18/2025, 10:57:45",
+    "logType": "success",
+    "message": "Fetched product list for Merchant A, 300 products found."
+  },
+  {
+    "timestamp": "07/18/2025, 05:27:45",
+    "timestampIND": "07/18/2025, 10:57:45",
+    "logType": "success",
+    "message": "Fetched product list for Merchant A, 300 products found."
+  },
+  {
+    "timestamp": "07/18/2025, 05:27:46",
+    "timestampIND": "07/18/2025, 10:57:46",
+    "logType": "success",
+    "message": "Fetched product list for Merchant A, 300 products found."
+  },
+  {
+    "timestamp": "07/18/2025, 05:27:47",
+    "timestampIND": "07/18/2025, 10:57:47",
+    "logType": "success",
+    "message": "Fetched product list for Merchant A, 300 products found."
+  },
+  {
+    "timestamp": "07/18/2025, 05:27:47",
+    "timestampIND": "07/18/2025, 10:57:47",
+    "logType": "success",
+    "message": "Fetched product list for Merchant A, 300 products found."
+  },
+  {
+    "timestamp": "07/18/2025, 05:27:48",
+    "timestampIND": "07/18/2025, 10:57:48",
+    "logType": "success",
+    "message": "Fetched product list for Merchant A, 300 products found."
+  },
+  {
+    "timestamp": "07/18/2025, 05:29:09",
+    "timestampIND": "07/18/2025, 10:59:09",
+    "logType": "success",
+    "message": "Login successful."
+  },
+  {
+    "timestamp": "07/18/2025, 05:29:10",
+    "timestampIND": "07/18/2025, 10:59:10",
+    "logType": "success",
+    "message": "Fetched product list for Merchant A, 300 products found."
+  },
+  {
+    "timestamp": "07/18/2025, 05:29:11",
+    "timestampIND": "07/18/2025, 10:59:11",
+    "logType": "success",
+    "message": "Fetched product list for Merchant A, 300 products found."
+  },
+  {
+    "timestamp": "07/18/2025, 05:29:11",
+    "timestampIND": "07/18/2025, 10:59:11",
+    "logType": "success",
+    "message": "Fetched product list for Merchant A, 300 products found."
+  },
+  {
+    "timestamp": "07/18/2025, 05:29:12",
+    "timestampIND": "07/18/2025, 10:59:12",
+    "logType": "success",
+    "message": "Fetched product list for Merchant A, 300 products found."
+  },
+  {
+    "timestamp": "07/18/2025, 05:29:12",
+    "timestampIND": "07/18/2025, 10:59:12",
+    "logType": "success",
+    "message": "Fetched product list for Merchant A, 300 products found."
+  },
+  {
+    "timestamp": "07/18/2025, 05:29:13",
+    "timestampIND": "07/18/2025, 10:59:13",
+    "logType": "success",
+    "message": "Fetched product list for Merchant A, 300 products found."
+  },
+  {
+    "timestamp": "07/18/2025, 05:29:13",
+    "timestampIND": "07/18/2025, 10:59:13",
+    "logType": "success",
+    "message": "Fetched product list for Merchant A, 300 products found."
+  },
+  {
+    "timestamp": "07/18/2025, 05:29:14",
+    "timestampIND": "07/18/2025, 10:59:14",
+    "logType": "success",
+    "message": "Fetched product list for Merchant A, 300 products found."
+  },
+  {
+    "timestamp": "07/18/2025, 05:29:15",
+    "timestampIND": "07/18/2025, 10:59:15",
+    "logType": "success",
+    "message": "Fetched product list for Merchant A, 300 products found."
+  },
+  {
+    "timestamp": "07/18/2025, 05:29:15",
+    "timestampIND": "07/18/2025, 10:59:15",
+    "logType": "success",
+    "message": "Fetched product list for Merchant A, 300 products found."
+  },
+  {
+    "timestamp": "07/18/2025, 05:29:16",
+    "timestampIND": "07/18/2025, 10:59:16",
+    "logType": "success",
+    "message": "Fetched product list for Merchant A, 300 products found."
+  },
+  {
+    "timestamp": "07/18/2025, 05:29:16",
+    "timestampIND": "07/18/2025, 10:59:16",
+    "logType": "success",
+    "message": "Fetched product list for Merchant A, 300 products found."
+  },
+  {
+    "timestamp": "07/18/2025, 05:29:17",
+    "timestampIND": "07/18/2025, 10:59:17",
+    "logType": "success",
+    "message": "Fetched product list for Merchant A, 300 products found."
+  },
+  {
+    "timestamp": "07/18/2025, 05:29:58",
+    "timestampIND": "07/18/2025, 10:59:58",
+    "logType": "success",
+    "message": "Login successful."
+  },
+  {
+    "timestamp": "07/18/2025, 05:29:58",
+    "timestampIND": "07/18/2025, 10:59:58",
+    "logType": "success",
+    "message": "Fetched product list for Merchant A, 300 products found."
+  },
+  {
+    "timestamp": "07/18/2025, 05:29:59",
+    "timestampIND": "07/18/2025, 10:59:59",
+    "logType": "success",
+    "message": "Fetched product list for Merchant A, 300 products found."
+  },
+  {
+    "timestamp": "07/18/2025, 05:29:59",
+    "timestampIND": "07/18/2025, 10:59:59",
+    "logType": "success",
+    "message": "Fetched product list for Merchant A, 300 products found."
+  },
+  {
+    "timestamp": "07/18/2025, 05:30:01",
+    "timestampIND": "07/18/2025, 11:00:01",
+    "logType": "success",
+    "message": "Fetched product list for Merchant A, 300 products found."
+  },
+  {
+    "timestamp": "07/18/2025, 05:30:02",
+    "timestampIND": "07/18/2025, 11:00:02",
+    "logType": "success",
+    "message": "Fetched product list for Merchant A, 300 products found."
+  },
+  {
+    "timestamp": "07/18/2025, 05:30:03",
+    "timestampIND": "07/18/2025, 11:00:03",
+    "logType": "success",
+    "message": "Fetched product list for Merchant A, 300 products found."
+  },
+  {
+    "timestamp": "07/18/2025, 05:30:03",
+    "timestampIND": "07/18/2025, 11:00:03",
+    "logType": "success",
+    "message": "Fetched product list for Merchant A, 300 products found."
+  },
+  {
+    "timestamp": "07/18/2025, 05:30:04",
+    "timestampIND": "07/18/2025, 11:00:04",
+    "logType": "success",
+    "message": "Fetched product list for Merchant A, 300 products found."
+  },
+  {
+    "timestamp": "07/18/2025, 05:30:05",
+    "timestampIND": "07/18/2025, 11:00:05",
+    "logType": "success",
+    "message": "Fetched product list for Merchant A, 300 products found."
+  },
+  {
+    "timestamp": "07/18/2025, 05:30:05",
+    "timestampIND": "07/18/2025, 11:00:05",
+    "logType": "success",
+    "message": "Fetched product list for Merchant A, 300 products found."
+  },
+  {
+    "timestamp": "07/18/2025, 05:30:06",
+    "timestampIND": "07/18/2025, 11:00:06",
+    "logType": "success",
+    "message": "Fetched product list for Merchant A, 300 products found."
+  },
+  {
+    "timestamp": "07/18/2025, 05:30:06",
+    "timestampIND": "07/18/2025, 11:00:06",
+    "logType": "success",
+    "message": "Fetched product list for Merchant A, 300 products found."
+  },
+  {
+    "timestamp": "07/18/2025, 05:30:07",
+    "timestampIND": "07/18/2025, 11:00:07",
+    "logType": "success",
+    "message": "Fetched product list for Merchant A, 300 products found."
+  },
+  {
+    "timestamp": "07/18/2025, 05:30:07",
+    "timestampIND": "07/18/2025, 11:00:07",
+    "logType": "success",
+    "message": "Fetched product list for Merchant A, 300 products found."
+  },
+  {
+    "timestamp": "07/18/2025, 05:30:08",
+    "timestampIND": "07/18/2025, 11:00:08",
+    "logType": "success",
+    "message": "Fetched product list for Merchant A, 300 products found."
+  },
+  {
+    "timestamp": "07/18/2025, 05:30:09",
+    "timestampIND": "07/18/2025, 11:00:09",
+    "logType": "success",
+    "message": "Fetched product list for Merchant A, 300 products found."
+  },
+  {
+    "timestamp": "07/18/2025, 05:30:09",
+    "timestampIND": "07/18/2025, 11:00:09",
+    "logType": "success",
+    "message": "Fetched product list for Merchant A, 300 products found."
+  },
+  {
+    "timestamp": "07/18/2025, 05:30:10",
+    "timestampIND": "07/18/2025, 11:00:10",
+    "logType": "success",
+    "message": "Fetched product list for Merchant A, 300 products found."
+  },
+  {
+    "timestamp": "07/18/2025, 05:30:11",
+    "timestampIND": "07/18/2025, 11:00:11",
+    "logType": "success",
+    "message": "Fetched product list for Merchant A, 300 products found."
+  },
+  {
+    "timestamp": "07/18/2025, 05:30:11",
+    "timestampIND": "07/18/2025, 11:00:11",
+    "logType": "success",
+    "message": "Fetched product list for Merchant A, 300 products found."
+  },
+  {
+    "timestamp": "07/18/2025, 05:30:12",
+    "timestampIND": "07/18/2025, 11:00:12",
+    "logType": "success",
+    "message": "Fetched product list for Merchant A, 300 products found."
+  },
+  {
+    "timestamp": "07/18/2025, 05:30:12",
+    "timestampIND": "07/18/2025, 11:00:12",
+    "logType": "success",
+    "message": "Fetched product list for Merchant A, 300 products found."
+  },
+  {
+    "timestamp": "07/18/2025, 05:30:13",
+    "timestampIND": "07/18/2025, 11:00:13",
+    "logType": "success",
+    "message": "Fetched product list for Merchant A, 300 products found."
+  },
+  {
+    "timestamp": "07/18/2025, 05:30:13",
+    "timestampIND": "07/18/2025, 11:00:13",
+    "logType": "success",
+    "message": "Fetched product list for Merchant A, 300 products found."
+  },
+  {
+    "timestamp": "07/18/2025, 05:30:14",
+    "timestampIND": "07/18/2025, 11:00:14",
+    "logType": "success",
+    "message": "Fetched product list for Merchant A, 300 products found."
+  },
+  {
+    "timestamp": "07/18/2025, 05:30:15",
+    "timestampIND": "07/18/2025, 11:00:15",
+    "logType": "success",
+    "message": "Fetched product list for Merchant A, 300 products found."
+  },
+  {
+    "timestamp": "07/18/2025, 05:30:15",
+    "timestampIND": "07/18/2025, 11:00:15",
+    "logType": "success",
+    "message": "Fetched product list for Merchant A, 300 products found."
+  },
+  {
+    "timestamp": "07/18/2025, 05:30:16",
+    "timestampIND": "07/18/2025, 11:00:16",
+    "logType": "success",
+    "message": "Fetched product list for Merchant A, 300 products found."
+  },
+  {
+    "timestamp": "07/18/2025, 05:30:16",
+    "timestampIND": "07/18/2025, 11:00:16",
+    "logType": "success",
+    "message": "Fetched product list for Merchant A, 300 products found."
+  },
+  {
+    "timestamp": "07/18/2025, 05:30:17",
+    "timestampIND": "07/18/2025, 11:00:17",
+    "logType": "success",
+    "message": "Fetched product list for Merchant A, 300 products found."
+  },
+  {
+    "timestamp": "07/18/2025, 05:30:18",
+    "timestampIND": "07/18/2025, 11:00:18",
+    "logType": "success",
+    "message": "Fetched product list for Merchant A, 300 products found."
+  },
+  {
+    "timestamp": "07/18/2025, 05:30:18",
+    "timestampIND": "07/18/2025, 11:00:18",
+    "logType": "success",
+    "message": "Fetched product list for Merchant A, 300 products found."
+  },
+  {
+    "timestamp": "07/18/2025, 05:30:19",
+    "timestampIND": "07/18/2025, 11:00:19",
+    "logType": "success",
+    "message": "Fetched product list for Merchant A, 300 products found."
+  },
+  {
+    "timestamp": "07/18/2025, 05:30:19",
+    "timestampIND": "07/18/2025, 11:00:19",
+    "logType": "success",
+    "message": "Fetched product list for Merchant A, 300 products found."
+  },
+  {
+    "timestamp": "07/18/2025, 05:30:20",
+    "timestampIND": "07/18/2025, 11:00:20",
+    "logType": "success",
+    "message": "Fetched product list for Merchant A, 300 products found."
+  },
+  {
+    "timestamp": "07/18/2025, 05:30:20",
+    "timestampIND": "07/18/2025, 11:00:20",
+    "logType": "success",
+    "message": "Fetched product list for Merchant A, 300 products found."
+  },
+  {
+    "timestamp": "07/18/2025, 05:30:21",
+    "timestampIND": "07/18/2025, 11:00:21",
+    "logType": "success",
+    "message": "Fetched product list for Merchant A, 300 products found."
+  },
+  {
+    "timestamp": "07/18/2025, 05:30:22",
+    "timestampIND": "07/18/2025, 11:00:22",
+    "logType": "success",
+    "message": "Fetched product list for Merchant A, 300 products found."
+  },
+  {
+    "timestamp": "07/18/2025, 05:30:30",
+    "timestampIND": "07/18/2025, 11:00:30",
+    "logType": "success",
+    "message": "Login successful."
+  },
+  {
+    "timestamp": "07/18/2025, 05:30:31",
+    "timestampIND": "07/18/2025, 11:00:31",
+    "logType": "success",
+    "message": "Fetched product list for Merchant A, 300 products found."
+  },
+  {
+    "timestamp": "07/18/2025, 05:30:31",
+    "timestampIND": "07/18/2025, 11:00:31",
+    "logType": "success",
+    "message": "Fetched product list for Merchant A, 300 products found."
+  },
+  {
+    "timestamp": "07/18/2025, 05:30:33",
+    "timestampIND": "07/18/2025, 11:00:33",
+    "logType": "success",
+    "message": "Fetched product list for Merchant A, 300 products found."
+  },
+  {
+    "timestamp": "07/18/2025, 05:30:33",
+    "timestampIND": "07/18/2025, 11:00:33",
+    "logType": "success",
+    "message": "Fetched product list for Merchant A, 300 products found."
+  },
+  {
+    "timestamp": "07/18/2025, 05:30:34",
+    "timestampIND": "07/18/2025, 11:00:34",
+    "logType": "success",
+    "message": "Fetched product list for Merchant A, 300 products found."
+  },
+  {
+    "timestamp": "07/18/2025, 05:30:34",
+    "timestampIND": "07/18/2025, 11:00:34",
+    "logType": "success",
+    "message": "Fetched product list for Merchant A, 300 products found."
+  },
+  {
+    "timestamp": "07/18/2025, 05:30:35",
+    "timestampIND": "07/18/2025, 11:00:35",
+    "logType": "success",
+    "message": "Fetched product list for Merchant A, 300 products found."
+  },
+  {
+    "timestamp": "07/18/2025, 05:30:35",
+    "timestampIND": "07/18/2025, 11:00:35",
+    "logType": "success",
+    "message": "Fetched product list for Merchant A, 300 products found."
+  },
+  {
+    "timestamp": "07/18/2025, 05:30:36",
+    "timestampIND": "07/18/2025, 11:00:36",
+    "logType": "success",
+    "message": "Fetched product list for Merchant A, 300 products found."
+  },
+  {
+    "timestamp": "07/18/2025, 05:30:36",
+    "timestampIND": "07/18/2025, 11:00:36",
+    "logType": "success",
+    "message": "Fetched product list for Merchant A, 300 products found."
+  },
+  {
+    "timestamp": "07/18/2025, 05:30:37",
+    "timestampIND": "07/18/2025, 11:00:37",
+    "logType": "success",
+    "message": "Fetched product list for Merchant A, 300 products found."
+  },
+  {
+    "timestamp": "07/18/2025, 05:30:37",
+    "timestampIND": "07/18/2025, 11:00:37",
+    "logType": "success",
+    "message": "Fetched product list for Merchant A, 248 products found."
+  },
+  {
+    "timestamp": "07/18/2025, 05:30:37",
+    "timestampIND": "07/18/2025, 11:00:37",
+    "logType": "success",
+    "message": "Fetched product list for Merchant A, 0 products found."
+  },
+  {
+    "timestamp": "07/18/2025, 05:30:38",
+    "timestampIND": "07/18/2025, 11:00:38",
+    "logType": "success",
+    "message": "Fetched product list for Merchant A, 0 products found."
+  },
+  {
+    "timestamp": "07/18/2025, 05:30:38",
+    "timestampIND": "07/18/2025, 11:00:38",
+    "logType": "success",
+    "message": "Fetched product list for Merchant A, 0 products found."
+  },
+  {
+    "timestamp": "07/18/2025, 05:30:38",
+    "timestampIND": "07/18/2025, 11:00:38",
+    "logType": "success",
+    "message": "Fetched product list for Merchant A, 0 products found."
+  },
+  {
+    "timestamp": "07/18/2025, 05:30:38",
+    "timestampIND": "07/18/2025, 11:00:38",
+    "logType": "success",
+    "message": "Fetched product list for Merchant A, 0 products found."
+  },
+  {
+    "timestamp": "07/18/2025, 05:30:39",
+    "timestampIND": "07/18/2025, 11:00:39",
+    "logType": "success",
+    "message": "Fetched product list for Merchant A, 0 products found."
+  },
+  {
+    "timestamp": "07/18/2025, 05:30:39",
+    "timestampIND": "07/18/2025, 11:00:39",
+    "logType": "success",
+    "message": "Fetched product list for Merchant A, 0 products found."
+  },
+  {
+    "timestamp": "07/18/2025, 05:30:39",
+    "timestampIND": "07/18/2025, 11:00:39",
+    "logType": "success",
+    "message": "Fetched product list for Merchant A, 0 products found."
+  },
+  {
+    "timestamp": "07/18/2025, 05:30:40",
+    "timestampIND": "07/18/2025, 11:00:40",
+    "logType": "success",
+    "message": "Fetched product list for Merchant A, 0 products found."
+  },
+  {
+    "timestamp": "07/18/2025, 05:30:40",
+    "timestampIND": "07/18/2025, 11:00:40",
+    "logType": "success",
+    "message": "Fetched product list for Merchant A, 0 products found."
+  },
+  {
+    "timestamp": "07/18/2025, 05:30:40",
+    "timestampIND": "07/18/2025, 11:00:40",
+    "logType": "success",
+    "message": "Fetched product list for Merchant A, 0 products found."
+  },
+  {
+    "timestamp": "07/18/2025, 05:31:00",
+    "timestampIND": "07/18/2025, 11:01:00",
+    "logType": "success",
+    "message": "Login successful."
+  },
+  {
+    "timestamp": "07/18/2025, 05:31:01",
+    "timestampIND": "07/18/2025, 11:01:01",
+    "logType": "success",
+    "message": "Fetched product list for Merchant A, 300 products found."
+  },
+  {
+    "timestamp": "07/18/2025, 05:31:08",
+    "timestampIND": "07/18/2025, 11:01:08",
+    "logType": "success",
+    "message": "Merchant A - All products deleted successfully."
+  },
+  {
+    "timestamp": "07/18/2025, 05:31:11",
+    "timestampIND": "07/18/2025, 11:01:11",
+    "logType": "success",
+    "message": "Fetched product list for Merchant A, 300 products found."
+  },
+  {
+    "timestamp": "07/18/2025, 05:31:17",
+    "timestampIND": "07/18/2025, 11:01:17",
+    "logType": "success",
+    "message": "Merchant A - All products deleted successfully."
+  },
+  {
+    "timestamp": "07/18/2025, 05:31:20",
+    "timestampIND": "07/18/2025, 11:01:20",
+    "logType": "success",
+    "message": "Fetched product list for Merchant A, 300 products found."
+  },
+  {
+    "timestamp": "07/18/2025, 05:31:26",
+    "timestampIND": "07/18/2025, 11:01:26",
+    "logType": "success",
+    "message": "Merchant A - All products deleted successfully."
+  },
+  {
+    "timestamp": "07/18/2025, 05:31:29",
+    "timestampIND": "07/18/2025, 11:01:29",
+    "logType": "success",
+    "message": "Fetched product list for Merchant A, 300 products found."
+  },
+  {
+    "timestamp": "07/18/2025, 05:31:35",
+    "timestampIND": "07/18/2025, 11:01:35",
+    "logType": "success",
+    "message": "Merchant A - All products deleted successfully."
+  },
+  {
+    "timestamp": "07/18/2025, 05:31:38",
+    "timestampIND": "07/18/2025, 11:01:38",
+    "logType": "success",
+    "message": "Fetched product list for Merchant A, 300 products found."
+  },
+  {
+    "timestamp": "07/18/2025, 05:31:44",
+    "timestampIND": "07/18/2025, 11:01:44",
+    "logType": "success",
+    "message": "Merchant A - All products deleted successfully."
+  },
+  {
+    "timestamp": "07/18/2025, 05:31:47",
+    "timestampIND": "07/18/2025, 11:01:47",
+    "logType": "error",
+    "message": "Merchant A - Error fetching product list: read ECONNRESET"
+  },
+  {
+    "timestamp": "07/18/2025, 05:32:32",
+    "timestampIND": "07/18/2025, 11:02:32",
+    "logType": "success",
+    "message": "Login successful."
+  },
+  {
+    "timestamp": "07/18/2025, 05:32:33",
+    "timestampIND": "07/18/2025, 11:02:33",
+    "logType": "success",
+    "message": "Fetched product list for Merchant A, 300 products found."
+  },
+  {
+    "timestamp": "07/18/2025, 05:32:39",
+    "timestampIND": "07/18/2025, 11:02:39",
+    "logType": "success",
+    "message": "Merchant A - All products deleted successfully."
+  },
+  {
+    "timestamp": "07/18/2025, 05:32:40",
+    "timestampIND": "07/18/2025, 11:02:40",
+    "logType": "success",
+    "message": "Fetched product list for Merchant A, 300 products found."
+  },
+  {
+    "timestamp": "07/18/2025, 05:32:47",
+    "timestampIND": "07/18/2025, 11:02:47",
+    "logType": "success",
+    "message": "Merchant A - All products deleted successfully."
+  },
+  {
+    "timestamp": "07/18/2025, 05:32:47",
+    "timestampIND": "07/18/2025, 11:02:47",
+    "logType": "success",
+    "message": "Fetched product list for Merchant A, 300 products found."
+  },
+  {
+    "timestamp": "07/18/2025, 05:32:54",
+    "timestampIND": "07/18/2025, 11:02:54",
+    "logType": "success",
+    "message": "Merchant A - All products deleted successfully."
+  },
+  {
+    "timestamp": "07/18/2025, 05:32:54",
+    "timestampIND": "07/18/2025, 11:02:54",
+    "logType": "success",
+    "message": "Fetched product list for Merchant A, 248 products found."
+  },
+  {
+    "timestamp": "07/18/2025, 05:33:00",
+    "timestampIND": "07/18/2025, 11:03:00",
+    "logType": "success",
+    "message": "Merchant A - All products deleted successfully."
+  },
+  {
+    "timestamp": "07/18/2025, 05:33:00",
+    "timestampIND": "07/18/2025, 11:03:00",
+    "logType": "success",
+    "message": "Fetched product list for Merchant A, 0 products found."
+  },
+  {
+    "timestamp": "07/18/2025, 05:33:28",
+    "timestampIND": "07/18/2025, 11:03:28",
+    "logType": "success",
+    "message": "Login successful."
+  },
+  {
+    "timestamp": "07/18/2025, 05:33:28",
+    "timestampIND": "07/18/2025, 11:03:28",
+    "logType": "success",
+    "message": "Fetched product list for Merchant A, 300 products found."
+  },
+  {
+    "timestamp": "07/18/2025, 05:33:35",
+    "timestampIND": "07/18/2025, 11:03:35",
+    "logType": "success",
+    "message": "Merchant A - All products deleted successfully."
+  },
+  {
+    "timestamp": "07/18/2025, 05:33:35",
+    "timestampIND": "07/18/2025, 11:03:35",
+    "logType": "success",
+    "message": "Fetched product list for Merchant A, 300 products found."
+  },
+  {
+    "timestamp": "07/18/2025, 05:33:42",
+    "timestampIND": "07/18/2025, 11:03:42",
+    "logType": "success",
+    "message": "Merchant A - All products deleted successfully."
+  },
+  {
+    "timestamp": "07/18/2025, 05:33:42",
+    "timestampIND": "07/18/2025, 11:03:42",
+    "logType": "success",
+    "message": "Fetched product list for Merchant A, 0 products found."
+  },
+  {
+    "timestamp": "07/18/2025, 05:33:51",
+    "timestampIND": "07/18/2025, 11:03:51",
+    "logType": "success",
+    "message": "Login successful."
+  },
+  {
+    "timestamp": "07/18/2025, 05:33:52",
+    "timestampIND": "07/18/2025, 11:03:52",
+    "logType": "success",
+    "message": "Fetched product list for Merchant A, 300 products found."
+  },
+  {
+    "timestamp": "07/18/2025, 05:33:58",
+    "timestampIND": "07/18/2025, 11:03:58",
+    "logType": "success",
+    "message": "Merchant A - All products deleted successfully."
+  },
+  {
+    "timestamp": "07/18/2025, 05:33:58",
+    "timestampIND": "07/18/2025, 11:03:58",
+    "logType": "success",
+    "message": "Fetched product list for Merchant A, 0 products found."
+  }
+]
